@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="component" version="3.0" method="upgrade">
-	<name>COM_TTCLUB_MANIFEST_DESCRIPTION</name>
+	<name>com_ttclub</name>
 	<author>Jörg Vater</author>
 	<authorEmail>joerg.vater@ttc-woeschbach.de</authorEmail>
 	<authorUrl>http://www.ttc-woeschbach.de</authorUrl>
@@ -21,15 +21,15 @@
 	</languages>
 
 	<administration>
-		<menu link="option=com_ttclub" img="components/com_ttclub/assets/images/ttclub_icon.png">COM_ttclub</menu>
+		<menu link="option=com_ttclub" img="components/com_ttclub/assets/images/icon-16-ttclub.png">COM_TTCLUB_MENU_MAIN</menu>
 		<submenu>
-			<menu view="settings" img="components/com_ttclub/assets/images/settings_icon.png" 
-				alt="ttclub/Settings">COM_ttclub_SETTINGS</menu>
+			<menu view="teams" img="components/com_ttclub/assets/images/icon-16-teams.png" alt="ttclub/teams">COM_TTCLUB_MENU_TEAMS</menu>
 		</submenu>
 
 		<files folder="administrator">
 			<folder>sql</folder>
 			<folder>language</folder>
+			<folder>assets</folder>
 			<folder>controllers</folder>
 			<filename>index.html</filename>
 		</files>  
