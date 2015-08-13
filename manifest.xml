@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5.0" method="upgrade">
+	<name>ttclub</name>
+	<creationDate>2015-08-13</creationDate>
+	<author>joerg.vater</author>
+	<authorEmail>joerg.vater@ttc-woeschbach.de</authorEmail>
+	<authorUrl>http://www.ttc-woeschbach.de</authorUrl>
+	<copyright>Copyright 2015 TTC Wöschbach</copyright>
+	<license>License Info</license>
+	<version>1.0.0</version>
+	<description>Tabletennis Club component for Joomla</description>
+
+	<install>
+  		<sql>
+    		<file charset="utf8" driver="mysql">sql/ttclub.install.sql</file>
+  		</sql>
+	</install>
+	
+	<files folder="site">
+		<folder>controllers</folder>
+		<filename>index.html</filename>
+	</files> 
+
+	<scriptfile>install.php</scriptfile>
+
+	<administration>
+		<menu link="option=com_ttclub" img="components/com_ttclub/assets/images/ttclub_icon.png">COM_ttclub</menu>
+		<submenu>
+			<menu view="settings" img="components/com_ttclub/assets/images/settings_icon.png" 
+				alt="ttclub/Settings">COM_ttclub_SETTINGS</menu>
+		</submenu>
+
+		<files folder="administrator">
+			<folder>sql</folder>
+			<folder>controllers</folder>
+			<filename>index.html</filename>
+		</files>  
+	</administration>
+</extension>
