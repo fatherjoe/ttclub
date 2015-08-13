@@ -8,7 +8,7 @@
 	<copyright>(C) 2015 TTC Wöschbach. All rights reserved.</copyright>
 	<license>GNU General Public License version 2 or later</license>
 	<version>1.0.0</version>
-	<description>Tabletennis Club component for Joomla</description>
+	<description>COM_TTCLUB_MANIFEST_DESCRIPTION</description>
 
 	<files folder="site">
 		<folder>controllers</folder>
@@ -16,6 +16,9 @@
 	</files> 
 
 	<scriptfile>install.php</scriptfile>
+	<languages folder="administrator/language">
+		<language tag="de-DE">de-DE/de-DE.com_ttclub.ini</language>
+	</languages>
 
 	<administration>
 		<menu link="option=com_ttclub" img="components/com_ttclub/assets/images/ttclub_icon.png">COM_ttclub</menu>
@@ -26,9 +29,15 @@
 
 		<files folder="administrator">
 			<folder>sql</folder>
+			<folder>language</folder>
 			<folder>controllers</folder>
 			<filename>index.html</filename>
 		</files>  
+
+		<languages folder="administrator/language">
+			<language tag="de-DE">de-DE/de-DE.com_ttclub.ini</language>
+			<language tag="de-DE">de-DE/de-DE.com_ttclub.sys.ini</language>
+		</languages>		
 	</administration>
 	
 	<install>
