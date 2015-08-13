@@ -1,21 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension type="component" version="2.5.0" method="upgrade">
+<extension type="component" version="3.0" method="upgrade">
 	<name>ttclub</name>
-	<creationDate>2015-08-13</creationDate>
-	<author>joerg.vater</author>
+	<author>Jörg Vater</author>
 	<authorEmail>joerg.vater@ttc-woeschbach.de</authorEmail>
 	<authorUrl>http://www.ttc-woeschbach.de</authorUrl>
-	<copyright>Copyright 2015 TTC Wöschbach</copyright>
-	<license>License Info</license>
+	<creationDate>2015-08-13</creationDate>
+	<copyright>(C) 2015 TTC Wöschbach. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later</license>
 	<version>1.0.0</version>
 	<description>Tabletennis Club component for Joomla</description>
 
-	<install>
-  		<sql>
-    		<file charset="utf8" driver="mysql">sql/ttclub.install.sql</file>
-  		</sql>
-	</install>
-	
 	<files folder="site">
 		<folder>controllers</folder>
 		<filename>index.html</filename>
@@ -36,4 +30,15 @@
 			<filename>index.html</filename>
 		</files>  
 	</administration>
+	
+	<install>
+  		<sql>
+    		<file charset="utf8" driver="mysql">sql/ttclub.install.sql</file>
+  		</sql>
+	</install>
+	<uninstall>
+  		<sql>
+    		<file charset="utf8" driver="mysql">sql/ttclub.uninstall.sql</file>
+  		</sql>
+	</uninstall>	
 </extension>
