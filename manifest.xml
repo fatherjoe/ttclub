@@ -27,12 +27,11 @@
 		</submenu>
 
 		<files folder="administrator">
-			<folder>sql</folder>
-			<folder>language</folder>
 			<folder>assets</folder>
-			<folder>models</folder>
-			<folder>views</folder>
 			<folder>controllers</folder>
+			<folder>language</folder>
+			<folder>sql</folder>
+			<folder>views</folder>
 			<filename>index.html</filename>
 		</files>  
 
