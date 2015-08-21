@@ -30,6 +30,8 @@
 			<folder>sql</folder>
 			<folder>language</folder>
 			<folder>assets</folder>
+			<folder>models</folder>
+			<folder>views</folder>
 			<folder>controllers</folder>
 			<filename>index.html</filename>
 		</files>  
