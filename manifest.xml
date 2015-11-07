@@ -33,7 +33,8 @@
 			<folder>sql</folder>
 			<folder>views</folder>
 			<filename>index.html</filename>
-		</files>  
+			<filename>ttclub.php</filename>
+		</files>
 
 		<languages folder="administrator/language">
 			<language tag="de-DE">de-DE/de-DE.com_ttclub.ini</language>
