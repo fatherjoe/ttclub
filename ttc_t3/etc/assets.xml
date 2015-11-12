@@ -6,6 +6,8 @@
 	
 	<stylesheets>
 		<file>fonts/font-awesome/css/font-awesome.min.css</file>
+		<file>http://fonts.googleapis.com/css?family=Titillium+Web</file>
+		<file>http://fonts.googleapis.com/css?family=Open+Sans</file>
 	</stylesheets>
 	
 </assets>
