@@ -19,6 +19,7 @@ defined('_JEXEC') or die;
 		<!-- //FOOT NAVIGATION -->
 	<?php endif ?>
 
+	<!--
 	<section class="t3-copyright">
 		<div class="container">
 			<div class="row">
@@ -40,6 +41,6 @@ defined('_JEXEC') or die;
 			</div>
 		</div>
 	</section>
-
+	-->
 </footer>
 <!-- //FOOTER -->

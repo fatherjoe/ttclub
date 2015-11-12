@@ -11,8 +11,9 @@ defined('_JEXEC') or die;
 $sitename  = $this->params->get('sitename');
 $slogan    = $this->params->get('slogan', '');
 $logotype  = $this->params->get('logotype', 'text');
-$logoimage = $logotype == 'image' ? $this->params->get('logoimage', T3Path::getUrl('images/logo.png', '', true)) : '';
-$logoimgsm = ($logotype == 'image' && $this->params->get('enable_logoimage_sm', 0)) ? $this->params->get('logoimage_sm', T3Path::getUrl('images/logo-sm.png', '', true)) : false;
+$logoimage = $logotype == 'image' ? T3Path::getUrl('images/ttc/logo.png', '', true) : '';
+$logoimgsm = $logotype == 'image' ? T3Path::getUrl('images/ttc/logo_sm_v2.png', '', true) : "";
+$logoright = $logotype == 'image' ? T3Path::getUrl('images/ttc/header_right_v2.png', '', true) : "";
 
 if (!$sitename) {
 	$sitename = JFactory::getConfig()->get('sitename');
@@ -24,6 +25,27 @@ if ($headright = $this->countModules('head-search or languageswitcherload')) {
 }
 
 ?>
+<!-- Google analytics tag -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-49540969-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<div id="fb-root"></div>
+
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/de_DE/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 
 <!-- HEADER -->
 <header id="t3-header" class="container t3-header">
@@ -35,6 +57,7 @@ if ($headright = $this->countModules('head-search or languageswitcherload')) {
 				<a href="<?php echo JURI::base(true) ?>" title="<?php echo strip_tags($sitename) ?>">
 					<?php if($logotype == 'image'): ?>
 						<img class="logo-img" src="<?php echo JURI::base(true) . '/' . $logoimage ?>" alt="<?php echo strip_tags($sitename) ?>" />
+						<img class="logo-right" src="<?php echo JURI::base(true) . '/' . $logoright ?>" alt="<?php echo strip_tags($sitename) ?>">
 					<?php endif ?>
 					<?php if($logoimgsm) : ?>
 						<img class="logo-img-sm" src="<?php echo JURI::base(true) . '/' . $logoimgsm ?>" alt="<?php echo strip_tags($sitename) ?>" />
