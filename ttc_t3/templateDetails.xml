@@ -46,8 +46,8 @@
 	</files>
 
 	<languages folder="language">
-		<language tag="en-GB">en-GB/en-GB.ttc_t3.ini</language>
-		<language tag="en-GB">en-GB/en-GB.ttc_t3.sys.ini</language>
+		<language tag="en-GB">en-GB/en-GB.tpl_ttc_t3.ini</language>
+		<language tag="en-GB">en-GB/en-GB.tpl_ttc_t3.sys.ini</language>
 	</languages>
 
 	<positions>
