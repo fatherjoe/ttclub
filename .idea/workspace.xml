@@ -1,7 +1,158 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8121f651-f93d-4b1c-84c9-e0a3eb80e43a" name="Default" comment="re-order admin folders list" />
+    <list default="true" id="8121f651-f93d-4b1c-84c9-e0a3eb80e43a" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/fonts/font-awesome/fonts/FontAwesome.otf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/images/arrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/images/system/arrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/images/system/arrow_rtl.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/fonts/font-awesome/fonts/fontawesome-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/fonts/font-awesome/fonts/fontawesome-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/fonts/font-awesome/fonts/fontawesome-webfont.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/fonts/font-awesome/fonts/fontawesome-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/images/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/images/demo/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/images/ico/search-invert.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/images/ico/search.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/images/themes/dark/ico/search.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/images/t3-banner.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/images/t3-bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/template_preview.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/template_thumbnail.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/etc/assets.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/css/bootstrap.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/css/rtl/bootstrap.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/css/rtl/dark/bootstrap.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/css/rtl/red/bootstrap.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/css/themes/dark/bootstrap.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/css/themes/red/bootstrap.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/less/bootstrap.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/component.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/less/components.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/less/core.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/etc/layout/default-content-left.ini" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/tpls/default-content-left.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/etc/layout/default-content-right.ini" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/tpls/default-content-right.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/etc/layout/default.ini" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/html/mod_footer/default.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/tpls/default.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/language/en-GB/en-GB.tpl_t3_bs3_blank.ini" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/language/en-GB/en-GB.tpl_t3_bs3_blank.sys.ini" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/fonts/font-awesome/css/font-awesome.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/fonts/font-awesome/css/font-awesome.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/fonts/font-awesome/fonts/fontawesome-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/tpls/blocks/footer.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/less/forms.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/css/frontend-edit.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/css/rtl/frontend-edit.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/css/rtl/dark/frontend-edit.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/css/rtl/red/frontend-edit.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/css/themes/dark/frontend-edit.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/css/themes/red/frontend-edit.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/tpls/blocks/head.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/tpls/blocks/header.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/etc/layout/home-1.ini" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/tpls/home-1.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/tpls/home-2.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/css/home.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/css/rtl/home.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/css/rtl/dark/home.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/css/rtl/red/home.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/css/themes/dark/home.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/css/themes/red/home.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/less/home.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/css/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/fonts/font-awesome/css/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/fonts/font-awesome/fonts/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/less/joomla.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/less/rtl/joomla.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/css/legacy-grid.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/css/rtl/legacy-grid.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/css/rtl/dark/legacy-grid.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/css/rtl/red/legacy-grid.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/css/themes/dark/legacy-grid.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/css/themes/red/legacy-grid.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/css/legacy-navigation.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/css/rtl/legacy-navigation.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/css/rtl/dark/legacy-navigation.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/css/rtl/red/legacy-navigation.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/css/themes/dark/legacy-navigation.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/css/themes/red/legacy-navigation.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/tpls/blocks/mainbody-content-left.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/tpls/blocks/mainbody-content-right.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/tpls/blocks/mainbody-home-1.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/tpls/blocks/mainbody-home-2.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/tpls/blocks/mainbody.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/tpls/blocks/mainnav.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/css/megamenu.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/css/rtl/megamenu.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/css/rtl/dark/megamenu.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/css/rtl/red/megamenu.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/css/themes/dark/megamenu.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/css/themes/red/megamenu.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/less/megamenu.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/less/modules.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/less/navbar.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/tpls/blocks/navhelper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/less/navigation.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/tpls/blocks/mainbody/no-sidebar.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/css/off-canvas.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/css/rtl/off-canvas.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/css/rtl/dark/off-canvas.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/css/rtl/red/off-canvas.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/css/themes/dark/off-canvas.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/css/themes/red/off-canvas.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/less/off-canvas.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/tpls/blocks/off-canvas.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/tpls/blocks/mainbody/one-sidebar-left-with-mastcol.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/tpls/blocks/mainbody/one-sidebar-left.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/tpls/blocks/mainbody/one-sidebar-right-with-mastcol.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/tpls/blocks/mainbody/one-sidebar-right.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/js/script.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/tpls/blocks/spotlight-1.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/tpls/blocks/spotlight-2.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/less/style.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/less/rtl/style.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/css/template.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/css/rtl/template.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/css/rtl/dark/template.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/css/rtl/red/template.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/css/themes/dark/template.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/css/themes/red/template.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/less/template.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/less/rtl/template.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/less/themes/dark/template.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/less/themes/red/template.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/templateDetails.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/templateHook.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/templateInfo.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/thememagic.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/ttc_t3.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/tpls/blocks/mainbody/two-sidebar-left.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/tpls/blocks/mainbody/two-sidebar-right.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/tpls/blocks/mainbody/two-sidebar.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/less/typography.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/less/themes/dark/variables-custom.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/less/themes/red/variables-custom.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/less/variables.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/less/themes/dark/variables.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/less/themes/red/variables.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/less/vars.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/css/windows.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/css/rtl/windows.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/css/rtl/dark/windows.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/css/rtl/red/windows.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/css/themes/dark/windows.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/css/themes/red/windows.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/less/windows.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/TTCHomepage.iml" afterPath="$PROJECT_DIR$/.idea/TTCHomepage.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="ttclub.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -26,6 +177,11 @@
   <component name="Git.Settings">
     <option name="UPDATE_TYPE" value="REBASE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -64,11 +220,7 @@
     <order />
   </component>
   <component name="PhpDebugGeneral" break_at_first_line="true" />
-  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true">
-    <include_path>
-      <path value="C:\Users\joergv\AppData\Local\xampp\htdocs\Joomla_3\libraries\joomla" />
-    </include_path>
-  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
@@ -716,7 +868,7 @@
       <workItem from="1447309869767" duration="211000" />
       <workItem from="1447310859736" duration="220000" />
       <workItem from="1447311231923" duration="212000" />
-      <workItem from="1447311517833" duration="76000" />
+      <workItem from="1447311517833" duration="473000" />
       <workItem from="1447312224130" duration="90000" />
     </task>
     <task id="LOCAL-00001" summary="move index.html to images folder">
@@ -731,11 +883,23 @@
       <option name="project" value="LOCAL" />
       <updated>1440160320763</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="rename IntelliJ project to TTCHomepage">
+      <created>1447311640823</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1447311640823</updated>
+    </task>
+    <task id="LOCAL-00004" summary="rename IntelliJ project to TTCHomepage">
+      <created>1447311772592</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1447311772592</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6270000" />
+    <option name="totallyTimeSpent" value="6577000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1612" height="876" extended-state="0" />
@@ -744,6 +908,7 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -762,7 +927,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -809,7 +973,8 @@
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="false" />
     <MESSAGE value="move index.html to images folder" />
     <MESSAGE value="re-order admin folders list" />
-    <option name="LAST_COMMIT_MESSAGE" value="re-order admin folders list" />
+    <MESSAGE value="rename IntelliJ project to TTCHomepage" />
+    <option name="LAST_COMMIT_MESSAGE" value="rename IntelliJ project to TTCHomepage" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
