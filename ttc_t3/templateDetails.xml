@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE install PUBLIC "-//Joomla! 1.6//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
 <extension version="2.5" type="template" method="upgrade" client="site">
-	<name>t3_bs3_blank</name>
+	<name>ttc_t3</name>
 	<version>2.2.1</version>
 	<creationDate>30 July 2015</creationDate>
-	<author>JoomlArt.com</author>
-	<authorEmail>webmaster@joomlart.com</authorEmail>
-	<authorUrl>http://www.t3-framework.org</authorUrl>
-	<copyright>Copyright (C), J.O.O.M Solutions Co., Ltd. All Rights Reserved.</copyright>
+	<author>Jörg Vater</author>
+	<authorEmail>joerg.vater@ttc-woeschbach.de</authorEmail>
+	<authorUrl>http://www.ttc-woeschbach.de</authorUrl>
+	<copyright>Copyright (C) 2015 TTC Wöschbach 58 e.V.</copyright>
 	<license>license GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
 	<t3>
 		<base>base-bs3</base>
@@ -16,11 +16,8 @@
 		<![CDATA[
 		<div align="center">
 			<div class="alert alert-success" style="background-color:#DFF0D8;border-color:#D6E9C6;color: #468847;padding: 1px 0;">
-				<a href="http://t3-framework.org/"><img src="http://joomlart.s3.amazonaws.com/images/jat3v3-documents/message-installation/logo.png" alt="some_text" width="300" height="99"></a>
-				<h4><a href="http://t3-framework.org/" title="">Home</a> | <a href="http://demo.t3-framework.org/" title="">Demo</a> | <a href="http://t3-framework.org/documentation" title="">Document</a> | <a href="https://github.com/t3framework/t3/blob/master/CHANGELOG.md" title="">Changelog</a></h4>
-				<p> </p>
-				<span style="color:#FF0000">Note: T3 blank requires T3 plugin to be installed and enabled.</span><p></p>
-				<p>Copyright 2004 - 2015 <a href='http://www.joomlart.com/' title='Visit Joomlart.com!'>JoomlArt.com</a>.</p>
+				<p>TTC T3 template based on T3 BS Blank template</p>
+				<p>Copyright 2015 <a href='http://www.ttc-woeschbach.de/' title='Visit TTC Wöschbach!'>TTC Wöschbach</a>.</p>
 			</div>
 			<style>table.adminform{width: 100%;}</style>
 		</div>
@@ -47,10 +44,10 @@
 		<folder>images</folder>
 		<folder>tpls</folder>
 	</files>
-	
+
 	<languages folder="language">
-		<language tag="en-GB">en-GB/en-GB.tpl_t3_bs3_blank.ini</language>
-		<language tag="en-GB">en-GB/en-GB.tpl_t3_bs3_blank.sys.ini</language>
+		<language tag="en-GB">en-GB/en-GB.ttc_t3.ini</language>
+		<language tag="en-GB">en-GB/en-GB.ttc_t3.sys.ini</language>
 	</languages>
 
 	<positions>
