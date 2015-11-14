@@ -54,3 +54,223 @@
 
 // Template Styles
 @import "style.less"; 
+
+// TTC
+.t3-header {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.logo {
+    height: 160px;
+	padding-left: 0px;
+}
+
+.container {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+#t3-mainnav {
+  background: transparent;
+}
+
+#t3-mainnav .container {
+  padding: 0px;
+}
+
+.navbar {
+  border: 0px;
+}
+
+.container .t3-navbar {
+  background: url(../images/ttc/navigation_bg.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding-left: 0px;
+} 
+
+.container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse {
+    margin-left: 0;
+    margin-right: 0;
+	margin-bottom: 10px;
+}
+
+#t3-header > .row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.t3-mainbody {
+  background: url(../images/ttc/content_bg.jpg) no-repeat scroll 0 0 #2a457e;
+  margin-bottom: 20px;  
+}
+
+.t3-content {
+  background-color: #FFF; 
+}
+
+.logo-control .logo-right {
+	display: inline;
+	position: absolute;
+	right: 0px;
+	top: 0;	
+}
+
+#t3-header {
+  padding-right: 0px;
+}
+
+@media (max-width: (@screen-sm - 1)) {
+//  .row {
+//    background-color: #FF0;
+//  }
+  .logo-control .logo-img-sm {
+    display: block;
+  }
+  .logo-control .logo-img {
+    display: none;
+  }
+  .logo-control .logo-right {
+    display: none;
+  }
+  .logo {
+    height: 50px;
+  }
+  #t3-header {
+    padding-left: 0px;
+  }
+
+  .container {
+    padding-top: 0px;  
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+@media (min-width: @screen-sm) and (max-width: (@screen-md - 1)) {
+//  .row {
+//    background-color: #F00;
+//  }
+  .logo-control .logo-img-sm {
+    display: none;
+  }
+  .logo-control .logo-img {
+    display: block;
+  }
+  .logo-control .logo-right {
+    display: none;
+  }
+  
+  #t3-header {
+    padding-left: 25px;
+  }  
+  .container {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+@media (min-width: @screen-md) and (max-width: (@screen-lg - 1)) {
+//  .row {
+//    background-color: #0F0;
+//  }  
+  
+  #t3-header {
+    padding-left: 25px;
+  }
+
+  .container {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  
+}
+
+@media (min-width: @screen-lg) {
+//  .row {
+//    background-color: #0FF;
+//  }  
+
+	.logo-control .logo-right {
+		display: inline;
+		position: absolute;
+		right: 0px;
+		top: 0;	
+	}
+
+  #t3-header {
+    padding-left: 60px;
+  }
+
+  .container {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+	
+}
+
+.clicktt_player_box {
+    float: left;
+    height: 176px;
+    margin-bottom: 1em;
+    margin-right: 1em;
+    width: 108px;
+}
+
+.clicktt_team_box {
+    float: left;
+    margin-bottom: 1em;
+    margin-right: 1em;
+    //width: 108px;
+    //height: 176px;
+}
+
+.clicktt_team_image >a >img{
+    width: 100%;	
+    max-width: 600px;	
+}
+//h1 {
+//	word-wrap: break-word;
+//}
+#teamtabelle > table {
+	> td { 
+	  //overflow:hidden;
+	  white-space:nowrap; 
+	  word-wrap:break-word;
+    }
+
+	//table-layout:fixed;
+	width:100%;
+}
+#teamschedule > table {
+	> td { 
+	  overflow:hidden;
+	  white-space:nowrap; 
+	  word-wrap:break-word;
+    }
+
+	//table-layout:fixed;
+	width:100%;
+}
+#aufstellung > table {
+	table-layout:fixed;
+	width:100%;
+}
+
+
+.nextmatches td {
+    border-bottom: 1px solid #999999;
+    border-right: 1px none;
+    padding: 0 8px 0 0;
+}
+
+.item-image img {
+    width: 100%;
+}
+
+div  .article-image {
+    margin: 0 30px 20px 0;
+    max-width: 50%;
+	min-width: 320px;	
+}

@@ -51,6 +51,9 @@
   .logo-control .logo-img {
     display: none;
   }
+  .logo-control .logo-right {
+    display: none;
+  } 
 }
 @media (min-width: 768px) {
   .logo-control .logo-img-sm {
@@ -58,6 +61,12 @@
   }
   .logo-control .logo-img {
     display: block;
+  }
+  .logo-control .logo-right {
+    display: inline;
+    position: absolute;
+    right: 0;
+    top: 0;	
   }
 }
 #community-wrap .collapse {
@@ -1280,6 +1289,8 @@ ul.latestusers li {
 .article-intro .pull-left.item-image,
 .article-content .pull-left.item-image {
   margin: 0 0 20px 30px;
+  max-width: 50%;
+  min-width: 320px;  
 }
 .article-intro img[align=right],
 .article-content img[align=right],
@@ -1288,6 +1299,8 @@ ul.latestusers li {
 .article-intro .pull-right.item-image,
 .article-content .pull-right.item-image {
   margin: 0 30px 20px 0;
+  max-width: 50%;
+  min-width: 320px;  
 }
 @media (max-width: 768px) {
   .article-content iframe {
@@ -1911,7 +1924,7 @@ div.finder {
   margin: 10px 0;
 }
 .filters {
-  margin: 10px 0;
+  margin: 10px 0 5px;
 }
 .display-limit {
   margin: 10px 0 5px;
@@ -2423,6 +2436,8 @@ a.list-group-item.active:focus .list-group-item-text {
 .article-intro .pull-left.item-image,
 .article-content .pull-left.item-image {
   margin: 0 30px 20px 0;
+  max-width: 50%;
+  min-width: 320px;  
 }
 .article-intro img[align=right],
 .article-content img[align=right],
@@ -2431,12 +2446,16 @@ a.list-group-item.active:focus .list-group-item-text {
 .article-intro .pull-right.item-image,
 .article-content .pull-right.item-image {
   margin: 0 0 20px 30px;
+  max-width: 50%;
+  min-width: 320px;  
 }
 @media (max-width: 768px) {
   article img[align=left],
   .img_caption.left,
   .pull-left.item-image {
     margin: 0 30px 20px 0;
+    max-width: 50%;
+    min-width: 320px;  
   }
 }
 @media (max-width: 768px) {
@@ -2444,7 +2463,9 @@ a.list-group-item.active:focus .list-group-item-text {
   .img_caption.right,
   .pull-right.item-image {
     margin: 0 0 20px 30px;
-  }
+    max-width: 50%;
+    min-width: 320px;  
+}
 }
 .languageswitcherload ul {
   float: left;

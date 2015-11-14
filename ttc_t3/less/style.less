@@ -22,8 +22,35 @@
 .t3-header {
   padding-top: @t3-global-padding;
   padding-bottom: @t3-global-padding;
+  
+  @media (min-width: (@screen-sm)) {
+    background: url("../images/ttc/header_bg_v2.png") repeat-x scroll 0 0 #ffffff;
+  }
+  @media (max-width: (@screen-sm - 1)) {
+    background: url("../images/ttc/header_bg_small_v2.png") repeat-x scroll 0 0 #ffffff;
+  }  
 }
 
+#t3-header {
+  @media screen and (max-width: @screen-sm) {
+    height: 55px;
+    padding-top: 2px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+}
+
+#t3-mainnav {
+  @media screen and (max-width: @screen-sm) {
+    position: fixed;
+    top: 5px;
+    padding-top: 3px;
+    width: 100%;
+    z-index: 1;
+  }
+}
 
 // Logo
 // ----
@@ -172,6 +199,12 @@
 .t3-mainbody {
   padding-top: @line-height-computed ;
   padding-bottom: @line-height-computed;
+
+  @media screen and (max-width: @screen-sm) {
+    margin-top: 55px;
+    position: absolute; 
+    width: 100%;	
+  }
 }
 
 // Content
