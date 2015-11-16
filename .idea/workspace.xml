@@ -1,41 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8121f651-f93d-4b1c-84c9-e0a3eb80e43a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/images/ttc/content_bg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/images/ttc/content_bg_firework.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/images/ttc/content_bg_xmas.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/images/ttc/favicon.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/images/ttc/header_bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/images/ttc/header_bg_small.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/images/ttc/header_bg_small_v2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/images/ttc/header_bg_small_v2.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/images/ttc/header_bg_v2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/images/ttc/header_right.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/images/ttc/header_right_v2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/images/ttc/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/images/ttc/logo.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/images/ttc/logo_sm.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/images/ttc/logo_sm_v2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/images/ttc/logo_sm_v2.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/images/ttc/menu-item-bg-current.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/images/ttc/menu-item-bg-over.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/images/ttc/menu-item-bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ttc_t3/images/ttc/navigation_bg.png" />
-      <change type="MOVED" beforePath="C:\Users\joergv\workspaces\git\TTCHomepage\ttc_t3\language\en-GB\en-GB.tpl_t3_bs3_blank.ini" afterPath="$PROJECT_DIR$/ttc_t3/language/en-GB/en-GB.ttc_t3.ini" />
-      <change type="MOVED" beforePath="C:\Users\joergv\workspaces\git\TTCHomepage\ttc_t3\language\en-GB\en-GB.tpl_t3_bs3_blank.sys.ini" afterPath="$PROJECT_DIR$/ttc_t3/language/en-GB/en-GB.ttc_t3.sys.ini" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ttc_t3/favicon.ico" afterPath="$PROJECT_DIR$/ttc_t3/favicon.ico" />
+    <list default="true" id="8121f651-f93d-4b1c-84c9-e0a3eb80e43a" name="Default" comment="update template files for TTC design">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ttc_t3/template_preview.png" afterPath="$PROJECT_DIR$/ttc_t3/template_preview.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ttc_t3/template_thumbnail.png" afterPath="$PROJECT_DIR$/ttc_t3/template_thumbnail.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ttc_t3/etc/assets.xml" afterPath="$PROJECT_DIR$/ttc_t3/etc/assets.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ttc_t3/tpls/blocks/footer.php" afterPath="$PROJECT_DIR$/ttc_t3/tpls/blocks/footer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ttc_t3/tpls/blocks/header.php" afterPath="$PROJECT_DIR$/ttc_t3/tpls/blocks/header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ttc_t3/less/joomla.less" afterPath="$PROJECT_DIR$/ttc_t3/less/joomla.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ttc_t3/less/navbar.less" afterPath="$PROJECT_DIR$/ttc_t3/less/navbar.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ttc_t3/less/style.less" afterPath="$PROJECT_DIR$/ttc_t3/less/style.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ttc_t3/css/rtl/template.css" afterPath="$PROJECT_DIR$/ttc_t3/css/rtl/template.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ttc_t3/less/template.less" afterPath="$PROJECT_DIR$/ttc_t3/less/template.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ttc_t3/templateDetails.xml" afterPath="$PROJECT_DIR$/ttc_t3/templateDetails.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ttc_t3/less/variables.less" afterPath="$PROJECT_DIR$/ttc_t3/less/variables.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -58,28 +31,7 @@
     <favorites_list name="ttclub" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="assets.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ttc_t3/etc/assets.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ttc_t3/tpls/blocks/header.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="Git.Settings">
     <option name="UPDATE_TYPE" value="REBASE" />
@@ -106,6 +58,10 @@
         <option value="$PROJECT_DIR$/administrator/language/de-DE/de-DE.com_ttclub.sys.ini" />
         <option value="$PROJECT_DIR$/administrator/language/de-DE/de-DE.com_ttclub.ini" />
         <option value="$PROJECT_DIR$/administrator/controllers/teams.php" />
+        <option value="$PROJECT_DIR$/ttc_t3/language/en-GB/en-GB.ttc_t3.ini" />
+        <option value="$PROJECT_DIR$/ttc_t3/templateDetails.xml" />
+        <option value="$PROJECT_DIR$/ttc_t3/templateInfo.php" />
+        <option value="$PROJECT_DIR$/ttc_t3/language/en-GB/en-GB.tpl_ttc_t3.ini" />
       </list>
     </option>
   </component>
@@ -184,6 +140,9 @@
             <id>Inheritance issuesJava</id>
           </State>
           <State>
+            <id>Internationalization issues</id>
+          </State>
+          <State>
             <id>J2ME issuesJava</id>
           </State>
           <State>
@@ -235,6 +194,11 @@
             <id>XMLSpring CoreSpring</id>
           </State>
         </expanded-state>
+        <selected-state>
+          <State>
+            <id>Android</id>
+          </State>
+        </selected-state>
       </profile-state>
     </entry>
   </component>
@@ -323,7 +287,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -813,7 +777,7 @@
       <workItem from="1447311231923" duration="212000" />
       <workItem from="1447311517833" duration="473000" />
       <workItem from="1447312224130" duration="90000" />
-      <workItem from="1447316756823" duration="935000" />
+      <workItem from="1447316756823" duration="5070000" />
     </task>
     <task id="LOCAL-00001" summary="move index.html to images folder">
       <created>1440160277836</created>
@@ -839,11 +803,41 @@
       <option name="project" value="LOCAL" />
       <updated>1447311772592</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add Open Sans and Titillium Web fonts">
+      <created>1447318068557</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1447318068557</updated>
+    </task>
+    <task id="LOCAL-00006" summary="use TTC emblem as favicon">
+      <created>1447318124155</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1447318124155</updated>
+    </task>
+    <task id="LOCAL-00007" summary="use TTC images in header, comment out T3 part of footer">
+      <created>1447318231335</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1447318231335</updated>
+    </task>
+    <task id="LOCAL-00008" summary="set size of article image">
+      <created>1447318397524</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1447318397524</updated>
+    </task>
+    <task id="LOCAL-00009" summary="remove &quot;Resources&quot; section from template home screen">
+      <created>1447323533315</created>
+      <option name="number" value="00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1447323533315</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7512000" />
+    <option name="totallyTimeSpent" value="11647000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
@@ -852,15 +846,17 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23137255" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.49067715" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1641791" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32973504" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -870,10 +866,8 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -918,7 +912,12 @@
     <MESSAGE value="move index.html to images folder" />
     <MESSAGE value="re-order admin folders list" />
     <MESSAGE value="rename IntelliJ project to TTCHomepage" />
-    <option name="LAST_COMMIT_MESSAGE" value="rename IntelliJ project to TTCHomepage" />
+    <MESSAGE value="add Open Sans and Titillium Web fonts" />
+    <MESSAGE value="use TTC emblem as favicon" />
+    <MESSAGE value="use TTC images in header, comment out T3 part of footer" />
+    <MESSAGE value="set size of article image" />
+    <MESSAGE value="remove &quot;Resources&quot; section from template home screen" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove &quot;Resources&quot; section from template home screen" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1125,6 +1124,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ttc_t3/tpls/blocks/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ttc_t3/etc/assets.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1133,10 +1140,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ttc_t3/tpls/blocks/header.php">
+    <entry file="file://$PROJECT_DIR$/ttc_t3/templateInfo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.730769">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ttc_t3/language/en-GB/en-GB.tpl_ttc_t3.sys.ini">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="44" selection-start-line="0" selection-start-column="44" selection-end-line="0" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ttc_t3/language/en-GB/en-GB.tpl_ttc_t3.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.51367784">
+          <caret line="135" column="29" selection-start-line="135" selection-start-column="29" selection-end-line="135" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ttc_t3/templateDetails.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49088147">
+          <caret line="49" column="46" selection-start-line="49" selection-start-column="46" selection-end-line="49" selection-end-column="46" />
           <folding />
         </state>
       </provider>
