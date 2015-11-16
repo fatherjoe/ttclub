@@ -614,9 +614,9 @@ html[dir="ltr"] .off-canvas-right.old-ie .t3-off-canvas {
   border-radius: 0;
   border: 0;
   padding: 0;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
 }
 .off-canvas-toggle:focus {
   outline: none;

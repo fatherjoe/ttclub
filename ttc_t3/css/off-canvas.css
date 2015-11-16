@@ -11,7 +11,7 @@ body {
   width: 100%;
 }
 .t3-wrapper {
-  background: #ffffff;
+  background: #45639e;
   position: relative;
   left: 0;
   z-index: 99;
@@ -99,7 +99,7 @@ html[dir="ltr"] .off-canvas-right.t3-off-canvas {
   overflow-y: auto;
 }
 .t3-off-canvas {
-  background: #ffffff;
+  background: #45639e;
   color: #333333;
 }
 .t3-off-canvas .t3-off-canvas-header {
@@ -114,11 +114,11 @@ html[dir="ltr"] .off-canvas-right.t3-off-canvas {
   padding: 6px 12px;
 }
 .t3-off-canvas .t3-off-canvas-body a {
-  color: #428bca;
+  color: #3a509b;
 }
 .t3-off-canvas .t3-off-canvas-body a:hover,
 .t3-off-canvas .t3-off-canvas-body a:focus {
-  color: #2a6496;
+  color: #253363;
 }
 .t3-off-canvas .t3-off-canvas-body a:focus {
   outline: thin dotted;
@@ -614,15 +614,15 @@ html[dir="ltr"] .off-canvas-right.old-ie .t3-off-canvas {
   border-radius: 0;
   border: 0;
   padding: 0;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
 }
 .off-canvas-toggle:focus {
   outline: none;
 }
 .t3-off-canvas {
-  background: #ffffff;
+  background: #45639e;
   color: #333333;
 }
 .t3-off-canvas .t3-off-canvas-header {
@@ -652,12 +652,12 @@ html[dir="ltr"] .off-canvas-right.old-ie .t3-off-canvas {
   padding: 24px 12px;
 }
 .t3-off-canvas .t3-off-canvas-body a {
-  color: #428bca;
+  color: #3a509b;
   text-decoration: none;
 }
 .t3-off-canvas .t3-off-canvas-body a:hover,
 .t3-off-canvas .t3-off-canvas-body a:focus {
-  color: #2a6496;
+  color: #253363;
   text-decoration: none;
 }
 .t3-off-canvas .t3-off-canvas-body a:focus {

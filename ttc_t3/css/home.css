@@ -16,7 +16,7 @@
 }
 .home .t3-sl-1 {
   padding: 0;
-  background: #ffffff;
+  background: #45639e;
   color: #333333;
   border-bottom: 1px solid #eeeeee;
 }
@@ -41,7 +41,7 @@
 .home .t3-sl-3 p > img {
   margin-top: 20px;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1070px) {
   .home .t3-sl-3 p > img {
     margin-top: 0;
   }
@@ -80,7 +80,7 @@
   }
 }
 .home .t3-sl-5 {
-  background: #ffffff;
+  background: #45639e;
   color: #333333;
   border-top: 1px solid #eeeeee;
   padding: 0;
