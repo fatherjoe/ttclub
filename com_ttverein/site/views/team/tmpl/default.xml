@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Mannschaftdetails">
+		<message>
+			<![CDATA[Mannschaftsdetails]]>
+		</message>
+	</layout>
+	<state>
+		<name>Mannschaftsdetails Einstellungen</name>
+		<description>Optionen zur Anzeige der Mannschaftsdetails</description>
+		<params>
+	 		<param name="mannschaftsid" type="text" default="" label="Mannschafts ID" description="ID der anzuzeigenden Mannschaft" size="3" />
+	 	</params>
+	</state>
+</metadata>
