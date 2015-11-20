@@ -6,7 +6,6 @@ $clubname = $_GET['clubname'];
 $clubid = $_GET['clubid'];
 $championship = $_GET['championship'];
 $group = $_GET['group'];
-$imageUrl = $_GET['imageurl'];
 $teamtable = $_GET['teamtable'];
 $pageState = $_GET['pageState'];
 
