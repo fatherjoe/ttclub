@@ -471,7 +471,7 @@ class ClickTT {
 	}
 	
 	/**
-	 * Läd die Bilanzen eines Spieler aus einer bestimmten Saison aus click-TT. 
+	 * Lädt die Bilanzen eines Spieler aus einer bestimmten Saison aus click-TT. 
 	 * @access public
 	 * @param string $seasonName Saison aus der die Bilanz genommen werden soll.
 	 * @param int $personID Die Click-TT ID des Spielers.
@@ -494,7 +494,7 @@ class ClickTT {
 		 * Überprüfen ob dies die gewünschte Saison ist. Gibt es den Spieler
 		 * nicht in der gewünschten Saison, so gibt click-tt die Aktuelle Saison aus.
 		 */ 
-		preg_match("/<h1>Spielsaison&nbsp;(.*)\n/Usi", $content, $result);
+		preg_match("/<h1>.*Spielsaison&nbsp;(.*)\n/Usi", $content, $result);
 		$saisonName = $this->getSaisonName($saisonStart);	
 
 		if(trim($result[1]) != $saisonName)
