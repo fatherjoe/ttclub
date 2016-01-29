@@ -275,6 +275,11 @@ h6,
 }
 p {
   margin: 0 0 10px;
+  hyphens: auto;
+  -moz-hyphens: auto;
+  -o-hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;  
 }
 .lead {
   margin-bottom: 20px;
