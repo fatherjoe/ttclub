@@ -471,7 +471,7 @@ class ClickTT {
 	}
 	
 	/**
-	 * Lädt die Bilanzen eines Spieler aus einer bestimmten Saison aus click-TT. 
+	 * Lädt die Bilanzen eines Spieler aus einer bestimmten Saison aus click-TT.
 	 * @access public
 	 * @param string $seasonName Saison aus der die Bilanz genommen werden soll.
 	 * @param int $personID Die Click-TT ID des Spielers.
@@ -902,6 +902,7 @@ class ClickTT {
 		$table = str_replace("RL H", "Regionalliga", $table);
 		$table = str_replace("Ju Kr  Kl", "Jugend KK", $table);
 		$table = str_replace("Ju Kr  Li", "Jugend KL", $table);
+		$table = str_replace("Ju Pok", "Jugend Pokal", $table);
 		$table = str_replace("Ju Bez Li", "Jugend BezL", $table);
 		$table = str_replace("Ju Vb Kl", "Jugend VK", $table);
 		$table = str_replace("Sm Kr Kl", "Schüler KK", $table);
@@ -947,6 +948,7 @@ class ClickTT {
 		$table = str_replace("RL H", "Regionalliga", $table);
 		$table = str_replace("Ju Kr  Kl", "Jugend KK", $table);
 		$table = str_replace("Ju Kr  Li", "Jugend KL", $table);
+		$table = str_replace("Ju Pok", "Jugend Pokal", $table);
 		$table = str_replace("Ju Bez Li", "Jugend BezL", $table);
 		$table = str_replace("Ju Vb Kl", "Jugend VK", $table);
 		$table = str_replace("Sm Kr Kl", "Schüler KK", $table);
