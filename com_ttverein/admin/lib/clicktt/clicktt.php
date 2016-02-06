@@ -909,6 +909,9 @@ class ClickTT {
 		$table = str_replace("Sm Kr  Li", "Schüler KL", $table);
 		$table = str_replace("SG-EK Söllingen/TTC Wöschb", "SG Söll./Wöschb.", $table);
 		
+		if (strlen($table) == 0)
+			$table = "Keine Spiele in den nächsten 14 Tagen.";
+		
 		return '<div class="table-responsive"><table class="nextmatches table table-condensed table-striped">' . $table . '</table></div>';
 	}
 
