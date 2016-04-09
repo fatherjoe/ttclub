@@ -1278,6 +1278,9 @@ ul.latestusers li {
   font-size: 12px;
   margin-bottom: 20px;
 }
+.tags {
+  margin-bottom: 20px;
+}
 .article-intro img,
 .article-content img {
   display: block;
