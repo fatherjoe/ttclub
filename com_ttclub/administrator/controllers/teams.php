@@ -3,7 +3,7 @@
  * @version     1.0.0
  * @package     com_ttclub
  * @copyright   Copyright (C) 2014. Alle Rechte vorbehalten.
- * @license     GNU General Public License Version 2 oder sp‰ter; siehe LICENSE.txt
+ * @license     GNU General Public License Version 2 oder sp√§ter; siehe LICENSE.txt
  * @author      Thomas Muster <tom.muster@dodgemail.de> - http://
  */
 
@@ -26,8 +26,8 @@ class TtclubControllerTeams extends JControllerAdmin
 		$model = parent::getModel($name, $prefix, array('ignore_request' => true));
 		return $model;
 	}
-
-
+    
+    
 	/**
 	 * Method to save the submitted ordering values for records via AJAX.
 	 *
@@ -60,7 +60,7 @@ class TtclubControllerTeams extends JControllerAdmin
 		// Close the application
 		JFactory::getApplication()->close();
 	}
-
-
-
+    
+    
+    
 }

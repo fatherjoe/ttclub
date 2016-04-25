@@ -1,12 +1,25 @@
 <?php
-
 /**
- * Created by IntelliJ IDEA.
- * User: joergv
- * Date: 18.09.2015
- * Time: 10:22
+ * @version     1.0.0
+ * @package     com_ttclub
+ * @copyright   Copyright (C) 2014. Alle Rechte vorbehalten.
+ * @license     GNU General Public License Version 2 oder später; siehe LICENSE.txt
+ * @author      Thomas Muster <tom.muster@dodgemail.de> - http://
  */
-class ttclub
-{
 
+
+// no direct access
+defined('_JEXEC') or die;
+
+// Access check.
+if (!JFactory::getUser()->authorise('core.manage', 'com_ttclub')) 
+{
+	throw new Exception(JText::_('JERROR_ALERTNOAUTHOR'));
 }
+
+// Include dependancies
+jimport('joomla.application.component.controller');
+
+$controller	= JControllerLegacy::getInstance('Ttclub');
+$controller->execute(JFactory::getApplication()->input->get('task'));
+$controller->redirect();
