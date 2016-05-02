@@ -1,78 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension type="component" version="3.0" method="upgrade">
-    <name>com_ttclub</name>
-    <creationDate>2014-12-10</creationDate>
-    <copyright>Copyright (C) 2014. Alle Rechte vorbehalten.</copyright>
-    <license>GNU General Public License Version 2 oder später; siehe LICENSE.txt</license>
-    <author>Thomas Muster</author>
-    <authorEmail>tom.muster@dodgemail.de</authorEmail>
-    <authorUrl>http://</authorUrl>
-    <version>1.0.0</version>
-    <description>Tischtennis Club Komponente</description>
-    
-    
-    
-    <install> <!-- Runs on install -->
-        <sql>
-            <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
-        </sql>
-    </install>
-    <uninstall> <!-- Runs on uninstall -->
-        <sql>
-            <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
-        </sql>
-    </uninstall>
+<extension type="component" version="3.2.0" method="upgrade">
 
-    <files folder="site">
-        <filename>index.html</filename>
-        <filename>ttclub.php</filename>
-        <filename>controller.php</filename>
-        <filename>router.php</filename>
-        <folder>views</folder>
-        <folder>models</folder>
-        <folder>controllers</folder>
-        <folder>helpers</folder>
-        <folder>assets</folder>
-    </files>
-    <languages folder="languages/site">
-        
-			<language tag="de-DE">de-DE/de-DE.com_ttclub.ini</language>
-    </languages>
-    <administration>
-        <menu img="components/com_ttclub/assets/images/s_com_ttclub.png" >COM_TTCLUB</menu>
-        <submenu>
-            
-			<menu link="option=com_ttclub&amp;view=teams" view="teams" img="components/com_ttclub/assets/images/s_teams.png" alt="Ttclub/Teams">COM_TTCLUB_TITLE_TEAMS</menu>
+	<name>COM_TTCLUB</name>
 
-			<menu link="option=com_ttclub&amp;view=schedule" view="schedule" img="components/com_ttclub/assets/images/s_schedule.png" alt="Ttclub/Schedule">COM_TTCLUB_TITLE_SCHEDULE</menu>
+	<creationDate>2015-08-13</creationDate>
+	<author>Jörg Vater</author>
+	<authorEmail>joerg.vater@ttc-woeschbach.de</authorEmail>
+	<authorUrl>http://www.ttc-woeschbach.de</authorUrl>
+	<copyright>(C) 2015 TTC Wöschbach. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later</license>
 
-			<menu link="option=com_ttclub&amp;view=results" view="results" img="components/com_ttclub/assets/images/s_results.png" alt="Ttclub/Results">COM_TTCLUB_TITLE_RESULTS</menu>
+	<version>0.0.1</version>
+	<description>COM_TTCLUB_MANIFEST_DESCRIPTION</description>
 
-        </submenu>
-        <files folder="administrator">
-            <filename>access.xml</filename>
-            <filename>config.xml</filename>
-            <filename>controller.php</filename>
-            <filename>index.html</filename>
-            <filename>ttclub.php</filename>
-            <folder>controllers</folder>
-            <folder>assets</folder>
-            <folder>helpers</folder>
-            <folder>models</folder>
-            <folder>sql</folder>
-            <folder>tables</folder>
-            <folder>views</folder>
-        </files>
-        <languages folder="languages/administrator">
-            
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/ttclub.install.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/ttclub.uninstall.sql</file>
+		</sql>
+	</uninstall>    
+	<update> <!-- Runs on update; New in 2.5 -->
+		<schemas>
+			<schemapath type="mysql">sql/updates/mysql</schemapath>
+		</schemas>
+	</update>
+
+	<files folder="site">
+		<filename>index.html</filename>
+		<filename>ttclub.php</filename>
+		<filename>controller.php</filename>
+		<filename>router.php</filename>
+		<folder>controllers</folder>
+		<folder>views</folder>
+		<folder>models</folder>
+		<folder>tables</folder>
+		<folder>helpers</folder>
+	</files>
+
+	<languages folder="site/language">
+		<language tag="en-GB">en-GB/en-GB.com_ttclub.ini</language>
+		<language tag="de-DE">de-DE/de-DE.com_ttclub.ini</language>
+	</languages>
+
+	<media destination="com_ttclub" folder="media">
+		<filename>index.html</filename>
+		<folder>images</folder>
+		<folder>css</folder>
+		<folder>js</folder>
+	</media>
+
+	<administration>
+		<menu link="option=com_ttclub" img="components/com_ttclub/assets/images/icon-16-ttclub.png">
+            COM_TTCLUB_MENU_MAIN
+		</menu>
+		<submenu>
+			<menu view="teams" img="components/com_ttclub/assets/images/icon-16-teams.png" alt="ttclub/teams">
+                COM_TTCLUB_MENU_TEAMS
+			</menu>
+		</submenu>
+
+		<files folder="admin">
+			<filename>index.html</filename>
+			<filename>ttclub.php</filename>
+			<filename>controller.php</filename>
+			<folder>controllers</folder>
+			<folder>helpers</folder>
+			<folder>models</folder>
+			<folder>sql</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+		</files>
+
+		<languages folder="admin/language">
+			<language tag="en-GB">en-GB/en-GB.com_ttclub.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_ttclub.sys.ini</language>
 			<language tag="de-DE">de-DE/de-DE.com_ttclub.ini</language>
 			<language tag="de-DE">de-DE/de-DE.com_ttclub.sys.ini</language>
-        </languages>
-    </administration>
-    <plugins>
-        <plugin group="search" plugin="ttclub"/>
-    </plugins>
-    
+		</languages>
+	</administration>
+
+<!--    <scriptfile>install.php</scriptfile> -->
 </extension>
-<!-- Component built by the Joomla Component Creator -->
-<!-- http://www.component-creator.com/ -->
