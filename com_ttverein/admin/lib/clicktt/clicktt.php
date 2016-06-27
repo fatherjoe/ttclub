@@ -19,7 +19,7 @@ class ClickTT {
 	var $regExps = array();
 	
 	/**
-	 * Läd die Regulären Ausdrücke und sucht dann die clubID.
+	 * Lädt die Regulären Ausdrücke und sucht dann die clubID.
 	 *
 	 *  @param string $url Die komplette Url zu einer Click-TT Seite
 	 * 	z.B. http://wttv.click-tt.de/cgi-bin/WebObjects/ClickWTTV.woa/wa/
@@ -27,7 +27,7 @@ class ClickTT {
 	 * 	in Tabellen oder Terminplänen benutzt wird. Über die Vereinssuche (Adressen, Mannschaften, Spieler, Ergebnisse)
 	 *  muss dieser Name zur Vereinsseite führen.
 	 */
-	function ClickTT($verbandName, $vereinsNummer, $vereinsName, $id=null) {
+	function __construct($verbandName, $vereinsNummer, $vereinsName, $id=null) {
 		if(DEBUG)
 			echo "<br />new ClickTT($verbandName, $vereinsNummer, $vereinsName, $id)";
 			 
@@ -884,30 +884,35 @@ class ClickTT {
 		// Extrahiere Tabelle aus Ergebnisseite
 		//preg_match("/<table class=\"result-set\" cellspacing=\"0\" border=\"0\" cellpadding=\"0\" border=\"0\">(.*)<\/table>/Usi", $content, $table);
 		preg_match("/.*<table class.*=.*\"result-set\".*>(.*)<\/table>/Usi", $content, $table);
-		$table = $table[1];
-		// Lösche nicht benötigte Spalten
-		$table = preg_replace("/(<th[^@]*?<\/th>)[^@]*?(<th[^@]*?<\/th>)[^@]*?(<th[^@]*?<\/th>)[^@]*?(<th[^@]*?<\/th>)[^@]*?(<th[^@]*?<\/th>)[^@]*?(<th[^@]*?<\/th>)[^@]*?(<th[^@]*?<\/th>)[^@]*?(<th[^@]*?<\/th>)[^@]*?<th[^@]*?<\/th>[^@]*?<th[^@]*?<\/th>/", 
-		"$1$5$6$4", $table);
-		$table = preg_replace("/(<td[^@]*?<\/td>)[^@]*?(<td[^@]*?<\/td>)[^@]*?(<td[^@]*?<\/td>)[^@]*?(<td[^@]*?<\/td>)[^@]*?(<td[^@]*?<\/td>)[^@]*?(<td[^@]*?<\/td>)[^@]*?(<td[^@]*?<\/td>)[^@]*?(<td[^@]*?<\/td>)[^@]*?(<td[^@]*?<\/td>)[^@]*?(<td[^@]*?<\/td>)[^@]*?(<td[^@]*?<\/td>)[^@]*?(<td[^@]*?<\/td>)/", 
-		"$1$2$3$7$8$6", $table);
-		$table = str_replace("He Kr  Kl B", "Kreisklasse B", $table);
-		$table = str_replace("He Kr  Kl A", "Kreisklasse A", $table);
-		$table = str_replace("He Kr   Li", "Kreisliga", $table);
-		$table = str_replace("He Bez Kl", "Bezirksklasse", $table);
-		$table = str_replace("He Bez Li", "Bezirksliga", $table);
-		$table = str_replace("He Vb Kl", "Verbandsklasse", $table);
-		$table = str_replace("He Vb Li", "Verbandsliga", $table);
-		$table = str_replace("HER BaL", "Badenliga", $table);
-		$table = str_replace("OL H", "Oberliga", $table);
-		$table = str_replace("RL H", "Regionalliga", $table);
-		$table = str_replace("Ju Kr  Kl", "Jugend KK", $table);
-		$table = str_replace("Ju Kr  Li", "Jugend KL", $table);
-		$table = str_replace("Ju Pok", "Jugend Pokal", $table);
-		$table = str_replace("Ju Bez Li", "Jugend BezL", $table);
-		$table = str_replace("Ju Vb Kl", "Jugend VK", $table);
-		$table = str_replace("Sm Kr Kl", "Schüler KK", $table);
-		$table = str_replace("Sm Kr  Li", "Schüler KL", $table);
-		$table = str_replace("SG-EK Söllingen/TTC Wöschb", "SG Söll./Wöschb.", $table);
+		if (sizeof($table)==0) {
+			$table= "";
+		} else {
+		
+			$table = $table[1];
+			// Lösche nicht benötigte Spalten
+			$table = preg_replace("/(<th[^@]*?<\/th>)[^@]*?(<th[^@]*?<\/th>)[^@]*?(<th[^@]*?<\/th>)[^@]*?(<th[^@]*?<\/th>)[^@]*?(<th[^@]*?<\/th>)[^@]*?(<th[^@]*?<\/th>)[^@]*?(<th[^@]*?<\/th>)[^@]*?(<th[^@]*?<\/th>)[^@]*?<th[^@]*?<\/th>[^@]*?<th[^@]*?<\/th>/", 
+			"$1$5$6$4", $table);
+			$table = preg_replace("/(<td[^@]*?<\/td>)[^@]*?(<td[^@]*?<\/td>)[^@]*?(<td[^@]*?<\/td>)[^@]*?(<td[^@]*?<\/td>)[^@]*?(<td[^@]*?<\/td>)[^@]*?(<td[^@]*?<\/td>)[^@]*?(<td[^@]*?<\/td>)[^@]*?(<td[^@]*?<\/td>)[^@]*?(<td[^@]*?<\/td>)[^@]*?(<td[^@]*?<\/td>)[^@]*?(<td[^@]*?<\/td>)[^@]*?(<td[^@]*?<\/td>)/", 
+			"$1$2$3$7$8$6", $table);
+			$table = str_replace("He Kr  Kl B", "Kreisklasse B", $table);
+			$table = str_replace("He Kr  Kl A", "Kreisklasse A", $table);
+			$table = str_replace("He Kr   Li", "Kreisliga", $table);
+			$table = str_replace("He Bez Kl", "Bezirksklasse", $table);
+			$table = str_replace("He Bez Li", "Bezirksliga", $table);
+			$table = str_replace("He Vb Kl", "Verbandsklasse", $table);
+			$table = str_replace("He Vb Li", "Verbandsliga", $table);
+			$table = str_replace("HER BaL", "Badenliga", $table);
+			$table = str_replace("OL H", "Oberliga", $table);
+			$table = str_replace("RL H", "Regionalliga", $table);
+			$table = str_replace("Ju Kr  Kl", "Jugend KK", $table);
+			$table = str_replace("Ju Kr  Li", "Jugend KL", $table);
+			$table = str_replace("Ju Pok", "Jugend Pokal", $table);
+			$table = str_replace("Ju Bez Li", "Jugend BezL", $table);
+			$table = str_replace("Ju Vb Kl", "Jugend VK", $table);
+			$table = str_replace("Sm Kr Kl", "Schüler KK", $table);
+			$table = str_replace("Sm Kr  Li", "Schüler KL", $table);
+			$table = str_replace("SG-EK Söllingen/TTC Wöschb", "SG Söll./Wöschb.", $table);
+		}
 		
 		if (strlen($table) == 0)
 			$table = "Keine Spiele in den nächsten 14 Tagen.";
@@ -932,31 +937,39 @@ class ClickTT {
 		$content = $this->getUserAgentSite($this->buildNextMatchesUrl($club, $searchMeetings, 3, $startdate, $enddate, 1));
 		// Extrahiere Tabelle aus Ergebnisseite
 		preg_match("/.*<table class.*=.*\"result-set\".*>(.*)<\/table>/Usi", $content, $table);
-		// Lösche nicht benötigte Spalten
-		$table = $table[1];
-		$table = preg_replace("/(<th[^@]*?<\/th>)[^@]*?(<th[^@]*?<\/th>)[^@]*?(<th[^@]*?<\/th>)[^@]*?(<th[^@]*?<\/th>)[^@]*?(<th[^@]*?<\/th>)[^@]*?(<th[^@]*?<\/th>)[^@]*?(<th[^@]*?<\/th>)[^@]*?(<th[^@]*?<\/th>)[^@]*?<th[^@]*?<\/th>[^@]*?<th[^@]*?<\/th>/", 
-		"<thead><th colspan='2'>Tag Datum</th>$4$5$6<th class='center'>Ergebnis</th></thead>", $table);
-		$table = preg_replace("/(<td[^@]*?<\/td>)[^@]*?(<td[^@]*?<\/td>)[^@]*?(<td[^@]*?<\/td>)[^@]*?(<td[^@]*?<\/td>)[^@]*?(<td[^@]*?<\/td>)[^@]*?(<td[^@]*?<\/td>)[^@]*?(<td[^@]*?<\/td>)[^@]*?(<td[^@]*?<\/td>)[^@]*?(<td[^@]*?<\/td>)[^@]*?(<td[^@]*?<\/td>)[^@]*?(<td[^@]*?<\/td>)[^@]*?(<td[^@]*?<\/td>)/", 
-		"$1$2$6$7$8$9", $table);
-		$table = preg_replace('/\"\/cgi-bin/', '"http://ttvbw.click-tt.de/cgi-bin', $table);
-		$table = str_replace("He Kr  Kl B", "Kreisklasse B", $table);
-		$table = str_replace("He Kr  Kl A", "Kreisklasse A", $table);
-		$table = str_replace("He Kr   Li", "Kreisliga", $table);
-		$table = str_replace("He Bez Kl", "Bezirksklasse", $table);
-		$table = str_replace("He Bez Li", "Bezirksliga", $table);
-		$table = str_replace("He Vb Kl", "Verbandsklasse", $table);
-		$table = str_replace("He Vb Li", "Verbandsliga", $table);
-		$table = str_replace("HER BaL", "Badenliga", $table);
-		$table = str_replace("OL H", "Oberliga", $table);
-		$table = str_replace("RL H", "Regionalliga", $table);
-		$table = str_replace("Ju Kr  Kl", "Jugend KK", $table);
-		$table = str_replace("Ju Kr  Li", "Jugend KL", $table);
-		$table = str_replace("Ju Pok", "Jugend Pokal", $table);
-		$table = str_replace("Ju Bez Li", "Jugend BezL", $table);
-		$table = str_replace("Ju Vb Kl", "Jugend VK", $table);
-		$table = str_replace("Sm Kr Kl", "Schüler KK", $table);
-		$table = str_replace("Sm Kr  Li", "Schüler KL", $table);
-		$table = str_replace("SG-EK Söllingen/TTC Wöschb", "SG Söll./Wöschb.", $table);
+		
+		if (sizeof($table)==0) {
+			$table= "";
+		} else {
+			// Lösche nicht benötigte Spalten
+			$table = $table[1];
+			$table = preg_replace("/(<th[^@]*?<\/th>)[^@]*?(<th[^@]*?<\/th>)[^@]*?(<th[^@]*?<\/th>)[^@]*?(<th[^@]*?<\/th>)[^@]*?(<th[^@]*?<\/th>)[^@]*?(<th[^@]*?<\/th>)[^@]*?(<th[^@]*?<\/th>)[^@]*?(<th[^@]*?<\/th>)[^@]*?<th[^@]*?<\/th>[^@]*?<th[^@]*?<\/th>/", 
+			"<thead><th colspan='2'>Tag Datum</th>$4$5$6<th class='center'>Ergebnis</th></thead>", $table);
+			$table = preg_replace("/(<td[^@]*?<\/td>)[^@]*?(<td[^@]*?<\/td>)[^@]*?(<td[^@]*?<\/td>)[^@]*?(<td[^@]*?<\/td>)[^@]*?(<td[^@]*?<\/td>)[^@]*?(<td[^@]*?<\/td>)[^@]*?(<td[^@]*?<\/td>)[^@]*?(<td[^@]*?<\/td>)[^@]*?(<td[^@]*?<\/td>)[^@]*?(<td[^@]*?<\/td>)[^@]*?(<td[^@]*?<\/td>)[^@]*?(<td[^@]*?<\/td>)/", 
+			"$1$2$6$7$8$9", $table);
+			$table = preg_replace('/\"\/cgi-bin/', '"http://ttvbw.click-tt.de/cgi-bin', $table);
+			$table = str_replace("He Kr  Kl B", "Kreisklasse B", $table);
+			$table = str_replace("He Kr  Kl A", "Kreisklasse A", $table);
+			$table = str_replace("He Kr   Li", "Kreisliga", $table);
+			$table = str_replace("He Bez Kl", "Bezirksklasse", $table);
+			$table = str_replace("He Bez Li", "Bezirksliga", $table);
+			$table = str_replace("He Vb Kl", "Verbandsklasse", $table);
+			$table = str_replace("He Vb Li", "Verbandsliga", $table);
+			$table = str_replace("HER BaL", "Badenliga", $table);
+			$table = str_replace("OL H", "Oberliga", $table);
+			$table = str_replace("RL H", "Regionalliga", $table);
+			$table = str_replace("Ju Kr  Kl", "Jugend KK", $table);
+			$table = str_replace("Ju Kr  Li", "Jugend KL", $table);
+			$table = str_replace("Ju Pok", "Jugend Pokal", $table);
+			$table = str_replace("Ju Bez Li", "Jugend BezL", $table);
+			$table = str_replace("Ju Vb Kl", "Jugend VK", $table);
+			$table = str_replace("Sm Kr Kl", "Schüler KK", $table);
+			$table = str_replace("Sm Kr  Li", "Schüler KL", $table);
+			$table = str_replace("SG-EK Söllingen/TTC Wöschb", "SG Söll./Wöschb.", $table);
+		}
+		if (strlen($table) == 0)
+			$table = "Keine Ergebnisse aus den letzten 14 Tagen.";
+		
 
 		return '<div class="table-responsive"><table class="nextmatches table table-condensed table-striped">' . $table . '</table></div>';
 	}	
