@@ -36,7 +36,7 @@ class TeamsModelPlayer extends JModelLegacy
 			$query = "SELECT sf.kurz_text, sf.datum, sf.text, f.typ, f.name_frontend AS name" .
 					" FROM #__ttverein_spieler_felder AS sf, #__ttverein_felder AS f " .
 					" WHERE sf.spieler_id = $id " .
-						" AND sf.felder_id = f.id " .
+					" AND sf.felder_id = f.id " .
 					" ORDER BY f.reihenfolge, f.id ASC ";
 			$this->_db->setQuery( $query );
 			$this->_data->felder = $this->_db->loadObjectList();
