@@ -190,25 +190,14 @@ class ClickTT {
 		if ($content == null) 
 			return '';
 		
-		//echo "data goes here:";
-		//$dom = @DOMDocument::loadHTML($content);
-		//if ($dom) {
-		//	$tables = $dom->getElementsByTagName('table');
-		//}
-		//$rows = $tables->item(1)->getElementsByTagName('tr');			
-		//foreach ($rows as $row) {
-		//	$z++;
-		//	$head = $row->getElementsByTagName('th');
-		//	echo $z;
-		//}
-		//echo "<-- data goes here";
-		//		return;
-		
 		preg_match("/<div id=\"content-row2\">(.*)<\/div>/Usi", $content, $table);
 		preg_match("/<table class=\"result-set\".*>(.*)<\/table>/Usi", $table[1], $table);
 		
 		$table = $table[1];
-		
+
+		if (strlen($table) == 0)
+			$table = "Keine Informationen verfügbar";
+
 		// Lösche nicht benötigte Spalten
 		$table = preg_replace("/(<th[^@]*?<\/th>)[^@]*?(<th[^@]*?<\/th>)[^@]*?(<th[^@]*?<\/th>)[^@]*?(<th[^@]*?<\/th>)[^@]*?(<th[^@]*?<\/th>)[^@]*?(<th[^@]*?<\/th>)[^@]*?(<th[^@]*?<\/th>)[^@]*?(<th[^@]*?<\/th>)[^@]*?(<th[^@]*?<\/th>)/", 
 		"<th colspan='3'>Termin</th>$4$5<th>Ergebnis</th>", $table);
