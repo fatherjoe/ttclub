@@ -4,8 +4,8 @@ defined('_JEXEC') or die('Restricted access');
 $unknown = "<strong>Unbekannte Version.</strong>";
 $VERSION_MAIN = 0;
 $VERSION_SUB = 2;
-$VERSION_PATCH = 8;
-$VERSION_BUILD = 5;
+$VERSION_PATCH = 9;
+$VERSION_BUILD = 1;
 //Erzeugt Update auf Verion $VERSION_MAIN.$VERSION_SUB.$VERSION_PATCH
 $update = new Update($VERSION_MAIN,$VERSION_SUB,$VERSION_PATCH, $VERSION_BUILD);
 
