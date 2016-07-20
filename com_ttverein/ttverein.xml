@@ -9,24 +9,24 @@
     <authorUrl>http://www.debugmode.de/trac/ttverein</authorUrl>
     <version>0.2.9</version>
     <description>Komponente zur Verwaltung von Tischtennis Mannschaften für eine Vereinsseite</description>
-    
+
     <scriptfile>install.script.php</scriptfile>
-	
+
     <files folder="site">
         <filename>index.html</filename>
         <filename>ttverein.php</filename>
         <filename>controller.php</filename>
-		<folder>views</folder>
-		<folder>models</folder>
-		<folder>images</folder>
+        <folder>views</folder>
+        <folder>models</folder>
+        <folder>images</folder>
     </files>
-	
+
     <install folder="admin">
         <sql>
             <file charset="utf8" driver="mysql">install.sql</file>
         </sql>
     </install>
-    
+
     <administration>
         <menu img="templates/hathor/images/arrow.png/icon-16-user-note.png">TT-Verein</menu>
         <submenu>
@@ -39,18 +39,18 @@
             <menu img="templates/hathor/images/arrow.png" link="option=com_ttverein&amp;controller=felder">Spielerfelder</menu>
             <menu img="templates/hathor/images/arrow.png" link="option=com_ttverein&amp;controller=help&amp;layout=update">Hilfe</menu>
         </submenu>
-        
+
         <files folder="admin">
             <filename>index.html</filename>
             <filename>ttverein.php</filename>
             <filename>controller.php</filename>
-			<folder>controllers</folder>
-			<folder>views</folder>
-			<folder>lib</folder>
-			<folder>models</folder>
-			<folder>views</folder>
-			<folder>tables</folder>
-			<!--
+            <folder>controllers</folder>
+            <folder>views</folder>
+            <folder>lib</folder>
+            <folder>models</folder>
+            <folder>views</folder>
+            <folder>tables</folder>
+            <!--
             <filename>lib/index.html</filename>
             <filename>lib/clicktt/index.html</filename>
             <filename>lib/clicktt/php.ini</filename>
@@ -135,7 +135,7 @@
             <filename>tables/player.php</filename>
             <filename>tables/formation.php</filename>
             <filename>tables/index.html</filename>
-			-->
+            -->
             <filename>install.sql</filename>
             <filename>uninstall.ttverein.sql</filename>
         </files>
