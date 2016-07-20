@@ -21,7 +21,7 @@ class TeamsViewteams extends JViewLegacy
 		$this->assignRef('newestsaison'  , $newestsaison);
 		
 		/*
-		 * Stadart ist die Rückrunde bei der Anzeige
+		 * Standard ist die Rückrunde bei der Anzeige
 		 */
 		if($newestsaison->min_hinrunde == 0)
 			$showHin = 0;
@@ -29,8 +29,8 @@ class TeamsViewteams extends JViewLegacy
 			$showHin = 1;
 		
 		/*
-		 * Saisonjahr ist default das Aktuellste.
-		 * Wenn 'saison' gesetzt ist wird dies überschrieben.
+		 * Saisonjahr ist default das aktuellste.
+		 * Wenn 'saison' gesetzt ist, wird dies überschrieben.
 		 */
 		$showSaison = $newestsaison;
 		if( ($saison = JRequest::getCmd( 'saison' )) ) {
@@ -52,8 +52,7 @@ class TeamsViewteams extends JViewLegacy
 		$this->assignRef('showSaison'  , $showSaison);
 		
 		/*
-		 * Wenn Parameter 'runde' angebeben ist wird der 
-		 * Standart überschrieben
+		 * Wenn Parameter 'runde' angegeben ist, wird der Standard überschrieben
 		 */
 		if(JRequest::getCmd( 'runde' ) == 'hin') {
 			$showHin = 1;
