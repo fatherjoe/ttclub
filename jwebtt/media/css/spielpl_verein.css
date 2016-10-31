@@ -1,0 +1,16 @@
+/*
+ * Diese Stildatei bezieht sich auf den Vereinsspielplan nach Monaten und den Vereinsspielplan nach Kalenderwochen
+ID: 'spielpl_verein', 'spielpl_verein_kw'
+Klassen:
+	th: 'monat' (Monatsname in der Monatsansicht), 'kw (Kalenderwoche in der Wochenansicht)'
+	tr: 'verlegt' (verlegtes Spiel), 'getauscht (Heimrecht getauscht)', 'halle_verlegt (Halle verlegt)'
+	td: 'tag', 'datum', 'zeit', 'liga', 'halle', 'heim', 'gast', 'erg'
+*/
+
+/* Monatsname/Kalenderwoche im Kalender */
+#spielpl_verein th.monat, #spielpl_verein_kw th.kw {
+	}
+	
+/* Spaltenüberschriften unter dem Monat/der Kalenderwoche */
+#spielpl_verein th td, #spielpl_verein_kw th td {
+	}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+		<field
+				name="id"
+				type="hidden"
+				/>
+		<field
+				name="clicktt_kurz"
+				type="text"
+				label="COM_WEBTT_STAFFELNAMENS_CLICKTT_KURZ_LABEL"
+				description="COM_WEBTT_STAFFELNAMENS_CLICKTT_KURZ_DESC"
+				size="40"
+				class="inputbox"
+				default=""
+				/>
+		<field
+				name="clicktt_lang"
+				type="text"
+				label="COM_WEBTT_STAFFELNAMENS_CLICKTT_LANG_LABEL"
+				description="COM_WEBTT_STAFFELNAMENS_CLICKTT_LANG_DESC"
+				size="40"
+				class="inputbox"
+				default=""
+				/>
+	</fieldset>
+</form>

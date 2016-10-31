@@ -1,0 +1,26 @@
+/* div-Container der Seite */
+#hallen {  
+
+}
+
+/* Absatz mit Halle und Adresse */
+#hallen p.descr {
+	text-align:center;
+}
+
+/* dynamische Karte */
+#hallen iframe.map_dyn {
+
+}
+
+/* statische Karte (Hintergrundbild) */
+#hallen div.map_stat {
+	height:512px;
+	width:100%;
+	background-position:center;
+}
+
+/* Link unter der Karte zum Routenplaner */
+.hallen small {  
+
+}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+		<field
+				name="id"
+				type="hidden"
+				/>
+		<field
+				name="datum"
+				type="text"
+				label="COM_WEBTT_QTTR_DATUM_LABEL"
+				description="COM_WEBTT_QTTR_DATUM_DESC"
+				size="40"
+				class="inputbox"
+				default=""
+				/>
+		<field
+				name="werte"
+				type="textarea"
+				label="COM_WEBTT_QTTR_WERTE_LABEL"
+				description="COM_WEBTT_QTTR_WERTE_DESC"
+				size="40"
+				class="inputbox"
+				default=""
+				/>
+	</fieldset>
+</form>

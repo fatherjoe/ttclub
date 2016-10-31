@@ -1,0 +1,14 @@
+/* 
+ID: 'pokal'
+Klassen:
+	table
+		thead
+			th 'tag', 'datum', 'zeit', 'halle', 'heim', 'gast', 'erg'
+		
+		tfoot
+		
+		tbody
+			th 'runde' (z.B. 3.Runde, Viertelfinale)
+			td 'tag', 'datum', 'zeit', 'halle', 'heim', 'gast', 'erg'
+			tr 'verlegt' (verlegte Spiele), 'halle_verlegt', 'getauscht' (Heimrecht getauscht), 'kampflos'
+*/

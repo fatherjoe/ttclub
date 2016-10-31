@@ -1,0 +1,12 @@
+#spielerliste span.qttr_akt {  } /* Aktueller Wert */ 
+#spielerliste span.qttr_last { font-size:70%; } /* Letzter Wert */ 
+
+#spielerliste .box table { font-size:85%; min-width:400px; }
+#spielerliste .box caption { margin:0; line-height:200%; background-color:#cccccc; } /* Spielername in der Box */
+
+#spielerliste .box td.tendenz { text-align:center; } /* Pfeile */
+#spielerliste .box td.qttr { text-align:center; font-weight:bold; }
+#spielerliste .box td.up { color:green; } /* Verbesserter QTTR-Wert*/
+#spielerliste .box td.down { color:red; } /* Verschlechteter QTTR-Wert*/
+#spielerliste .box td.equal { color:blue; } /* Gleicher QTTR-Wert*/
+#spielerliste .box td.datum { text-align:center; }

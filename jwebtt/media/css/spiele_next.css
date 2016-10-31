@@ -1,0 +1,14 @@
+/* 
+ID: 'spiele_next'
+Klassen:
+	tr: 'verlegt' (verlegtes Spiel), 'getauscht (Heimrecht getauscht)', 'halle_verlegt (Halle verlegt)'
+	td 'tag', 'datum', 'zeit', 'liga', 'halle', 'heim', 'gast'
+*/
+
+#spiele_next td.tag, #spiele_next td.datum, #spiele_next td.zeit, #spiele_next td.halle  {
+   text-align:center;
+   }
+
+#spiele_next td.heim, #spiele_next td.gast {
+   text-align:left;
+   }

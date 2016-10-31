@@ -1,0 +1,9 @@
+DROP TABLE IF EXISTS `#__webtt_hallen`;
+DROP TABLE IF EXISTS `#__webtt_mannsch`;
+DROP TABLE IF EXISTS `#__webtt_kalender`;
+DROP TABLE IF EXISTS `#__webtt_popups`;
+DROP TABLE IF EXISTS `#__webtt_spieler`;
+DROP TABLE IF EXISTS `#__webtt_staffeln`;
+DROP TABLE IF EXISTS `#__webtt_tabellen`;
+DROP TABLE IF EXISTS `#__webtt_teams`;
+DROP TABLE IF EXISTS `#__webtt_ttr`;

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<extension type="component" version="0.0.1" method="upgrade">
+ 
+        <name>WebTT</name>
+
+        <creationDate>Mai 2016</creationDate>
+        <author>Norbert Schulze</author>
+        <authorEmail>webtt@gmx-topmail.de</authorEmail>
+        <authorUrl>http://webtt.de/</authorUrl>
+        <copyright>Copyright Info</copyright>
+        <license>30 Tage kostenlos testen, anschließend Lizenzerwerb auf webtt.de</license>
+        <version>0.0.1</version>
+        
+        <description>Einbindung von Spielplänen, Aufstellungen, Tabellen ... aus den Daten von Clicktt</description>
+ 
+        <install>
+                <sql>
+                        <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+                </sql>
+        </install>
+        <uninstall>
+                <sql>
+                        <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+                </sql>
+        </uninstall>
+        <update>
+                <schemas>
+                        <schemapath type="mysql">sql/updates/mysql/</schemapath>
+                </schemas>
+        </update>
+ 
+		<files folder="site">
+				<filename>index.html</filename>
+				<filename>webtt.php</filename>
+				<filename>controller.php</filename>
+				<folder>controllers</folder>
+				<folder>helpers</folder>
+				<folder>models</folder>
+				<folder>tables</folder>
+				<folder>views</folder>
+		</files>
+
+		<media folder="media" destination="com_webtt">
+			<folder>css</folder>
+			<folder>js</folder>
+			<folder>thumbnails</folder>
+			<folder>tmp</folder>
+		</media>
+
+        <administration>
+                <menu>WebTT</menu>
+                <submenu>
+						<menu view="mannschaftens">Mannschaften</menu>
+						<menu view="aktualisieren">Aktualisieren</menu>
+						<menu view="fotos">Spielerfotos</menu>
+						<menu view="hallens">Hallen</menu>
+                </submenu>
+                <files folder="admin">
+						<filename>config.xml</filename>
+						<filename>controller.php</filename>
+                        <filename>index.html</filename>
+                        <filename>webtt.php</filename>
+                        <folder>controllers</folder>
+                        <folder>helpers</folder>
+                        <folder>language</folder>
+                        <folder>models</folder>
+                        <folder>sql</folder>
+                        <folder>tables</folder>
+                        <folder>views</folder>
+                </files>
+        </administration>
+ 
+</extension>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+		<field
+				name="id"
+				type="hidden"
+				/>
+		<field
+				name="foto"
+				type="media"
+				label="COM_WEBTT_FOTO_FOTO_LABEL"
+				description="COM_WEBTT_FOTO_FOTO_DESC"
+				size="40"
+				class="inputbox"
+				default=""
+				filter="raw"
+				/>
+		<field
+				name="name"
+				type="text"
+				label="COM_WEBTT_FOTO_SPIELER_LABEL"
+				description="COM_WEBTT_FOTO_SPIELER_DESC"
+				size="40"
+				class="inputbox"
+				default="spieler"
+				/>
+		<field
+				name="mannschaften"
+				type="text"
+				label="COM_WEBTT_FOTO_MANNSCHAFT_LABEL"
+				description="COM_WEBTT_FOTO_MANNSCHAFT_DESC"
+				size="40"
+				class=""
+				default=""
+				/>
+		<field
+				name="upload"
+				type="file"
+				label="COM_WEBTT_FOTO_UPLOAD_LABEL"
+				description="COM_WEBTT_FOTO_UPLOAD_DESC"
+				size=""
+				class=""
+				default=""
+				/>
+	</fieldset>
+</form>

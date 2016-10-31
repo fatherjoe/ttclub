@@ -1,0 +1,91 @@
+/* 
+ID: 'aufst'
+Klassen:
+	td 'pos', 'name', 'eins' (Anzahl der Einsätze), 'bil' (Bilanz), 'bw' (Bilanzwert)
+*/
+
+/* Überschrift2: [Mannschaft] */
+#aufst h2 {
+   text-align:center;
+   }
+
+/* Überschrift3: [Staffellink] */
+#aufst h3 {
+   text-align:center;
+   margin-bottom:30px;
+   }
+
+   
+#aufst table {
+	}
+
+#aufst td.foto {
+	width:41px;
+	height:56px;
+	}   
+
+/* Funktion der Lightbox */   
+#aufst td.foto div {
+	display:none;
+	}
+
+#aufst td.foto:hover .lightbox {
+	display: block;
+	position:fixed;
+	background:url('33_opac75.png');
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	text-align:center;
+	z-index:50000;
+	}
+
+#aufst td.foto:hover .lightbox div{
+	display:block;
+	width:100%;
+	height:100%;
+	}
+	
+#aufst td.foto .lightbox:active {
+	display:none;
+	}	
+/* Ende Funktion Lightbox */	
+
+
+/* Zellen der Spalte Position */
+#aufst td.name:hover div.box .box_pos, #aufst td.name:hover div.box .box_res {
+	text-align:center;
+	}
+
+/* Zellen der Spalten Spieler */
+#aufst td.name:hover div.box .box_spieler {
+	text-align:left;
+	}
+
+/* Zeile mit Mannschaftskontakt */
+#aufst tr.mk td { height:35px; }
+
+/* Name */
+#aufst span.mkname  { font-style:italic; }
+
+/* Infotip, wenn in den Einstellungen festgelegt */
+#aufst .mk:hover .infotip { height:auto; margin-top:-235px; margin-left: -25px; padding:15px 15px 25px 15px; }
+
+/* Zeilen im Infotip */
+#aufst .infotip span { padding-left:10px; }
+
+/* Name im Infotip */
+#aufst .infotip .mkname  { font-style:normal; font-weight:bold; }
+
+/* Privatnummer */
+#aufst span.mktel  { }
+
+/* Mobilnummer */
+#aufst span.mkmobil  {   }
+
+/* Geschäftliche Nummer */
+#aufst span.mkgesch  {   }
+
+/* Email */
+#aufst span.mkmail  {   }
