@@ -1,0 +1,3 @@
+-- 0.0.1.sql:
+-- nothing to update in initial version
+--

@@ -25,7 +25,7 @@
 	</uninstall>    
 	<update> <!-- Runs on update; New in 2.5 -->
 		<schemas>
-			<schemapath type="mysql">sql/updates/mysql</schemapath>
+			<schemapath type="mysql">sql/updates</schemapath>
 		</schemas>
 	</update>
 
@@ -34,9 +34,9 @@
 		<filename>ttclub.php</filename>
 		<filename>controller.php</filename>
 		<filename>router.php</filename>
-		<folder>controllers</folder>
-		<folder>views</folder>
 		<folder>models</folder>
+		<folder>views</folder>
+		<folder>controllers</folder>
 		<folder>tables</folder>
 		<folder>helpers</folder>
 	</files>
@@ -54,11 +54,11 @@
 	</media>
 
 	<administration>
-		<menu link="option=com_ttclub" img="components/com_ttclub/assets/images/icon-16-ttclub.png">
+		<menu link="option=com_ttclub" img="media/com_ttclub/images/icon-16-ttclub.png">
             COM_TTCLUB_MENU_MAIN
 		</menu>
 		<submenu>
-			<menu view="teams" img="components/com_ttclub/assets/images/icon-16-teams.png" alt="ttclub/teams">
+			<menu view="teams" img="media/com_ttclub/images/icon-16-teams.png" alt="ttclub/teams">
                 COM_TTCLUB_MENU_TEAMS
 			</menu>
 		</submenu>
