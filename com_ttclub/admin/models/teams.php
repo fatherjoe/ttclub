@@ -90,55 +90,51 @@ class TtclubModelTeams extends JModelList {
      */
     protected function getListQuery() {
         // Create a new query object.
-        $db = $this->getDbo();
+        $db = JFactory::getDBO();
         $query = $db->getQuery(true);
 
         // Select the required fields from the table.
-        $query->select(
-                $this->getState(
-                        'list.select', 'DISTINCT a.*'
-                )
-        );
-        $query->from('`#__ttclub_team` AS a');
+        $query->select('club_id,clicktt_club'        );
+        $query->from('`#__ttclub_teams` AS t');
 
         
-		// Join over the users for the checked out user
-		$query->select("uc.name AS editor");
-		$query->join("LEFT", "#__users AS uc ON uc.id=a.checked_out");
-		// Join over the user field 'created_by'
-		$query->select('created_by.name AS created_by');
-		$query->join('LEFT', '#__users AS created_by ON created_by.id = a.created_by');
+//		// Join over the users for the checked out user
+//		$query->select("uc.name AS editor");
+//		$query->join("LEFT", "#__users AS uc ON uc.id=a.checked_out");
+//		// Join over the user field 'created_by'
+//		$query->select('created_by.name AS created_by');
+//		$query->join('LEFT', '#__users AS created_by ON created_by.id = a.created_by');
 
         
 
-		// Filter by published state
-		$published = $this->getState('filter.state');
-		if (is_numeric($published)) {
-			$query->where('a.state = ' . (int) $published);
-		} else if ($published === '') {
-			$query->where('(a.state IN (0, 1))');
-		}
-
-        // Filter by search in title
-        $search = $this->getState('filter.search');
-        if (!empty($search)) {
-            if (stripos($search, 'id:') === 0) {
-                $query->where('a.id = ' . (int) substr($search, 3));
-            } else {
-                $search = $db->Quote('%' . $db->escape($search, true) . '%');
-                
-            }
-        }
-
-        
-
-
-        // Add the list ordering clause.
-        $orderCol = $this->state->get('list.ordering');
-        $orderDirn = $this->state->get('list.direction');
-        if ($orderCol && $orderDirn) {
-            $query->order($db->escape($orderCol . ' ' . $orderDirn));
-        }
+//		// Filter by published state
+//		$published = $this->getState('filter.state');
+//		if (is_numeric($published)) {
+//			$query->where('a.state = ' . (int) $published);
+//		} else if ($published === '') {
+//			$query->where('(a.state IN (0, 1))');
+//		}
+//
+//        // Filter by search in title
+//        $search = $this->getState('filter.search');
+//        if (!empty($search)) {
+//            if (stripos($search, 'id:') === 0) {
+//                $query->where('a.id = ' . (int) substr($search, 3));
+//            } else {
+//                $search = $db->Quote('%' . $db->escape($search, true) . '%');
+//
+//            }
+//        }
+//
+//
+//
+//
+//        // Add the list ordering clause.
+//        $orderCol = $this->state->get('list.ordering');
+//        $orderDirn = $this->state->get('list.direction');
+//        if ($orderCol && $orderDirn) {
+//            $query->order($db->escape($orderCol . ' ' . $orderDirn));
+//        }
 
         return $query;
     }
