@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Pokal">
+		<message>Pokalseite einer Mannschaft</message>
+	</layout>
+	<fields name="request">
+		<fieldset name="request">
+			<field
+				name="team"
+				type="list"
+				label="Mannschaft"
+				description=""
+				default="1">
+						<option value="Herren Kreisliga">Herren Kreisliga</option>
+						<option value="Herren 1. Kreisklasse II">Herren 1. Kreisklasse II</option>
+						<option value="Herren 1. Kreisklasse III">Herren 1. Kreisklasse III</option>
+						<option value="Herren 3. Kreisklasse IV">Herren 3. Kreisklasse IV</option>
+						<option value="Damen Bezirksklassen">Damen Bezirksklassen</option>
+						<option value="Jungen 1. Kreisklasse">Jungen 1. Kreisklasse</option>
+						<option value="Jungen Aufbauklasse II">Jungen Aufbauklasse II</option>
+						<option value="Jungen Aufbauklasse III">Jungen Aufbauklasse III</option>
+						<option value="Schüler B/C Kreisliga">Schüler B/C Kreisliga</option>
+			</field>
+		</fieldset>
+	</fields>
+</metadata>

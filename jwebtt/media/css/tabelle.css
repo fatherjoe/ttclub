@@ -1,0 +1,30 @@
+/* Überschrift2: [Mannschaft] */
+#tabelle h2 {
+   text-align:center;
+   }
+
+/* Überschrift3: [Staffellink] */
+#tabelle h3 {
+   text-align:center;
+   margin-bottom:30px;
+   }
+   
+ 
+/* BOX mit den Mannschaftsaufstellungen, die eingeblendet wird,
+ * wenn man mit der Maus über eine Mannschaft fährt */	
+
+/* Tabelle mit dem Spielbericht */
+#tabelle td.team:hover div.box table {
+	white-space:;
+	border-collapse:;
+	}
+
+/* Zellen der Spalte Position */
+#tabelle td.team:hover div.box .box_pos, #tabelle td.team:hover div.box .box_res {
+	text-align:center;
+	}
+
+/* Zellen der Spalten Spieler */
+#tabelle td.team:hover div.box .box_spieler {
+	text-align:left;
+	}

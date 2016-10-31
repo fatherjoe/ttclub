@@ -1,0 +1,304 @@
+/* Stildatei, die sich auf sämtliche Seiten auswirkt */
+
+/* WEB-TT - Bereiche */
+#webtt {
+	}
+
+#webtt .hide { display:none; } /* Seitentitel, die nur für die Druckansicht gebraucht werden */
+
+#webtt h1#verein { display:none; } /* Vereinsname als Überschrift, nur für Druckansicht */
+
+#webtt a:link {
+    }
+
+#webtt a:visited {
+    }
+
+#webtt a:hover {
+    }
+
+td a:link, h3 a:link {  }
+td a:hover, h3 a:hover {  }
+
+/* Seitentitel (Aufstellung, Vereinsspielplan, ...) */
+#webtt h1 {
+	text-align:center;
+    }
+
+/* Mannschaft (auf Mannschaftsseiten Aufstellung, Spielplan und Ligatabelle) */
+#webtt h2 {
+	text-align:center;
+    }
+
+/* Mannschaft (auf Mannschaftsseiten Aufstellung, Spielplan und Ligatabelle) */
+#webtt h3 {
+	text-align:center;
+    }
+
+/* Link zu Staffelseite auf click-tt */
+#webtt h3 a {
+    }
+
+
+p.printbutton {  }
+
+#webtt table {
+	margin:0 auto;
+	}
+
+/* Tabellenüberschriften */
+#webtt caption.hin, #webtt caption.rueck {
+   }
+
+#webtt th {
+   }
+
+#webtt thead tr {
+
+	}
+
+/* Fusszeile der Tabelle mit dem Zeitpunkt der letzten Aktualisierung */
+#webtt tfoot {
+	text-align:right;
+	}
+
+/* Kopzeile der Tabellen (mit den Spaltenüberschriften) */
+#webtt tbody tr {
+	}
+ 
+#webtt td {
+	}
+	
+#webtt td.tag, #webtt td.datum, #webtt td.zeit, #webtt td.halle , #webtt td.erg, #webtt td.eins, #webtt td.bil, #webtt td.bw, #webtt td.platz, #webtt td.punkte, #webtt td.pos {
+   text-align:center;
+   }
+
+#webtt td.heim, #webtt td.gast, #webtt td.liga , #webtt td.mann {
+   text-align:left;
+   }
+
+/* (ungerade) Tabellenzeilen */ 
+#webtt tbody tr td {
+	}
+	
+/* gerade Zeile, für abwechselnde Farben in den Tabellen  */
+#webtt tbody tr.odd td {
+	}
+	
+/* eigen Mannschaft auf den Spielplänen */
+#webtt td.eigenteam { font-weight:bold; }
+
+
+/* KENNZEICHNUNG VON BESONDEREN SPIELEN AUF DEN SPIELPLÄNEN */
+
+/* Verlegungen von Spielen, hier bezogen auf die Spalten Tag, Datum und Uhrzeit */
+#webtt tr.datumverl td.tag, #webtt tr.datumverl td.datum, #webtt tr.datumverl td.zeit { background-color:#eeeeee; }
+
+/* Verschiebungen des Spielbeginns (Verlegung am selben Tag) */
+#webtt tr.uhrzeitverl td.zeit { background-color:#eeeeee; }
+
+/* Verlegung der Halle */
+#webtt tr.halleverl td.halle { background-color:#eeeeee; }
+
+/* Tausch des Heimrechts, Spalten der Heim- und Gastmannschaft */
+#webtt tr.heimtausch td.heim, #webtt tr.heimtausch td.gast { background-color:#eeeeee; }
+
+/* Kampflose Spiele, Ergebnisspalte */
+#webtt tr.kampflos td.erg { background-color:#eeeeee; }
+
+/* ENDE KENNZEICHNUNG VON BESONDEREN SPIELEN */
+
+	
+/* HOVER-EFFEKT FÜR EINE ZEILE */
+
+/* Rahmen der Tabellenzellen */
+/*#webtt #spielpl tr td, #webtt #spielpl_verein tr td, #webtt #spielpl_verein_kw tr td, #webtt #spiele_next tr td, #webtt #spiele_rec tr td {
+	border-width:;
+	border-color:transparent;
+	border-style:solid;
+	}
+*/
+/* Erste Zelle einer Zeile (Tag) */
+#webtt #spielpl td:first-child , #webtt #spielpl_verein td:first-child , #webtt #spielpl_verein_kw td:first-child, #webtt #spiele_next td:first-child , #webtt #spiele_rec td:first-child { border-radius: 10px 0 0 10px; -moz-border-radius:10px 0 0 10px; border-width:0; }
+
+/* Letzte Zelle einer Zeile (Ergebnis) */
+#webtt #spielpl td:last-child, #webtt #spielpl_verein td:last-child, #webtt #spielpl_verein_kw td:last-child, #webtt #spiele_next td:last-child, #webtt #spiele_rec td:last-child { border-radius: 0 10px 10px 0; -moz-border-radius:0 10px 10px 0; border-width:0; }
+
+/*  */
+#webtt #spielpl tr:hover td, #webtt #spielpl_verein tr:hover td, #webtt #spielpl_verein_kw tr:hover td, #webtt #spiele_next tr:hover td, #webtt #spiele_rec tr:hover td { background-color:#eeeeee; }
+
+/* Aufheben Formatierung für die Untertabellen in den Popups (Spielberichte) */
+#webtt #spielpl tr:hover td td, #webtt #spielpl_verein tr:hover td td, #webtt #spielpl_verein_kw tr:hover td td, #webtt #spiele_next tr:hover td td, #webtt #spiele_rec tr:hover td td { background-color:transparent; border-radius:0; -moz-border-radius:0; }
+
+
+/* ENDE HOVER-EFFEKT */
+
+
+
+/* CSS FÜR DIE INFOTIPS DER BESONDEREN SPIELE AUF DEN SPIELPLÄNEN
+ *
+ * Aufbau
+ *
+ * 	div.infotip
+ * 		div.infotop
+ * 		div.infobottom
+ * 			p
+ * 			p
+ *
+ *
+ * Für Spiele, die auf ein anderes Datum gelegt wurde, befindet sich der Infotip in der Spalte "Tag"
+ * Für Spiele, bei denen nur die Uhrzeit verlegt wurde, befindet sich der Infotip in der Spalte "Uhrzeit"
+ * Der Infotip für verlegt Hallen befindet sich in der Spalte "Halle"
+ * Der Infotip für getauschtes Heimrecht befindet sich in der Spalte "Gast"
+ * Der Infotip für kampflose Spiele befindet sich in der Spalte "Ergebnis"
+ *
+ * Die Positionierung erfolgt als jeweils in Bezug zu der jeweiligen Zelle.
+ * 
+ *  */
+
+/* Ausblendung im Normalzustand */
+#webtt div.infotip { display:none; }
+
+#webtt table { border-spacing:0; }
+
+/* Tooltip */
+#webtt tr:hover div.infotip  {
+
+	display:block; /* Einblenden beim Hovern der Zeile */
+
+	position:absolute;
+
+	width:200px;
+	height:200px;
+
+	background-color:rgba(238,238,238,0.7);
+	border: 10px solid rgba(0,0,0,0.5);
+
+	padding:0;
+	
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-moz-background-clip: padding;
+	background-clip: padding-box;
+	-webkit-background-clip: padding-box;
+	}
+
+/* Für Spiel- und Hallenverlegungen */
+#webtt tr:hover div.infotip div.infotop {
+	background-color:rgba(109,132,179,0.75);
+	color:#ffffff;
+	width:170px;
+	height:60px;
+
+	padding:15px;
+	font-size:1.1em;
+	font-weight:bold;
+	}
+
+#webtt tr:hover div.infotip div.infobottom {
+	background-color:rgba(200,200,200,0.75);
+	color:#000000;
+	width:170px;
+	height:80px;
+	padding:15px;
+	}
+
+#webtt div.infobottom p:first-child {
+	font-size:0.9em;
+	font-weight:normal;
+	font-style:italic;
+	margin:0;
+	}
+
+#webtt div.infobottom p:last-child {
+	font-size:1em;
+	font-weight:bold;
+	font-style:italic;
+	}
+	
+
+/* Für Heimrechttausch und kampflose Spiele, dort gibt es nur die Meldung ohne weiteren Kommentar */
+#webtt tr.heimtausch td.gast div.infotip, #webtt tr.kampflos td.erg div.infotip { height:100px; }
+#webtt tr.heimtausch td.gast div.infotip div.infotop, #webtt tr.kampflos td.erg div.infotop { height:70px; }
+#webtt tr.heimtausch td.gast div.infotip div.infobottom, #webtt tr.kampflos td.erg div.infobottom { display:none; }
+
+
+
+/* Positionieren der linken oberen Ecke der Infotips in Bezug zur linken oberen Ecke der jeweiligen Tabellenzelle mit margin */
+#webtt td.tag div.infotip { margin-top:-235px; margin-left: -25px; }
+#webtt td.zeit div.infotip { margin-top:-235px; margin-left: -75px; }
+#webtt td.halle div.infotip { margin-top:-235px; margin-left: -85px; }
+#webtt td.gast div.infotip { margin-top:-135px; margin-left: -100px; }
+#webtt td.erg div.infotip { margin-top:-135px; margin-left: -150px; }
+
+/* Bei mehreren Besonderheiten können wegen Platzgründen andere Positionen nötig sein, damit sich die Infotips nicht überlappen */
+#webtt tr.datumverl.halleverl td.halle div.infotip { margin-left:100px; }
+#webtt tr.uhrzeitverl.halleverl td.halle div.infotip { margin-left:100px; }
+#webtt tr.heimtausch.kampflos td.gast div.infotip { margin-left:-300px; }
+
+
+
+/******************************************************************
+ * Ausblenden der Box(en) im Normalzustand (daher nicht verändern)*
+ ******************************************************************/
+
+#webtt div.box {
+	display:none;
+	}
+	
+/* Eingeblendete Box mit den Einzelergebnissen */
+#webtt td:hover div.box {
+	display:block;
+	overflow:auto;
+	position:fixed;
+	top:10%;
+	left:10%;
+	max-height:80%;
+	*top:10%; /* IE7 */
+	*left:-150px; /* IE7 */
+	z-index:2000;
+	border:5px solid #cccccc;
+	background:#FFFFFF;
+	}
+
+/* Tabelle in der Aufklappbox */
+#webtt :hover div.box table {
+	width:auto;
+	border:0;
+	white-space:;
+	border-collapse:collapse;
+	}
+
+/* Tabellenüberschrift */
+#webtt :hover div.box caption {
+	white-space:nowrap;
+	text-algin:center;
+	}
+/* Tabellenkopf */
+#webtt td:hover div.box thead {
+	background:;
+	}
+	
+/* Tabellenkopfzeile */
+#webtt td:hover div.box th {
+	line-height:;
+	}
+	
+/* Tabellenzeilen */
+#webtt td:hover div.box tr {
+	color:;
+	}
+
+/* Tabellenzellen  */
+#webtt td:hover div.box td {
+	white-space:nowrap;
+	}
+
+#imagelightbox
+{
+    position: fixed;
+    z-index: 9999;
+ 
+    -ms-touch-action: none;
+    touch-action: none;
+}

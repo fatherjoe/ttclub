@@ -1,0 +1,9 @@
+/* 
+ID: 'pokal_verein'
+Elemente: div#pokal_verein table thead tr th (Tabellenkopf, Kopfzeile)
+                                 tbody
+                                       tr.odd (ungeraden Zeilen)
+                                       tr.even (gerade Zeilen)
+                                       tr td.team (Spalte mit den Mannschaften)
+                                       td.liga a (Spalte mit den Pokalklassen, verlinkt zu click-tt)
+*/

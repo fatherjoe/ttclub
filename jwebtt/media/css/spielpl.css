@@ -1,0 +1,45 @@
+/* 
+ID: 'spielpl'
+table: 'vor' (Hinserie), 'rueck' (Rückserie), 'halb (Staffeln mit nur einer Halbserie, oft bei Schülerstaffeln)', 
+tr: 'verlegt' (verlegtes Spiel), 'getauscht (Heimrecht getauscht)', 'halle_verlegt (Halle verlegt)', '', '', 
+Klassen:
+	td 'tag', 'datum', 'zeit', 'liga', 'halle', 'heim', 'gast', 'erg' 'box (Aufklappbox mit dem Spielbericht)',
+	td.box div
+	td.box div table (Tabelle mit dem Spielbericht)
+	td 'box_pos' (Spielerposition), 'box_spieler' (Spielernamen), 'box_res' (Sätze und Spiele)
+*/
+/* Überschrift2: [Mannschaft] */
+#spielpl h2 {
+   text-align:center;
+   }
+  
+#spielpl h3 {
+   text-align:center;
+   margin-bottom:30px;
+   }
+
+/* Tabelle Rückrunde bzw. Frühjahrsrunde */
+#spielpl table#rueck {
+	margin-top: 50px; /* Abstand zur Hinrundentabelle */
+	}
+
+
+
+/* BOX mit dem Spielbericht, die eingeblendet wird,
+ * wenn man mit der Maus über das Ergebnis fährt */	
+
+
+ /* Feld mit einem Ergebnis */
+#spielpl td.erg {
+	text-align:center;
+	}
+
+/* Zellen der Spalte Position */
+#spielpl td:hover div td.box_pos, #spielpl td.box:hover div td.box_res {
+	text-align:center;
+	}
+
+/* Zellen der Spalten Spieler */
+#spielpl td:hover div.box td.spieler {
+	text-align:left;
+	}

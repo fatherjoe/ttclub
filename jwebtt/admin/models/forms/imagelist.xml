@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+		<field 
+				name="myimage" 
+				type="imagelist" 
+				default="" 
+				label="Select an image" 
+				description="" 
+				directory="" 
+				exclude="" 
+				stripext="" />
+	</fieldset>
+</form>

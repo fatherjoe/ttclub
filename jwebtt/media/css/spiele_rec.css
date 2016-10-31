@@ -1,0 +1,22 @@
+/* 
+ID: 'spiele_rec'
+Klassen:
+	tr: 'verlegt' (verlegtes Spiel), 'getauscht (Heimrecht getauscht)', 'halle_verlegt (Halle verlegt)', '', '', 
+	td 'tag', 'datum', 'zeit', 'liga', 'halle', 'heim', 'gast', 'erg' 'box (Aufklappbox mit dem Spielbericht)',
+	td div.box
+	td div.bix table (Tabelle mit dem Spielbericht)
+	td 'box_pos' (Spielerposition), 'box_spieler' (Spielernamen), 'box_res' (Sätze und Spiele)
+*/
+
+/* BOX mit dem Spielbericht, die eingeblendet wird,
+ * wenn man mit der Maus über das Ergebnis fährt */	
+
+/* Zellen der Spalte Position */
+#spiele_rec td.box_pos , #spiele_rec td.box_res {
+	text-align:center;
+	}
+
+/* Zellen der Spalten Spieler */
+#spiele_rec td.box_spieler {
+	text-align:left;
+	}

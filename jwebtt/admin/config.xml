@@ -1,0 +1,1935 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+
+	<fieldset
+		name="vereinsdaten"
+		label="COM_WEBTT_VEREINSDATEN_LABEL">
+
+		<field
+			name="verband"
+			type="list"
+			default=""
+			label="COM_WEBTT_FIELD_VERBAND_LABEL"
+			description="COM_WEBTT_FIELD_VERBAND_DESC"
+			required="true"
+			filter="string">
+			<option value="bttv">ByTTV</option>
+			<option value="fttb">FTTB</option>
+			<option value="httv">HTTV</option>
+			<option value="pttv">PTTV</option>
+			<option value="ttvbw">TTVBW</option>
+			<option value="ttvn">TTVN</option>
+			<option value="ttvr">TTVR</option>
+			<option value="ttvsa">TTVSA</option>
+			<option value="ttvwh">TTVWH</option>
+			<option value="wttv">WTTV</option>
+		</field>
+
+		<field
+			name="reg_verband"
+			type="list"
+			default=""
+			label="COM_WEBTT_FIELD_REGVERBAND_LABEL"
+			description="COM_WEBTT_FIELD_REGVERBAND_DESC"
+			required="true"
+			filter="string">
+			<option value="BTTV">ByTTV</option>
+			<option value="NTTV">NTTV</option>
+			<option value="SWTTV">SWTTV</option>
+			<option value="TTVBW">TTVBW</option>
+			<option value="WTTV">WTTV</option>
+		</field>
+
+		<field
+			name="verein"
+			type="text"
+			default=""
+			label="COM_WEBTT_FIELD_VEREIN_LABEL"
+			description="COM_WEBTT_FIELD_VEREIN_DESC"
+			filter="string"
+			size="15" />
+
+		<field
+			name="verein_spielplan"
+			type="text"
+			default=""
+			label="COM_WEBTT_FIELD_VEREINSP_LABEL"
+			description="COM_WEBTT_FIELD_VEREINSP_DESC"
+			filter="string"
+			size="15" />
+
+		<field
+			name="verein_nr"
+			type="text"
+			default=""
+			label="COM_WEBTT_FIELD_VEREINNR_LABEL"
+			description="COM_WEBTT_FIELD_VEREINNR_DESC"
+			filter="integer"
+			size="5" />
+
+	</fieldset>
+
+	<fieldset
+		name="saison"
+		label="COM_WEBTT_SAISON_SETTINGS_LABEL">
+
+		<field
+			name="saison_hin"
+			type="text"
+			default=""
+			label="COM_WEBTT_FIELD_SAISONHIN_LABEL"
+			description="COM_WEBTT_FIELD_SAISONHIN_DESC"
+			filter="integer"
+			size="4" />
+
+		<field
+			name="saison_rueck"
+			type="text"
+			default=""
+			label="COM_WEBTT_FIELD_SAISONRUECK_LABEL"
+			description="COM_WEBTT_FIELD_SAISONRUECK_DESC"
+			filter="integer"
+			size="4" />
+
+		<field
+			name="hs"
+			type="list"
+			default=""
+			label="COM_WEBTT_FIELD_HS_LABEL"
+			description="COM_WEBTT_FIELD_HS_DESC"
+			filter="string">
+			<option value="hin">Hinserie</option>
+			<option value="rueck">Rückserie</option>
+		</field>
+
+	</fieldset>
+
+	<fieldset
+		name="zeitraeume"
+		label="COM_WEBTT_ZEITRAEUME_SETTINGS_LABEL">
+
+		<field
+			name="spiele_next_days"
+			type="text"
+			default="14"
+			label="COM_WEBTT_FIELD_ZEITRAEUME_SPIELE_NEXT_LABEL"
+			description="COM_WEBTT_FIELD_ZEITRAEUME_SPIELE_NEXT_DESC"
+			filter="integer"
+			size="2" />
+
+		<field
+			name="spiele_rec_days"
+			type="text"
+			default="14"
+			label="COM_WEBTT_FIELD_ZEITRAEUME_SPIELE_REC_LABEL"
+			description="COM_WEBTT_FIELD_ZEITRAEUME_SPIELE_REC_DESC"
+			filter="integer"
+			size="2" />
+
+	</fieldset>
+
+	<fieldset
+		name="titles"
+		label="COM_WEBTT_TITLES_SETTINGS_LABEL">
+
+		<field
+			name="spielpl_verein_title"
+			type="text"
+			default="Vereinsspielplan"
+			label="COM_WEBTT_FIELD_SPIELPL_VEREIN_TITLE_LABEL"
+			description="COM_WEBTT_FIELD_SPIELPL_VEREIN_TITLE_DESC"
+			filter="string"
+			size="15" />
+
+		<field
+			name="spielpl_verein_kw_title"
+			type="text"
+			default="Vereinsspielplan"
+			label="COM_WEBTT_FIELD_SPIELPL_VEREIN_KW_TITLE_LABEL"
+			description="COM_WEBTT_FIELD_SPIELPL_VEREIN_KW_TITLE_DESC"
+			filter="string"
+			size="15" />
+
+		<field
+			name="spiele_next_title"
+			type="text"
+			default="Nächste Spiele"
+			label="COM_WEBTT_FIELD_SPIELE_NEXT_TITLE_LABEL"
+			description="COM_WEBTT_FIELD_SPIELE_NEXT_TITLE_DESC"
+			filter="string"
+			size="15" />
+
+		<field
+			name="spiele_rec_title"
+			type="text"
+			default="Letzte Spiele"
+			label="COM_WEBTT_FIELD_SPIELE_REC_TITLE_LABEL"
+			description="COM_WEBTT_FIELD_SPIELE_REC_TITLE_DESC"
+			filter="string"
+			size="15" />
+
+		<field
+			name="tabellenstaende_title"
+			type="text"
+			default="Tabellenstände"
+			label="COM_WEBTT_FIELD_TABST_TITLE_LABEL"
+			description="COM_WEBTT_FIELD_TABST_TITLE_DESC"
+			filter="string"
+			size="15" />
+
+		<field
+			name="pokal_verein_title"
+			type="text"
+			default="Pokalübersicht"
+			label="COM_WEBTT_FIELD_POKAL_VEREIN_TITLE_LABEL"
+			description="COM_WEBTT_FIELD_POKAL_VEREIN_TITLE_DESC"
+			filter="string"
+			size="15" />
+
+		<field
+			name="cal_verein_title"
+			type="text"
+			default="Kalenderübersicht"
+			label="COM_WEBTT_FIELD_CAL_VEREIN_TITLE_LABEL"
+			description="COM_WEBTT_FIELD_CAL_VEREIN_TITLE_DESC"
+			filter="string"
+			size="15" />
+
+		<field
+			name="spielerliste_title"
+			type="text"
+			default="Spielerliste"
+			label="COM_WEBTT_FIELD_SPIELERLISTE_TITLE_LABEL"
+			description="COM_WEBTT_FIELD_SPIELERLISTE_TITLE_DESC"
+			filter="string"
+			size="15" />
+
+		<field
+			name="hallen_title"
+			type="text"
+			default="Hallen"
+			label="COM_WEBTT_FIELD_HALLEN_TITLE_LABEL"
+			description="COM_WEBTT_FIELD_HALLEN_TITLE_DESC"
+			filter="string"
+			size="15" />
+
+		<field
+			name="aufstellung_title"
+			type="text"
+			default="Aufstellung"
+			label="COM_WEBTT_FIELD_AUFST_TITLE_LABEL"
+			description="COM_WEBTT_FIELD_AUFST_TITLE_DESC"
+			filter="string"
+			size="15" />
+
+		<field
+			name="spielplan_title"
+			type="text"
+			default="Spielplan"
+			label="COM_WEBTT_FIELD_SPIELPL_TITLE_LABEL"
+			description="COM_WEBTT_FIELD_SPIELPL_TITLE_DESC"
+			filter="string"
+			size="15" />
+
+		<field
+			name="tabelle_title"
+			type="text"
+			default="Tabelle"
+			label="COM_WEBTT_FIELD_TABELLE_TITLE_LABEL"
+			description="COM_WEBTT_FIELD_TABELLE_TITLE_DESC"
+			filter="string"
+			size="15" />
+
+		<field
+			name="pokal_title"
+			type="text"
+			default="Pokal"
+			label="COM_WEBTT_FIELD_POKAL_TITLE_LABEL"
+			description="COM_WEBTT_FIELD_POKAL_TITLE_DESC"
+			filter="string"
+			size="15" />
+
+	</fieldset>
+
+	<fieldset
+		name="titles_anz"
+		label="COM_WEBTT_TITLES_ANZ_SETTINGS_LABEL">
+
+		<field
+			name="spielpl_verein_title_anz"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_SPIELPL_VEREIN_TITLE_ANZ_LABEL"
+			description="COM_WEBTT_FIELD_SPIELPL_VEREIN_TITLE_ANZ_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="spielpl_verein_kw_title_anz"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_SPIELPL_VEREIN_KW_TITLE_ANZ_LABEL"
+			description="COM_WEBTT_FIELD_SPIELPL_VEREIN_KW_TITLE_ANZ_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="spiele_next_title_anz"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_SPIELE_NEXT_TITLE_ANZ_LABEL"
+			description="COM_WEBTT_FIELD_SPIELE_NEXT_TITLE_ANZ_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="spiele_rec_title_anz"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_SPIELE_REC_TITLE_ANZ_LABEL"
+			description="COM_WEBTT_FIELD_SPIELE_REC_TITLE_ANZ_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="tabellenstaende_title_anz"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_TABST_TITLE_ANZ_LABEL"
+			description="COM_WEBTT_FIELD_TABST_TITLE_ANZ_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="pokal_verein_title_anz"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_POKAL_VEREIN_TITLE_ANZ_LABEL"
+			description="COM_WEBTT_FIELD_POKAL_VEREIN_TITLE_ANZ_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="cal_verein_title_anz"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_CAL_VEREIN_TITLE_ANZ_LABEL"
+			description="COM_WEBTT_FIELD_CAL_VEREIN_TITLE_ANZ_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="spielerliste_title_anz"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_SPIELERLISTE_TITLE_ANZ_LABEL"
+			description="COM_WEBTT_FIELD_SPIELERLISTE_TITLE_ANZ_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="hallen_title_anz"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_HALLEN_TITLE_ANZ_LABEL"
+			description="COM_WEBTT_FIELD_HALLEN_TITLE_ANZ_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="aufstellung_title_anz"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_AUFST_TITLE_ANZ_LABEL"
+			description="COM_WEBTT_FIELD_AUFST_TITLE_ANZ_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="aufstellung_team_anz"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_AUFST_TEAM_ANZ_LABEL"
+			description="COM_WEBTT_FIELD_AUFST_TEAM_ANZ_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="aufstellung_staffel_anz"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_AUFST_STAFFEL_ANZ_LABEL"
+			description="COM_WEBTT_FIELD_AUFST_STAFFEL_ANZ_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="spielplan_title_anz"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_SPIELPL_TITLE_ANZ_LABEL"
+			description="COM_WEBTT_FIELD_SPIELPL_TITLE_ANZ_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="spielplan_team_anz"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_SPIELPLAN_TEAM_ANZ_LABEL"
+			description="COM_WEBTT_FIELD_SPIELPLAN_TEAM_ANZ_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="spielplan_staffel_anz"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_SPIELPLAN_STAFFEL_ANZ_LABEL"
+			description="COM_WEBTT_FIELD_SPIELPLAN_STAFFEL_ANZ_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="tabelle_title_anz"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_TABELLE_TITLE_ANZ_LABEL"
+			description="COM_WEBTT_FIELD_TABELLE_TITLE_ANZ_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="tabelle_team_anz"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_TABELLE_TEAM_ANZ_LABEL"
+			description="COM_WEBTT_FIELD_TABELLE_TEAM_ANZ_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="tabelle_staffel_anz"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_TABELLE_STAFFEL_ANZ_LABEL"
+			description="COM_WEBTT_FIELD_TABELLE_STAFFEL_ANZ_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="pokal_title_anz"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_POKAL_TITLE_ANZ_LABEL"
+			description="COM_WEBTT_FIELD_POKAL_TITLE_ANZ_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="pokal_team_anz"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_POKAL_TEAM_ANZ_LABEL"
+			description="COM_WEBTT_FIELD_POKAL_TEAM_ANZ_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="pokal_staffel_anz"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_POKAL_STAFFEL_ANZ_LABEL"
+			description="COM_WEBTT_FIELD_POKAL_STAFFEL_ANZ_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+	</fieldset>
+	
+	<fieldset
+		name="akt_int"
+		label="COM_WEBTT_AKT_INT_SETTINGS_LABEL">
+
+		<field
+			name="spielpl_verein_akt"
+			type="text"
+			default="24"
+			label="COM_WEBTT_FIELD_SPIELPL_VEREIN_AKT_LABEL"
+			description="COM_WEBTT_FIELD_SPIELPL_VEREIN_AKT_DESC"
+			filter="integer"
+			size="2" />
+
+		<field
+			name="spiele_next_akt"
+			type="text"
+			default="24"
+			label="COM_WEBTT_FIELD_SPIELE_NEXT_AKT_LABEL"
+			description="COM_WEBTT_FIELD_SPIELE_NEXT_AKT_DESC"
+			filter="integer"
+			size="2" />
+
+		<field
+			name="spiele_rec_akt"
+			type="text"
+			default="24"
+			label="COM_WEBTT_FIELD_SPIELE_REC_AKT_LABEL"
+			description="COM_WEBTT_FIELD_SPIELE_REC_AKT_DESC"
+			filter="integer"
+			size="2" />
+
+		<field
+			name="tabellenstaende_akt"
+			type="text"
+			default="24"
+			label="COM_WEBTT_FIELD_TABST_AKT_LABEL"
+			description="COM_WEBTT_FIELD_TABST_AKT_DESC"
+			filter="integer"
+			size="2" />
+
+		<field
+			name="pokal_verein_akt"
+			type="text"
+			default="24"
+			label="COM_WEBTT_FIELD_POKAL_VEREIN_AKT_LABEL"
+			description="COM_WEBTT_FIELD_POKAL_VEREIN_AKT_DESC"
+			filter="integer"
+			size="2" />
+
+		<field
+			name="aufstellung_akt"
+			type="text"
+			default="24"
+			label="COM_WEBTT_FIELD_AUFST_AKT_LABEL"
+			description="COM_WEBTT_FIELD_AUFST_AKT_DESC"
+			filter="integer"
+			size="2" />
+
+		<field
+			name="spielpl_akt"
+			type="text"
+			default="24"
+			label="COM_WEBTT_FIELD_SPIELPL_AKT_LABEL"
+			description="COM_WEBTT_FIELD_SPIELPL_AKT_DESC"
+			filter="integer"
+			size="2" />
+
+		<field
+			name="tabelle_akt"
+			type="text"
+			default="24"
+			label="COM_WEBTT_FIELD_TABELLE_AKT_LABEL"
+			description="COM_WEBTT_FIELD_TABELLE_AKT_DESC"
+			filter="integer"
+			size="2" />
+
+		<field
+			name="pokal_akt"
+			type="text"
+			default="24"
+			label="COM_WEBTT_FIELD_POKAL_AKT_LABEL"
+			description="COM_WEBTT_FIELD_POKAL_AKT_DESC"
+			filter="integer"
+			size="2" />
+
+	</fieldset>
+
+	<fieldset
+		name="maps"
+		label="COM_WEBTT_MAPS_LABEL">
+
+		<field
+			name="hallen_maps_api"
+			type="text"
+			label="COM_WEBTT_FIELD_HALLEN_MAPS_API_LABEL"
+			description="COM_WEBTT_FIELD_HALLEN_MAPS_API_DESC"
+			filter="string"
+			size="40" />
+
+		<field
+			name="hallen_maps_route_start"
+			type="text"
+			label="COM_WEBTT_FIELD_HALLEN_MAPS_ROUTE_START_LABEL"
+			description="COM_WEBTT_FIELD_HALLEN_MAPS_ROUTE_START_DESC"
+			filter="string"
+			size="40" />
+
+		<field
+			name="hallen_maps_karte"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_HALLEN_MAPS_KARTE_LABEL"
+			description="COM_WEBTT_FIELD_HALLEN_MAPS_KARTE_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="hallen_maps_karte_type"
+			type="list"
+			default=""
+			label="COM_WEBTT_FIELD_HALLEN_MAPS_KARTE_TYPE_LABEL"
+			description="COM_WEBTT_FIELD_HALLEN_MAPS_KARTE_TYPE_DESC"
+			filter="string">
+			<option value="dyn">dynamisch</option>
+			<option value="stat">statisch</option>
+		</field>
+
+		<field
+			name="hallen_maps_karte_width"
+			type="text"
+			default=""
+			label="COM_WEBTT_FIELD_HALLEN_MAPS_WIDTH_LABEL"
+			description="COM_WEBTT_FIELD_HALLEN_MAPS_WIDTH_DESC"
+			filter="integer"
+			size="4" />
+
+		<field
+			name="hallen_maps_karte_height"
+			type="text"
+			default=""
+			label="COM_WEBTT_FIELD_HALLEN_MAPS_HEIGHT_LABEL"
+			description="COM_WEBTT_FIELD_HALLEN_MAPS_HEIGHT_DESC"
+			filter="integer"
+			size="4" />
+
+		<field
+			name="hallen_maps_zoom"
+			type="text"
+			default=""
+			label="COM_WEBTT_FIELD_HALLEN_MAPS_ZOOM_LABEL"
+			description="COM_WEBTT_FIELD_HALLEN_MAPS_ZOOM_DESC"
+			filter="integer"
+			size="2" />
+
+		<field
+			name="hallen_maps_streetview"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_HALLEN_MAPS_STREETVIEW_LABEL"
+			description="COM_WEBTT_FIELD_HALLEN_MAPS_STREETVIEW_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="hallen_maps_streetview_type"
+			type="list"
+			default=""
+			label="COM_WEBTT_FIELD_HALLEN_MAPS_STREETVIEW_TYPE_LABEL"
+			description="COM_WEBTT_FIELD_HALLEN_MAPS_STREETVIEW_TYPE_DESC"
+			filter="string">
+			<option value="dyn">dynamisch</option>
+			<option value="stat">statisch</option>
+		</field>
+
+		<field
+			name="hallen_maps_streetview_width"
+			type="text"
+			default="400"
+			label="COM_WEBTT_FIELD_HALLEN_STREETVIEW_WIDTH_LABEL"
+			description="COM_WEBTT_FIELD_HALLEN_MAPS_STREETVIEW_WIDTH_DESC"
+			filter="integer"
+			size="4" />
+
+		<field
+			name="hallen_maps_streetview_height"
+			type="text"
+			default="400"
+			label="COM_WEBTT_FIELD_HALLEN_STREETVIEW_HEIGHT_LABEL"
+			description="COM_WEBTT_FIELD_HALLEN_STREETVIEW_HEIGHT_DESC"
+			filter="integer"
+			size="4" />
+
+		<field
+			name="hallen_maps_streetview_zoom"
+			type="text"
+			default=""
+			label="COM_WEBTT_FIELD_HALLEN_MAPS_ZOOM_LABEL"
+			description="COM_WEBTT_FIELD_HALLEN_MAPS_ZOOM_DESC"
+			filter="integer"
+			size="2" />
+
+		<field
+			name="popups_hallen_streetview"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_POPUPS_HALLEN_STREETVIEW_LABEL"
+			description="COM_WEBTT_FIELD_POPUPS_HALLEN_STREETVIEW_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+	</fieldset>
+
+	<fieldset
+		name="foto"
+		label="COM_WEBTT_FOTO_LABEL">
+			
+		<field
+			name="foto_width_lb"
+			type="text"
+			default=""
+			label="COM_WEBTT_FIELD_FOTO_WIDTH_LB_LABEL"
+			description="COM_WEBTT_FIELD_FOTO_WIDTH_LB_DESC"
+			filter="integer"
+			size="4" />
+
+		<field
+			name="foto_height_lb"
+			type="text"
+			default=""
+			label="COM_WEBTT_FIELD_FOTO_HEIGHT_LB_LABEL"
+			description="COM_WEBTT_FIELD_FOTO_HEIGHT_LB_DESC"
+			filter="integer"
+			size="4" />
+
+		<field
+			name="foto_path"
+			type="text"
+			default="images/webtt/fotos/"
+			label="COM_WEBTT_FIELD_FOTO_PATH_LABEL"
+			description="COM_WEBTT_FIELD_FOTO_PATH_DESC"
+			filter="string"
+			size="25" />
+
+	</fieldset>
+
+	<fieldset
+		name="mytt"
+		label="COM_WEBTT_MYTT_LABEL">
+
+		<field
+			name="mytt_user"
+			type="text"
+			default=""
+			label="COM_WEBTT_FIELD_MYTT_USER_LABEL"
+			description="COM_WEBTT_FIELD_MYTT_USER_DESC"
+			filter="string">
+		</field>
+
+		<field
+			name="mytt_pw"
+			type="text"
+			default=""
+			label="COM_WEBTT_FIELD_MYTT_PW_LABEL"
+			description="COM_WEBTT_FIELD_MYTT_PW_DESC"
+			filter="string"
+			size="" />
+
+		<field
+			name="mytt_verein"
+			type="text"
+			default=""
+			label="COM_WEBTT_FIELD_MYTT_VEREIN_LABEL"
+			description="COM_WEBTT_FIELD_MYTT_VEREIN_DESC"
+			filter="string"
+			size="4" />
+
+		<field
+			name="mytt_vereinid"
+			type="text"
+			default=""
+			label="COM_WEBTT_FIELD_MYTT_VEREINID_LABEL"
+			description="COM_WEBTT_FIELD_MYTT_VEREINID_DESC"
+			filter="integer"
+			size="4" />
+
+		<field
+			name="mytt_verband"
+			type="text"
+			default=""
+			label="COM_WEBTT_FIELD_MYTT_VERBAND_LABEL"
+			description="COM_WEBTT_FIELD_MYTT_VERBAND_DESC"
+			filter="string"
+			size="4" />
+
+		<field
+			name="mytt_akt_int"
+			type="list"
+			default=""
+			label="COM_WEBTT_FIELD_MYTT_AKT_INT_LABEL"
+			description="COM_WEBTT_FIELD_MYTT_AKT_INT_DESC"
+			filter="string">
+			<option value="1">täglich</option>
+			<option value="7">wöchentlich</option>
+		</field>
+
+	</fieldset>
+
+	<fieldset
+		name="misc"
+		label="COM_WEBTT_MISC_SETTINGS_LABEL">
+
+		<field
+			name="spielpl_anz_infotips"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_SPIELPL_ANZ_INFOTIPS_LABEL"
+			description="COM_WEBTT_FIELD_SPIELPL_ANZ_INFOTIPS_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="spielpl_verein_anz_infotips"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_SPIELPL_VEREIN_ANZ_INFOTIPS_LABEL"
+			description="COM_WEBTT_FIELD_SPIELPL_VEREIN_ANZ_INFOTIPS_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="spiele_next_anz_infotips"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_SPIELE_NEXT_ANZ_INFOTIPS_LABEL"
+			description="COM_WEBTT_FIELD_SPIELE_NEXT_ANZ_INFOTIPS_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="spiele_rec_anz_infotips"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_SPIELE_REC_ANZ_INFOTIPS_LABEL"
+			description="COM_WEBTT_FIELD_SPIELE_REC_ANZ_INFOTIPS_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="spielpl_anz_cal"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_SPIELPL_ANZ_CAL_LABEL"
+			description="COM_WEBTT_FIELD_SPIELPL_ANZ_CAL_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="vspielpl_anz_cal"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_VSPIELPL_ANZ_CAL_LABEL"
+			description="COM_WEBTT_FIELD_VSPIELPL_ANZ_CAL_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="aufst_spieler_all"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_AUFST_SPIELER_ALL_LABEL"
+			description="COM_WEBTT_FIELD_AUFST_SPIELER_ALL_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="aufst_spieler_mann_nr"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_AUFST_SPIELER_MANN_NR_LABEL"
+			description="COM_WEBTT_FIELD_AUFST_SPIELER_MANN_NR_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="aufst_mk"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_AUFST_MK_LABEL"
+			description="COM_WEBTT_FIELD_AUFST_MK_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="aufst_mk_tel"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_AUFST_MK_TEL_LABEL"
+			description="COM_WEBTT_FIELD_AUFST_MK_TEL_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="aufst_mk_mobil"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_AUFST_MK_MOBIL_LABEL"
+			description="COM_WEBTT_FIELD_AUFST_MK_MOBIL_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="aufst_mk_gesch"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_AUFST_MK_GESCH_LABEL"
+			description="COM_WEBTT_FIELD_AUFST_MK_GESCH_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="aufst_mk_mail"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_AUFST_MK_MAIL_LABEL"
+			description="COM_WEBTT_FIELD_AUFST_MK_MAIL_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="aufst_mk_infotip"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_AUFST_MK_INFOTIP_LABEL"
+			description="COM_WEBTT_FIELD_AUFST_MK_INFOTIP_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+	</fieldset>
+
+	<fieldset
+		name="rows_spielpl_verein_anz"
+		label="COM_WEBTT_SPALTEN_SPIELPL_VEREIN_ANZ_SETTINGS_LABEL"
+		legend="legend"
+		class="form_horizontal">
+
+		<field
+			name="spielpl_verein_anz_nr"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_SPIELPL_VEREIN_ANZ_NR_LABEL"
+			description="COM_WEBTT_FIELD_SPIELPL_VEREIN_ANZ_NR_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="spielpl_verein_anz_tag"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_SPIELPL_VEREIN_ANZ_TAG_LABEL"
+			description="COM_WEBTT_FIELD_SPIELPL_VEREIN_ANZ_TAG_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="spielpl_verein_anz_zeit"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_SPIELPL_VEREIN_ANZ_ZEIT_LABEL"
+			description="COM_WEBTT_FIELD_SPIELPL_VEREIN_ANZ_ZEIT_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="spielpl_verein_anz_halle"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_SPIELPL_VEREIN_ANZ_HALLE_LABEL"
+			description="COM_WEBTT_FIELD_SPIELPL_VEREIN_ANZ_HALLE_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="vspielplan_anz_halle_popup"
+			type="list"
+			default=""
+			label="COM_WEBTT_FIELD_SPIELPLAN_ANZ_HALLE_POPUP_LABEL"
+			description="COM_WEBTT_FIELD_SPIELPLAN_ANZ_HALLE_POPUP_DESC"
+			filter="string">
+			<option value="">keine</option>
+			<option value="css">css</option>
+			<option value="jquery">Lightbox2 (JQuery)</option>
+		</field>
+
+		<field
+			name="spielpl_verein_anz_liga"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_SPIELPL_VEREIN_ANZ_LIGA_LABEL"
+			description="COM_WEBTT_FIELD_SPIELPL_VEREIN_ANZ_LIGA_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="spielpl_verein_anz_erg"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_SPIELPL_VEREIN_ANZ_ERG_LABEL"
+			description="COM_WEBTT_FIELD_SPIELPL_VEREIN_ANZ_ERG_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="vspielplan_anz_erg_popup"
+			type="list"
+			default=""
+			label="COM_WEBTT_FIELD_VSPIELPLAN_ANZ_ERG_POPUP_LABEL"
+			description="COM_WEBTT_FIELD_VSPIELPLAN_ANZ_ERG_POPUP_DESC"
+			filter="string">
+			<option value="">keine</option>
+			<option value="css">css</option>
+			<option value="mootools">Milkbox (Mootools)</option>
+		</field>
+
+	</fieldset>
+
+	<fieldset
+		name="rows_spiele_rec_anz"
+		label="COM_WEBTT_SPALTEN_SPIELE_REC_ANZ_SETTINGS_LABEL"
+		legend="legend"
+		class="form_horizontal">
+
+		<field
+			name="spiele_rec_anz_tag"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_SPIELE_REC_ANZ_TAG_LABEL"
+			description="COM_WEBTT_FIELD_SPIELE_REC_ANZ_TAG_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="spiele_rec_anz_zeit"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_SPIELE_REC_ANZ_ZEIT_LABEL"
+			description="COM_WEBTT_FIELD_SPIELE_REC_ANZ_ZEIT_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="spiele_rec_anz_halle"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_SPIELE_REC_ANZ_HALLE_LABEL"
+			description="COM_WEBTT_FIELD_SPIELE_REC_ANZ_HALLE_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="spiele_rec_anz_halle_popup"
+			type="list"
+			default=""
+			label="COM_WEBTT_FIELD_SPIELPLAN_ANZ_HALLE_POPUP_LABEL"
+			description="COM_WEBTT_FIELD_SPIELPLAN_ANZ_HALLE_POPUP_DESC"
+			filter="string">
+			<option value="">keine</option>
+			<option value="css">css</option>
+			<option value="lightbox2">Lightbox2 (JQuery)</option>
+		</field>
+
+		<field
+			name="spiele_rec_anz_liga"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_SPIELE_REC_ANZ_LIGA_LABEL"
+			description="COM_WEBTT_FIELD_SPIELE_REC_ANZ_LIGA_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="spiele_rec_anz_erg"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_SPIELE_REC_ANZ_ERG_LABEL"
+			description="COM_WEBTT_FIELD_SPIELE_REC_ANZ_ERG_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="spiele_rec_anz_erg_popup"
+			type="list"
+			default=""
+			label="COM_WEBTT_FIELD_VSPIELPLAN_ANZ_ERG_POPUP_LABEL"
+			description="COM_WEBTT_FIELD_SPIELE_REC_ANZ_ERG_POPUP_DESC"
+			filter="string">
+			<option value="">keine</option>
+			<option value="css">css</option>
+			<option value="milkbox">Milkbox (Mootools)</option>
+		</field>
+
+	</fieldset>
+
+	<fieldset
+		name="rows_spiele_next_anz"
+		label="COM_WEBTT_SPALTEN_SPIELE_NEXT_ANZ_SETTINGS_LABEL">
+
+		<field
+			name="spiele_next_anz_tag"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_SPIELE_NEXT_ANZ_TAG_LABEL"
+			description="COM_WEBTT_FIELD_SPIELE_NEXT_ANZ_TAG_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="spiele_next_anz_zeit"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_SPIELE_NEXT_ANZ_ZEIT_LABEL"
+			description="COM_WEBTT_FIELD_SPIELE_NEXT_ANZ_ZEIT_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="spiele_next_anz_halle"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_SPIELE_NEXT_ANZ_HALLE_LABEL"
+			description="COM_WEBTT_FIELD_SPIELE_NEXT_ANZ_HALLE_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="spiele_next_anz_halle_popup"
+			type="list"
+			default=""
+			label="COM_WEBTT_FIELD_SPIELPLAN_ANZ_HALLE_POPUP_LABEL"
+			description="COM_WEBTT_FIELD_SPIELPLAN_ANZ_HALLE_POPUP_DESC"
+			filter="string">
+			<option value="">keine</option>
+			<option value="css">css</option>
+			<option value="lightbox2">Lightbox2 (JQuery)</option>
+		</field>
+
+		<field
+			name="spiele_next_anz_liga"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_SPIELE_NEXT_ANZ_LIGA_LABEL"
+			description="COM_WEBTT_FIELD_SPIELE_NEXT_ANZ_LIGA_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="spiele_next_anz_erg"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_SPIELE_NEXT_ANZ_ERG_LABEL"
+			description="COM_WEBTT_FIELD_SPIELE_NEXT_ANZ_ERG_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+	</fieldset>
+
+	<fieldset
+		name="rows_spielerliste_anz"
+		label="COM_WEBTT_SPALTEN_SPIELERLISTE_ANZ_SETTINGS_LABEL">
+
+		<field
+			name="spielerliste_anz_foto"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_SPIELERLISTE_ANZ_FOTO_LABEL"
+			description="COM_WEBTT_FIELD_SPIELERLISTE_ANZ_FOTO_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="foto_spielerliste_width_thumb"
+			type="text"
+			default=""
+			label="COM_WEBTT_FIELD_FOTO_SPIELERLISTE_WIDTH_THUMB_LABEL"
+			description="COM_WEBTT_FIELD_FOTO_SPIELERLISTE_WIDTH_THUMB_DESC"
+			filter="integer"
+			size="4" />
+
+		<field
+			name="foto_spielerliste_height_thumb"
+			type="text"
+			default=""
+			label="COM_WEBTT_FIELD_FOTO_SPIELERLISTE_HEIGHT_THUMB_LABEL"
+			description="COM_WEBTT_FIELD_FOTO_SPIELERLISTE_HEIGHT_THUMB_DESC"
+			filter="integer"
+			size="4" />
+
+		<field
+			name="spielerliste_anz_foto_popup"
+			type="list"
+			default=""
+			label="COM_WEBTT_FIELD_SPIELERLISTE_ANZ_FOTO_POPUP_LABEL"
+			description="COM_WEBTT_FIELD_SPIELERLISTE_ANZ_FOTO_POPUP_DESC"
+			filter="string">
+			<option value="">keine</option>
+			<option value="css">css</option>
+			<option value="lightbox2">Lightbox2 (JQuery)</option>
+			<option value="milkbox">Milkbox (Mootools)</option>
+		</field>
+
+		<field
+			name="spielerliste_anz_qttr"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_SPIELERLISTE_ANZ_QTTR_LABEL"
+			description="COM_WEBTT_FIELD_SPIELERLISTE_ANZ_QTTR_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="spielerliste_anz_qttr_popup"
+			type="list"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_SPIELERLISTE_ANZ_QTTR_POPUP_LABEL"
+			description="COM_WEBTT_FIELD_SPIELERLISTEANZ_QTTR_POPUP_DESC"
+			filter="string">
+			<option value="">keine</option>
+			<option value="css">css</option>
+			<option value="lightbox2">Lightbox2 (JQuery)</option>
+			<option value="milkbox">Milkbox (Mootools)</option>
+
+		</field>
+
+		<field
+			name="spielerliste_anz_ttr"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_SPIELERLISTE_ANZ_TTR_LABEL"
+			description="COM_WEBTT_FIELD_SPIELERLISTE_ANZ_TTR_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+	</fieldset>
+
+
+	<fieldset
+		name="rows_tabst_anz"
+		label="COM_WEBTT_SPALTEN_TABST_ANZ_SETTINGS_LABEL">
+
+		<field
+			name="tabst_anz_liga"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_TABST_ANZ_LIGA_LABEL"
+			description="COM_WEBTT_FIELD_TABST_ANZ_LIGA_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="tabst_anz_platz"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_TABST_ANZ_PLATZ_LABEL"
+			description="COM_WEBTT_FIELD_TABST_ANZ_PLATZ_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="tabst_anz_punkte"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_TABST_ANZ_PUNKTE_LABEL"
+			description="COM_WEBTT_FIELD_TABST_ANZ_PUNKTE_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+	</fieldset>
+
+
+	<fieldset
+		name="rows_aufst_anz"
+		label="COM_WEBTT_SPALTEN_AUFST_ANZ_SETTINGS_LABEL">
+
+		<field
+			name="aufst_anz_pos"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_AUFST_ANZ_POS_LABEL"
+			description="COM_WEBTT_FIELD_AUFST_ANZ_POS_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="aufst_anz_beschr"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_AUFST_ANZ_BESCHR_LABEL"
+			description="COM_WEBTT_FIELD_AUFST_ANZ_BESCHR_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="aufst_anz_foto"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_AUFST_ANZ_FOTO_LABEL"
+			description="COM_WEBTT_FIELD_AUFST_ANZ_FOTO_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="foto_aufstellung_width_thumb"
+			type="text"
+			default=""
+			label="COM_WEBTT_FIELD_FOTO_AUFST_WIDTH_THUMB_LABEL"
+			description="COM_WEBTT_FIELD_FOTO_AUFST_WIDTH_THUMB_DESC"
+			filter="integer"
+			size="4" />
+
+		<field
+			name="foto_aufstellung_height_thumb"
+			type="text"
+			default=""
+			label="COM_WEBTT_FIELD_FOTO_AUFST_HEIGHT_THUMB_LABEL"
+			description="COM_WEBTT_FIELD_FOTO_AUFST_HEIGHT_THUMB_DESC"
+			filter="integer"
+			size="4" />
+
+		<field
+			name="aufstellung_anz_foto_popup"
+			type="list"
+			default=""
+			label="COM_WEBTT_FIELD_ANZ_FOTO_POPUP_LABEL"
+			description="COM_WEBTT_FIELD_ANZ_FOTO_POPUP_DESC"
+			filter="string">
+			<option value="">keine</option>
+			<option value="css">css</option>
+			<option value="lightbox2">Lightbox2 (JQuery)</option>
+			<option value="milkbox">Milkbox (Mootools)</option>
+		</field>
+
+		<field
+			name="aufst_anz_spieler_popup"
+			type="list"
+			default=""
+			label="COM_WEBTT_FIELD_AUFST_ANZ_SPIELER_POPUP_LABEL"
+			description="COM_WEBTT_FIELD_AUFST_ANZ_SPIELER_POPUP_DESC"
+			filter="string">
+			<option value="">keine</option>
+			<option value="css">css</option>
+			<option value="milkbox">Milkbox (Mootools)</option>
+		</field>
+		
+		<field
+			name="aufst_anz_spieler_box_datum"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_AUFST_ANZ_SPIELER_BOX_DATUM_LABEL"
+			description="COM_WEBTT_FIELD_AUFST_ANZ_SPIELER_BOX_DATUM_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="aufst_anz_spieler_box_gegnerteam"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_AUFST_ANZ_SPIELER_BOX_GEGNERTEAM_LABEL"
+			description="COM_WEBTT_FIELD_AUFST_ANZ_SPIELER_BOX_GEGNERTEAM_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="aufst_anz_spieler_paarung"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_AUFST_ANZ_SPIELER_BOX_PAARUNG_LABEL"
+			description="COM_WEBTT_FIELD_AUFST_ANZ_SPIELER_BOX_PAARUNG_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="aufst_anz_spieler_box_erg"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_AUFST_ANZ_SPIELER_BOX_ERG_LABEL"
+			description="COM_WEBTT_FIELD_AUFST_ANZ_SPIELER_BOX_ERG_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="aufst_anz_eins"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_AUFST_ANZ_EINS_LABEL"
+			description="COM_WEBTT_FIELD_AUFST_ANZ_EINS_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="aufst_anz_bil"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_AUFST_ANZ_BIL_LABEL"
+			description="COM_WEBTT_FIELD_AUFST_ANZ_BIL_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="aufst_anz_bw"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_AUFST_ANZ_BW_LABEL"
+			description="COM_WEBTT_FIELD_AUFST_ANZ_BW_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="aufst_anz_qttr"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_AUFST_ANZ_QTTR_LABEL"
+			description="COM_WEBTT_FIELD_AUFST_ANZ_QTTR_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="aufst_anz_attr"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_AUFST_ANZ_TTR_LABEL"
+			description="COM_WEBTT_FIELD_AUFST_ANZ_TTR_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+	</fieldset>
+
+
+	<fieldset
+		name="rows_spielpl_anz"
+		label="COM_WEBTT_SPALTEN_SPIELPL_ANZ_SETTINGS_LABEL">
+
+		<field
+			name="spielpl_anz_tag"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_SPIELPL_ANZ_TAG_LABEL"
+			description="COM_WEBTT_FIELD_SPIELPL_ANZ_TAG_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="spielpl_anz_zeit"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_SPIELPL_ANZ_ZEIT_LABEL"
+			description="COM_WEBTT_FIELD_SPIELPL_ANZ_ZEIT_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="spielpl_anz_halle"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_SPIELPL_ANZ_HALLE_LABEL"
+			description="COM_WEBTT_FIELD_SPIELPL_ANZ_HALLE_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="spielplan_anz_halle_popup"
+			type="list"
+			default=""
+			label="COM_WEBTT_FIELD_SPIELPLAN_ANZ_HALLE_POPUP_LABEL"
+			description="COM_WEBTT_FIELD_SPIELPLAN_ANZ_HALLE_POPUP_DESC"
+			filter="string">
+			<option value="">keine</option>
+			<option value="css">css</option>
+			<option value="jquery">Lightbox2 (JQuery)</option>
+		</field>
+
+		<field
+			name="spielpl_anz_liga"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_SPIELPL_ANZ_LIGA_LABEL"
+			description="COM_WEBTT_FIELD_SPIELPL_ANZ_LIGA_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="spielpl_anz_erg"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_SPIELPL_ANZ_ERG_LABEL"
+			description="COM_WEBTT_FIELD_SPIELPL_ANZ_ERG_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="spielplan_anz_erg_popup"
+			type="list"
+			default=""
+			label="COM_WEBTT_FIELD_POPUPS_SPIELBERICHTE_LABEL"
+			description="COM_WEBTT_FIELD_POPUPS_SPIELBERICHTE_DESC"
+			filter="string">
+			<option value="">keine</option>
+			<option value="css">css</option>
+			<option value="mootools">Milkbox (Mootools)</option>
+		</field>
+
+		<field
+			name="spielplan_anz_erg_popup"
+			type="list"
+			default=""
+			label="COM_WEBTT_FIELD_SPIELPLAN_ANZ_HALLE_POPUP_LABEL"
+			description="COM_WEBTT_FIELD_SPIELPLAN_ANZ_HALLE_POPUP_DESC"
+			filter="string">
+			<option value="">keine</option>
+			<option value="css">css</option>
+			<option value="mootools">Milkbox (Mootools)</option>
+		</field>
+
+	</fieldset>
+	
+	<fieldset
+		name="rows_tabelle_anz"
+		label="COM_WEBTT_SPALTEN_TABELLE_ANZ_SETTINGS_LABEL">
+
+		<field
+			name="tabelle_anz_tendenz"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_TABELLE_ANZ_TENDENZ_LABEL"
+			description="COM_WEBTT_FIELD_TABELLE_ANZ_TENDENZ_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="tabelle_anz_mannschaft_popup"
+			type="list"
+			default=""
+			label="COM_WEBTT_FIELD_TABELLE_ANZ_MANNSCHAFT_POPUP_LABEL"
+			description="COM_WEBTT_FIELD_TABELLE_ANZ_MANNSCHAFT_POPUP_DESC"
+			filter="string">
+			<option value="">keine</option>
+			<option value="css">css</option>
+			<option value="milkbox">Milkbox (Mootools)</option>
+		</field>
+
+		<field
+			name="tabelle_anz_mann_box_pos"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_TABELLE_ANZ_MANN_BOX_POS_LABEL"
+			description="COM_WEBTT_FIELD_TABELLE_ANZ_MANN_BOX_POS_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="tabelle_anz_mann_box_bil"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_TABELLE_ANZ_MANN_BOX_BIL_LABEL"
+			description="COM_WEBTT_FIELD_TABELLE_ANZ_MANN_BOX_BIL_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="tabelle_anz_mann_box_bw"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_TABELLE_ANZ_MANN_BOX_BW_LABEL"
+			description="COM_WEBTT_FIELD_TABELLE_ANZ_MANN_BOX_BW_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="tabelle_anz_mann_box_qttr"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_TABELLE_ANZ_MANN_BOX_QTTR_LABEL"
+			description="COM_WEBTT_FIELD_TABELLE_ANZ_MANN_BOX_QTTR_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="tabelle_anz_begegnungen"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_TABELLE_ANZ_BEGEGNUNGEN_LABEL"
+			description="COM_WEBTT_FIELD_TABELLE_ANZ_BEGEGNUNGEN_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="tabelle_anz_details"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_TABELLE_ANZ_DETAILS_LABEL"
+			description="COM_WEBTT_FIELD_TABELLE_ANZ_DETAILS_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="tabelle_anz_spiele"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_TABELLE_ANZ_SPIELE_LABEL"
+			description="COM_WEBTT_FIELD_TABELLE_ANZ_SPIELE_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="tabelle_anz_diff"
+			type="radio"
+			class="btn-group"
+			default="0"
+			label="COM_WEBTT_FIELD_TABELLE_ANZ_DIFF_LABEL"
+			description="COM_WEBTT_FIELD_TABELLE_ANZ_DIFF_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="tabelle_anz_punkte"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_TABELLE_ANZ_PUNKTE_LABEL"
+			description="COM_WEBTT_FIELD_TABELLE_ANZ_PUNKTE_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+	</fieldset>
+
+	<fieldset
+		name="rows_pokal_anz"
+		label="COM_WEBTT_SPALTEN_POKAL_ANZ_SETTINGS_LABEL">
+
+		<field
+			name="pokal_anz_tag"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_POKAL_ANZ_TAG_LABEL"
+			description="COM_WEBTT_FIELD_POKAL_ANZ_TAG_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="pokal_anz_zeit"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_POKAL_ANZ_ZEIT_LABEL"
+			description="COM_WEBTT_FIELD_POKAL_ANZ_ZEIT_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="pokal_anz_halle"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_POKAL_ANZ_HALLE_LABEL"
+			description="COM_WEBTT_FIELD_POKAL_ANZ_HALLE_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="pokal_anz_halle_popup"
+			type="list"
+			default=""
+			label="COM_WEBTT_FIELD_POKAL_ANZ_HALLE_POPUP_LABEL"
+			description="COM_WEBTT_FIELD_POKAL_ANZ_HALLE_POPUP_DESC"
+			filter="string">
+			<option value="">keine</option>
+			<option value="css">css</option>
+			<option value="lightbox2">Lightbox2 (JQuery)</option>
+		</field>
+
+		<field
+			name="pokal_anz_liga"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_POKAL_ANZ_LIGA_LABEL"
+			description="COM_WEBTT_FIELD_POKAL_ANZ_LIGA_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="pokal_anz_erg"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_WEBTT_FIELD_POKAL_ANZ_ERG_LABEL"
+			description="COM_WEBTT_FIELD_POKAL_ANZ_ERG_DESC"
+			filter="integer">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="pokal_anz_erg_popup"
+			type="list"
+			default=""
+			label="COM_WEBTT_FIELD_POKAL_ANZ_ERG_POPUP_LABEL"
+			description="COM_WEBTT_FIELD_POKAL_ANZ_ERG_POPUP_DESC"
+			filter="string">
+			<option value="">keine</option>
+			<option value="css">css</option>
+			<option value="milkbox">Milkbox (Mootools)</option>
+		</field>
+
+	</fieldset>
+
+
+
+
+</config>
