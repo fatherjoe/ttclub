@@ -2,12 +2,12 @@
 <!DOCTYPE install PUBLIC "-//Joomla! 1.6//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
 <extension version="2.5" type="template" method="upgrade" client="site">
 	<name>TTC_T3</name>
-	<version>2.2.2</version>
-	<creationDate>April 08, 2016</creationDate>
+	<version>2.2.4</version>
+	<creationDate>May 2nd 2017</creationDate>
 	<author>Jörg Vater</author>
 	<authorEmail>joerg.vater@ttc-woeschbach.de</authorEmail>
 	<authorUrl>http://www.ttc-woeschbach.de</authorUrl>
-	<copyright>Copyright (C) 2016 TTC Wöschbach 58 e.V.</copyright>
+	<copyright>Copyright (C) 2017 TTC Wöschbach 58 e.V.</copyright>
 	<license>license GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
 	<t3>
 		<base>base-bs3</base>
@@ -17,7 +17,7 @@
 		<div align="center">
 			<div class="alert alert-success" style="background-color:#DFF0D8;border-color:#D6E9C6;color: #468847;padding: 1px 0;">
 				<p>TTC T3 template based on T3 BS Blank template</p>
-				<p>Copyright 2015 <a href='http://www.ttc-woeschbach.de/' title='Visit TTC Wöschbach!'>TTC Wöschbach</a>.</p>
+				<p>Copyright 2017 <a href='http://www.ttc-woeschbach.de/' title='Visit TTC Wöschbach!'>TTC Wöschbach</a>.</p>
 			</div>
 			<style>table.adminform{width: 100%;}</style>
 		</div>
@@ -111,7 +111,7 @@
 	</config>
 
 	<updateservers>
-		<server type="collection">http://update.joomlart.com/service/tracking/list.xml</server>
+    	<server type="extension">http://update.joomlart.com/service/tracking/j30/tpl_t3_bs3_blank.xml</server>
 	</updateservers>
 
 </extension>
