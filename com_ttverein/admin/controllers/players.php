@@ -6,10 +6,13 @@ require( JPATH_ADMINISTRATOR .'/'. 'components' .'/'. 'com_ttverein' .'/'. 'lib'
 
 class PlayersControllerPlayers extends AbstractController
 {
-	var $redirect = "index.php?option=com_ttverein&controller=players";
+    private $linkToSelf;
+
 	function __construct()
 	{
 		parent::__construct();
+
+		$this->linkToSelf = JRoute::_('index.php?option=com_ttverein&controller=players', false);
 
 		// Register Extra tasks
 		$this->registerTask( 'add', 'edit' );
@@ -41,7 +44,7 @@ class PlayersControllerPlayers extends AbstractController
 						$config['player_thumb_size']);
 			if($files == null) {
 				JError::raiseWarning( 551, JText::_( $imageManager->error ) );
-				$this->setRedirect($this->redirect, "Spieler nicht gespeichert");
+				$this->setRedirect($this->linkToSelf, "Spieler nicht gespeichert");
 				return false;
 			}
 
@@ -61,8 +64,7 @@ class PlayersControllerPlayers extends AbstractController
 		$cache = JFactory::getCache('com_ttverein');
 		$cache->clean();
 
-		$link = JRoute::_('index.php?option=com_ttverein&controller=players', false);		
-		$this->setRedirect( $link, $msg );
+		$this->setRedirect( $this->linkToSelf, $msg );
 	}
 
 	function remove()
@@ -77,15 +79,12 @@ class PlayersControllerPlayers extends AbstractController
 		$cache = JFactory::getCache('com_ttverein');
 		$cache->clean();
 
-		$link = JRoute::_('index.php?option=com_ttverein&controller=players', false);		
-		$this->setRedirect( $link, $msg );
+		$this->setRedirect( $this->linkToSelf, $msg );
 	}
 
 
 	function publish()
 	{
-		$this->setRedirect( $this->redirect );
-
 		// Initialize variables
 		$db			= JFactory::getDBO();
 		$user		= JFactory::getUser();
@@ -110,19 +109,17 @@ class PlayersControllerPlayers extends AbstractController
 		if (!$db->query()) {
 			return JError::raiseWarning( 500, $row->getError() );
 		}
-		$this->setMessage( JText::sprintf( $publish ? 'Spieler veröffentlicht' : 'Spieler nun unveröffentlicht', $n ) );
-		
+        $msg =  JText::sprintf( $publish ? 'Spieler veröffentlicht' : 'Spieler nun unveröffentlicht', $n );
+
 		$cache = JFactory::getCache('com_ttverein');
 		$cache->clean();
-		$link = JRoute::_('index.php?option=com_ttverein&controller=players', false);		
-		$this->setRedirect( $link, $msg );		
+		$this->setRedirect( $this->linkToSelf, $msg );
 	}
 
 	function cancel()
 	{
 		$msg = JText::_( 'Bearbeiten abgebrochen' );
-		$link = JRoute::_('index.php?option=com_ttverein&controller=players', false);		
-		$this->setRedirect( $link, $msg );
-	}
+        $this->setRedirect( $this->linkToSelf, $msg );
+    }
 }
 ?>

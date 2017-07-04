@@ -1,18 +1,17 @@
 <?php
 defined('_JEXEC') or die();
 
-
-
 class AltersklassenControllerAltersklassen extends AbstractController
 {
-	var $redirect = "index.php?option=com_ttverein&controller=altersklassen";
+    private $linkToSelf;
 
 	function __construct()
 	{
 		parent::__construct();
 
+        $this->linkToSelf = JRoute::_('index.php?option=com_ttverein&controller=altersklassen', false);
+
 		$this->registerTask( 'add'  , 	'edit' );
-		//$this->registerTask( 'unpublish', 	'publish');
 	}
 
 
@@ -40,7 +39,7 @@ class AltersklassenControllerAltersklassen extends AbstractController
 		$cache = JFactory::getCache('com_ttverein');
 		$cache->clean();
 
-		$this->setRedirect($this->redirect, $msg);
+		$this->setRedirect($this->linkToSelf, $msg);
 	}
 
 
@@ -58,14 +57,14 @@ class AltersklassenControllerAltersklassen extends AbstractController
 		$cache = JFactory::getCache('com_ttverein');
 		$cache->clean();
 
-		$this->setRedirect( $this->redirect, $msg );
+		$this->setRedirect( $this->linkToSelf, $msg );
 	}
 
 
 	function cancel()
 	{
 		$msg = JText::_( 'Abgebrochen' );
-		$this->setRedirect( $this->redirect, $msg );
+		$this->setRedirect( $this->linkToSelf, $msg );
 	}
 }
 ?>

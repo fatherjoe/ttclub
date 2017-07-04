@@ -5,11 +5,13 @@ defined('_JEXEC') or die();
 
 class LigenControllerLigen extends AbstractController
 {
-	var $redirect = "index.php?option=com_ttverein&controller=ligen";
+    private $linkToSelf;
 
 	function __construct()
 	{
 		parent::__construct();
+
+        $this->linkToSelf = JRoute::_('index.php?option=com_ttverein&controller=ligen', false);
 
 		$this->registerTask( 'add'  , 	'edit' );
 	}
@@ -39,7 +41,7 @@ class LigenControllerLigen extends AbstractController
 		$cache = JFactory::getCache('com_ttverein');
 		$cache->clean();
 
-		$this->setRedirect($this->redirect, $msg);
+		$this->setRedirect($this->linkToSelf, $msg);
 	}
 
 
@@ -55,13 +57,13 @@ class LigenControllerLigen extends AbstractController
 		$cache = JFactory::getCache('com_ttverein');
 		$cache->clean();
 
-		$this->setRedirect( $this->redirect, $msg );
+		$this->setRedirect( $this->linkToSelf, $msg );
 	}
 
 	function cancel()
 	{
 		$msg = JText::_( 'Abgebrochen' );
-		$this->setRedirect( $this->redirect, $msg );
+		$this->setRedirect( $this->linkToSelf, $msg );
 	}
 }
 ?>

@@ -8,11 +8,13 @@ require( JPATH_ADMINISTRATOR .'/'. 'components' .'/'. 'com_ttverein' .'/'. 'lib'
  */
 class TeamsControllerTeams extends AbstractController
 {
-	var $redirect = "index.php?option=com_ttverein&controller=teams";
+    private $linkToSelf;
 
-	function __construct()
+    function __construct()
 	{
 		parent::__construct();
+
+        $this->linkToSelf = JRoute::_('index.php?option=com_ttverein&controller=teams', false);
 
 		$this->registerTask( 'add', 'edit' );
 		$this->registerTask( 'unpublish', 'publish');
@@ -58,7 +60,7 @@ class TeamsControllerTeams extends AbstractController
 						
 			if($files == null) {
 				JError::raiseWarning( 552, JText::_( $imageManager->error ) );
-				$this->setRedirect($this->redirect, "Mannschaft nicht gespeichert");
+				$this->setRedirect($this->linkToSelf, "Mannschaft nicht gespeichert");
 				return false;
 			}
 
@@ -78,10 +80,7 @@ class TeamsControllerTeams extends AbstractController
 		$cache = JFactory::getCache('com_ttverein');
 		$cache->clean();
 
-		//$this->setRedirect($this->redirect, $msg);
-		//JFactory::getApplication()->enqueueMessage($msg);
-		$link = JRoute::_('index.php?option=com_ttverein&controller=teams', false);		
-		$this->setRedirect( $link, $msg );		
+		$this->setRedirect( $this->linkToSelf, $msg );
 	}
 
 	function remove()
@@ -96,9 +95,7 @@ class TeamsControllerTeams extends AbstractController
 		$cache = JFactory::getCache('com_ttverein');
 		$cache->clean();
 
-		//JFactory::getApplication()->enqueueMessage($msg);
-		$link = JRoute::_('index.php?option=com_ttverein&controller=teams', false);		
-		$this->setRedirect( $link, $msg );		
+		$this->setRedirect( $this->linkToSelf, $msg );
 	}
 
 	function publish()
@@ -128,18 +125,18 @@ class TeamsControllerTeams extends AbstractController
 		if (!$db->query()) {
 			return JError::raiseWarning( 500, $row->getError() );
 		}
-		$this->setMessage( JText::sprintf( $publish ? 'Items published' : 'Items unpublished', $n ) );
-		
+
 		$cache = JFactory::getCache('com_ttverein');
 		$cache->clean();
+
+		$msg = JText::sprintf( $publish ? 'Item(s) published' : 'Item(s) unpublished', $n );
+        $this->setRedirect( $this->linkToSelf, $msg );
 	}
 
 	function cancel()
 	{
 		$msg = JText::_( 'Aktion Abgebrochen' );
-		//JFactory::getApplication()->enqueueMessage($msg);		
-		$link = JRoute::_('index.php?option=com_ttverein&controller=teams', false);		
-		$this->setRedirect( $link, $msg );		
+		$this->setRedirect( $this->linkToSelf, $msg );
 	}
 }
 ?>

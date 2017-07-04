@@ -2205,7 +2205,7 @@ class upload {
                     $this->file_src_pathname   = $file;
                     $this->file_src_name       = basename($file);
                     $this->log .= '- local file name OK<br />';
-                    ereg('\.([^\.]*$)', $this->file_src_name, $extension);
+                    preg_match('\.([^\.]*$)', $this->file_src_name, $extension);
                     if (is_array($extension)) {
                         $this->file_src_name_ext      = strtolower($extension[1]);
                         $this->file_src_name_body     = substr($this->file_src_name, 0, ((strlen($this->file_src_name) - strlen($this->file_src_name_ext)))-1);
@@ -2260,7 +2260,7 @@ class upload {
 
             if ($this->uploaded) {
                 $this->log .= '- file name OK<br />';
-                ereg('\.([^\.]*$)', $this->file_src_name, $extension);
+                preg_match('\.([^\.]*$)', $this->file_src_name, $extension);
                 if (is_array($extension)) {
                     $this->file_src_name_ext      = strtolower($extension[1]);
                     $this->file_src_name_body     = substr($this->file_src_name, 0, ((strlen($this->file_src_name) - strlen($this->file_src_name_ext)))-1);
@@ -2878,7 +2878,7 @@ class upload {
             }
             if ($this->file_safe_name) { // formats the name
                 $this->file_dst_name_body = str_replace(array(' ', '-'), array('_','_'), $this->file_dst_name_body) ;
-                $this->file_dst_name_body = ereg_replace('[^A-Za-z0-9_]', '', $this->file_dst_name_body) ;
+                $this->file_dst_name_body = preg_replace('[^A-Za-z0-9_]', '', $this->file_dst_name_body) ;
                 $this->log .= '- file name safe format<br />';
             }
 
