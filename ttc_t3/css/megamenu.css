@@ -294,7 +294,7 @@
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     backface-visibility: hidden;
-    margin-top: -100%;
+    margin-top: -30%;
   }
   .t3-megamenu.animate.slide .mega.open > .mega-dropdown-menu > div {
     margin-top: 0%;
@@ -402,6 +402,18 @@
 }
 .t3-megamenu .mega-nav .dropdown-submenu > a::after {
   margin-right: 0;
+}
+.t3-megamenu .t3-module .module-inner {
+  padding: 0 20px;
+}
+.t3-megamenu .t3-module .module-inner ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.t3-megamenu .t3-module .module-inner ul li {
+  list-style: none;
+  padding: 5px 0;
 }
 .t3-megamenu .t3-module .module-title {
   margin: 0;
