@@ -2,8 +2,8 @@
 <!DOCTYPE install PUBLIC "-//Joomla! 1.6//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
 <extension version="2.5" type="template" method="upgrade" client="site">
 	<name>TTC_T3</name>
-	<version>2.2.4</version>
-	<creationDate>May 2nd 2017</creationDate>
+	<version>2.2.6</version>
+	<creationDate>May 26 2017</creationDate>
 	<author>Jörg Vater</author>
 	<authorEmail>joerg.vater@ttc-woeschbach.de</authorEmail>
 	<authorUrl>http://www.ttc-woeschbach.de</authorUrl>
@@ -16,7 +16,7 @@
 		<![CDATA[
 		<div align="center">
 			<div class="alert alert-success" style="background-color:#DFF0D8;border-color:#D6E9C6;color: #468847;padding: 1px 0;">
-				<p>TTC T3 template based on T3 BS Blank template</p>
+				<p>TTC T3 template based on tpl_t3_bs3_blank template</p>
 				<p>Copyright 2017 <a href='http://www.ttc-woeschbach.de/' title='Visit TTC Wöschbach!'>TTC Wöschbach</a>.</p>
 			</div>
 			<style>table.adminform{width: 100%;}</style>
