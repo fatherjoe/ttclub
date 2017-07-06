@@ -26,7 +26,6 @@ foreach($saisons as $saison) {
 			
 }
 $tab = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
-
 if(count($bilanzen) > 0) {
 	echo "<h2>Bilanzen</h2>\n";
 	echo "<table class='table table-condensed table-striped'>";
@@ -43,7 +42,9 @@ if(count($bilanzen) > 0) {
 		
 		ksort($bilanz);
 		foreach($bilanz as $runde=>$data) {
-			
+            $rundeAnzeige = "undef";
+            if ($runde == "rückrunde")
+                $runde = "rueckrunde";
 			if($runde == "vorrunde")
 				$rundeAnzeige = "Vorrunde";
 			else if($runde == "rueckrunde")

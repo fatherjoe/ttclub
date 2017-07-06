@@ -191,12 +191,18 @@ class ClickTT {
 			return '';
 		
 		preg_match("/<div id=\"content-row2\">(.*)<\/div>/Usi", $content, $table);
-		preg_match("/<table class=\"result-set\".*>(.*)<\/table>/Usi", $table[1], $table);
-		
-		$table = $table[1];
+        if (array_key_exists(1, $table)) {
+            preg_match("/<table class=\"result-set\".*>(.*)<\/table>/Usi", $table[1], $table);
+        }
 
-		if (strlen($table) == 0)
-			$table = "Keine Informationen verfügbar";
+		if (array_key_exists(1, $table)) {
+			$table = $table[1];
+            if (strlen($table) == 0)
+                $table = "Keine Informationen verfügbar";
+		} else {
+            $table = "Keine Informationen verfügbar";
+		}
+
 
 		// Lösche nicht benötigte Spalten
 		$table = preg_replace("/(<th[^@]*?<\/th>)[^@]*?(<th[^@]*?<\/th>)[^@]*?(<th[^@]*?<\/th>)[^@]*?(<th[^@]*?<\/th>)[^@]*?(<th[^@]*?<\/th>)[^@]*?(<th[^@]*?<\/th>)[^@]*?(<th[^@]*?<\/th>)[^@]*?(<th[^@]*?<\/th>)[^@]*?(<th[^@]*?<\/th>)/", 
@@ -563,9 +569,16 @@ class ClickTT {
 			$spielKlasse = trim($tmp[0]);
 			$runde = strtolower( trim( substr($tmp[1],0,strlen($tmp[1])-1) ) );
 
+            if ($runde == "rückrunde")
+                $runde = "rueckrunde";
 			if($runde == "r&uuml;ckrunde")
-				$runde = "rueckrunde";	
-			
+				$runde = "rueckrunde";
+            if(!array_key_exists($runde, $spiele)) {
+                $spiele[$runde] = array();
+            }
+            if(!array_key_exists($spielKlasse, $spiele[$runde])) {
+                $spiele[$runde][$spielKlasse] = array();
+            }
 			$index = count($spiele[$runde][$spielKlasse]);
 			$spiele[$runde][$spielKlasse][$index]['position'] = $paarKreuz[1][0];
 			$spiele[$runde][$spielKlasse][$index]['saetze'] = $spiel[1][0];
@@ -620,8 +633,8 @@ class ClickTT {
 					else {
 						$paarKreuz = 'unten';
 					}
-					
-					//Verhindert Notice Meldung in PHP 
+
+					//Verhindert Notice Meldung in PHP
 					if(!array_key_exists($paarKreuz, $bilanz[$runde][$klasse])) {
 						$bilanz[$runde][$klasse][$paarKreuz] = array();
 						$bilanz[$runde][$klasse][$paarKreuz]['gewonnen'] = 0;
