@@ -12,14 +12,14 @@
 defined('_JEXEC') or die;
 
 // Access check.
-if (!JFactory::getUser()->authorise('core.manage', 'com_ttclub')) 
+if (!JFactory::getUser()->authorise('core.manage', 'com_ttclub'))
 {
-	throw new Exception(JText::_('JERROR_ALERTNOAUTHOR'));
+    throw new Exception(JText::_('JERROR_ALERTNOAUTHOR'));
 }
 
-// Include dependancies
+// Include dependencies
 jimport('joomla.application.component.controller');
 
-$controller	= JControllerLegacy::getInstance('Ttclub');
+$controller = JControllerLegacy::getInstance('Ttclub');
 $controller->execute(JFactory::getApplication()->input->get('task'));
 $controller->redirect();
