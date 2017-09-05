@@ -13,15 +13,13 @@ if($verband && $vereinsnummer && $clubname && $clubid) {
 		echo '<br />';
 		echo '<h3 class="contentHeading">Herren</h3>';
 		echo '<br />';
-		//echo 'Aktuell sind keine Spiele geplant.<br />';
-		echo $clicktt->getNextMatches( $clubid, 'Suchen','2','','','0' );
-		//echo $clicktt->getNextMatches( $clubid, 'Suchen','1','01.07.2016','10.10.2016','1' );
+		echo $clicktt->getNextMatches( $clubid, 'Suchen','3','','','0' );
+		//echo $clicktt->getNextMatches( $clubid, 'Suchen','1','01.08.2017','10.10.2017','1' );
 		echo '<br />';
 		echo '<h3 class="contentHeading">Jugend / Schüler (Spielgemeinschaft mit EK Söllingen)</h3>';
 		echo '<br />';
-		//echo 'Aktuell sind keine Spiele geplant.<br />';
-		echo $clicktt->getNextMatches( 30464, 'Suchen','2','','','0' );
-		//echo $clicktt->getNextMatches( 30464, 'Suchen','1','01.07.2016','10.10.2016','1' );
+		echo $clicktt->getNextMatches( 30464, 'Suchen','3','','','0' );
+		//echo $clicktt->getNextMatches( 30464, 'Suchen','1','01.08.2017','10.10.2017','1' );
 	}
 }
 ?>
