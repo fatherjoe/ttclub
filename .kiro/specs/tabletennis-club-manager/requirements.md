@@ -208,3 +208,22 @@ The Table Tennis Club Manager is a Joomla 6 component that enables table tennis 
 3. THE Component SHALL allow frontend views to be accessible without authentication (public access)
 4. THE Component SHALL register its own asset rules with Joomla's ACL system so that permissions are configurable per component through Joomla's global configuration and component options permissions tab
 5. WHERE a user holds the core.admin permission for the component, THE Component SHALL allow that user to configure ACL permissions for other user groups through the component's options interface
+
+### Requirement 13: First-Time Historical Data Import
+
+**User Story:** As an administrator, I want to perform a one-time bulk import of all historical team data from mytischtennis.de or click-tt.de, so that I can bootstrap the component with a complete set of former teams and seasons without manual entry.
+
+#### Acceptance Criteria
+
+1. WHEN an administrator triggers the first-time import, THE Component SHALL discover all available seasons for the configured club on mytischtennis.de or click-tt.de by recursively navigating the season archive pages
+2. WHEN the first-time import discovers available seasons, THE Component SHALL create season records for each discovered season that does not already exist in the database
+3. WHEN the first-time import processes a discovered season, THE Component SHALL scrape and create team records including team number, league assignment, and age class for all teams found in that season
+4. WHEN the first-time import processes a discovered team, THE Component SHALL scrape and create roster entries linking players to teams for each half-season available in the source data
+5. WHEN the first-time import processes a discovered team, THE Component SHALL scrape and create schedule entries including match dates, opponents, venues, home/away indicators, and results for each team in each season
+6. WHEN the first-time import encounters a player not yet present in the database, THE Component SHALL create a new player record using the player's first name and last name as scraped from the source
+7. WHEN the first-time import completes successfully, THE Component SHALL display a summary indicating the total number of seasons, teams, players, roster entries, and schedule entries created
+8. IF the first-time import encounters a connection error or invalid response from mytischtennis.de or click-tt.de, THEN THE Component SHALL display an error message indicating which season or page caused the failure and leave existing data unchanged
+9. IF the database already contains season or team records, THEN THE Component SHALL warn the administrator that this operation is intended for initial setup and prompt for confirmation before proceeding
+10. THE Component SHALL log all first-time import operations with timestamps and per-season status for audit purposes
+11. THE Component SHALL match imported player records to existing records using the player's first name and last name combination as the unique identifier, creating new records only when no match is found
+12. THE Component SHALL provide the administrator with the option to select either mytischtennis.de or click-tt.de as the data source for the first-time import
