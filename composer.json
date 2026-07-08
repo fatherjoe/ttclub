@@ -1,0 +1,29 @@
+{
+    "name": "fatherjoe/com_ttclub",
+    "description": "Table Tennis Club Manager - Joomla 6 Component",
+    "type": "joomla-component",
+    "license": "GPL-2.0-or-later",
+    "require": {
+        "php": ">=8.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.0",
+        "giorgiosironi/eris": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Fatherjoe\\Component\\Ttclub\\Administrator\\": "com_ttclub/administrator/src/",
+            "Fatherjoe\\Component\\Ttclub\\Site\\": "com_ttclub/site/src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Fatherjoe\\Component\\Ttclub\\Tests\\": "tests/",
+            "Joomla\\Database\\": "tests/Stubs/Joomla/Database/",
+            "Joomla\\CMS\\": "tests/Stubs/Joomla/CMS/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}

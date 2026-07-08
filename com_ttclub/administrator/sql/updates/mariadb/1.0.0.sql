@@ -1,0 +1,2 @@
+-- com_ttclub 1.0.0 - Initial release
+-- Schema created via install.sql; no update queries needed for this version.

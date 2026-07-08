@@ -1,0 +1,386 @@
+/**
+ * @package     com_ttclub
+ * @copyright   (C) 2025 Fatherjoe. All rights reserved.
+ * @license     GNU General Public License version 2 or later
+ *
+ * Base component styles for Table Tennis Club Manager frontend views.
+ */
+
+/* ==========================================================================
+   Players Overview - Grid Layout
+   ========================================================================== */
+
+.com-ttclub-players {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1rem 0;
+}
+
+.com-ttclub-players__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--body-bg, #fff);
+    border: 1px solid var(--template-border-color, #dee2e6);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    text-align: center;
+    transition: box-shadow 0.2s ease;
+}
+
+.com-ttclub-players__card:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.com-ttclub-players__image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.com-ttclub-players__name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0 0 0.25rem;
+}
+
+.com-ttclub-players__meta {
+    font-size: 0.9rem;
+    color: var(--body-font-color, #6c757d);
+}
+
+/* ==========================================================================
+   Teams Overview - Grid Layout
+   ========================================================================== */
+
+.com-ttclub-teams {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1rem 0;
+}
+
+.com-ttclub-teams__card {
+    display: flex;
+    flex-direction: column;
+    background: var(--body-bg, #fff);
+    border: 1px solid var(--template-border-color, #dee2e6);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    transition: box-shadow 0.2s ease;
+}
+
+.com-ttclub-teams__card:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.com-ttclub-teams__photo {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+}
+
+.com-ttclub-teams__name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0 0 0.5rem;
+}
+
+.com-ttclub-teams__info {
+    font-size: 0.9rem;
+    color: var(--body-font-color, #6c757d);
+}
+
+/* ==========================================================================
+   Team Detail Layout
+   ========================================================================== */
+
+.com-ttclub-team {
+    padding: 1rem 0;
+}
+
+.com-ttclub-team__header {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.com-ttclub-team__photo {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.com-ttclub-team__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.com-ttclub-team__league {
+    font-size: 1rem;
+    color: var(--body-font-color, #6c757d);
+}
+
+.com-ttclub-team__roster {
+    margin-top: 1.5rem;
+}
+
+.com-ttclub-team__roster-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--template-border-color, #dee2e6);
+    padding-bottom: 0.5rem;
+}
+
+.com-ttclub-team__roster-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.com-ttclub-team__roster-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--template-border-color, #dee2e6);
+}
+
+.com-ttclub-team__roster-item:last-child {
+    border-bottom: none;
+}
+
+.com-ttclub-team__season-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.com-ttclub-team__season-nav a,
+.com-ttclub-team__season-nav span {
+    padding: 0.4rem 0.8rem;
+    border: 1px solid var(--template-border-color, #dee2e6);
+    border-radius: 0.25rem;
+    text-decoration: none;
+    font-size: 0.85rem;
+}
+
+.com-ttclub-team__season-nav .active {
+    background: var(--template-link-color, #0d6efd);
+    color: #fff;
+    border-color: var(--template-link-color, #0d6efd);
+}
+
+/* ==========================================================================
+   Schedule Table Styling
+   ========================================================================== */
+
+.com-ttclub-schedule {
+    padding: 1rem 0;
+}
+
+.com-ttclub-schedule__section-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 1.5rem 0 0.75rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--template-border-color, #dee2e6);
+}
+
+.com-ttclub-schedule__table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+}
+
+.com-ttclub-schedule__table th,
+.com-ttclub-schedule__table td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid var(--template-border-color, #dee2e6);
+}
+
+.com-ttclub-schedule__table th {
+    font-weight: 600;
+    background: var(--body-bg, #f8f9fa);
+}
+
+.com-ttclub-schedule__table tr:hover {
+    background: var(--body-bg, #f8f9fa);
+}
+
+.com-ttclub-schedule__home {
+    font-weight: 600;
+}
+
+.com-ttclub-schedule__result {
+    font-weight: 700;
+}
+
+.com-ttclub-schedule__result--win {
+    color: #198754;
+}
+
+.com-ttclub-schedule__result--loss {
+    color: #dc3545;
+}
+
+.com-ttclub-schedule__result--draw {
+    color: #6c757d;
+}
+
+/* ==========================================================================
+   Player Detail Layout
+   ========================================================================== */
+
+.com-ttclub-player {
+    padding: 1rem 0;
+}
+
+.com-ttclub-player__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.com-ttclub-player__image {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.com-ttclub-player__info {
+    text-align: center;
+}
+
+.com-ttclub-player__name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 0 0.5rem;
+}
+
+.com-ttclub-player__details {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.com-ttclub-player__details li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--template-border-color, #dee2e6);
+}
+
+.com-ttclub-player__details li:last-child {
+    border-bottom: none;
+}
+
+.com-ttclub-player__season-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    justify-content: center;
+}
+
+.com-ttclub-player__season-nav a,
+.com-ttclub-player__season-nav span {
+    padding: 0.4rem 0.8rem;
+    border: 1px solid var(--template-border-color, #dee2e6);
+    border-radius: 0.25rem;
+    text-decoration: none;
+    font-size: 0.85rem;
+}
+
+.com-ttclub-player__season-nav .active {
+    background: var(--template-link-color, #0d6efd);
+    color: #fff;
+    border-color: var(--template-link-color, #0d6efd);
+}
+
+/* ==========================================================================
+   Shared / Utility
+   ========================================================================== */
+
+.com-ttclub-empty-message {
+    padding: 2rem;
+    text-align: center;
+    color: var(--body-font-color, #6c757d);
+    font-style: italic;
+}
+
+/* ==========================================================================
+   Responsive Grid Styles
+   ========================================================================== */
+
+/* Tablet: 2 columns */
+@media (min-width: 576px) {
+    .com-ttclub-players {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .com-ttclub-teams {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .com-ttclub-player__header {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .com-ttclub-player__info {
+        text-align: left;
+    }
+}
+
+/* Desktop: 3+ columns */
+@media (min-width: 768px) {
+    .com-ttclub-players {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .com-ttclub-teams {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .com-ttclub-team__header {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .com-ttclub-team__photo {
+        max-width: 400px;
+    }
+}
+
+/* Large desktop: wider grids */
+@media (min-width: 992px) {
+    .com-ttclub-players {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .com-ttclub-teams {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Mobile: ensure schedule table scrolls horizontally */
+@media (max-width: 575px) {
+    .com-ttclub-schedule__table {
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+}

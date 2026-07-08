@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="component" method="upgrade">
+    <name>com_ttclub</name>
+    <author>Fatherjoe</author>
+    <creationDate>2025</creationDate>
+    <copyright>(C) 2025 Fatherjoe. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later</license>
+    <authorEmail>info@fatherjoe.de</authorEmail>
+    <authorUrl>https://github.com/fatherjoe</authorUrl>
+    <version>1.0.0</version>
+    <description>Table Tennis Club Manager - Manage players, teams, leagues, seasons, schedules, and rosters for your table tennis club.</description>
+
+    <namespace path="src">Fatherjoe\Component\Ttclub</namespace>
+
+    <install>
+        <sql>
+            <file driver="mysql" charset="utf8mb4">sql/install.sql</file>
+            <file driver="mysqli" charset="utf8mb4">sql/install.sql</file>
+        </sql>
+    </install>
+
+    <uninstall>
+        <sql>
+            <file driver="mysql" charset="utf8mb4">sql/uninstall.sql</file>
+            <file driver="mysqli" charset="utf8mb4">sql/uninstall.sql</file>
+        </sql>
+    </uninstall>
+
+    <update>
+        <schemas>
+            <schemapath type="mysql">sql/updates/mariadb</schemapath>
+        </schemas>
+    </update>
+
+    <files folder="site">
+        <folder>src</folder>
+        <folder>tmpl</folder>
+    </files>
+
+    <media destination="com_ttclub" folder="media/com_ttclub">
+        <folder>css</folder>
+        <folder>js</folder>
+        <folder>images</folder>
+    </media>
+
+    <administration>
+        <files folder="administrator">
+            <filename>access.xml</filename>
+            <filename>config.xml</filename>
+            <folder>forms</folder>
+            <folder>services</folder>
+            <folder>sql</folder>
+            <folder>src</folder>
+            <folder>tmpl</folder>
+        </files>
+
+        <menu>COM_TTCLUB</menu>
+        <submenu>
+            <menu link="option=com_ttclub&amp;view=players">COM_TTCLUB_PLAYERS</menu>
+            <menu link="option=com_ttclub&amp;view=teams">COM_TTCLUB_TEAMS</menu>
+            <menu link="option=com_ttclub&amp;view=leagues">COM_TTCLUB_LEAGUES</menu>
+            <menu link="option=com_ttclub&amp;view=ageclasses">COM_TTCLUB_AGECLASSES</menu>
+            <menu link="option=com_ttclub&amp;view=seasons">COM_TTCLUB_SEASONS</menu>
+            <menu link="option=com_ttclub&amp;view=import">COM_TTCLUB_IMPORT</menu>
+        </submenu>
+    </administration>
+
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field
+                    name="clicktt_federation"
+                    type="text"
+                    label="Federation"
+                    description="The federation abbreviation (e.g., BaTTV, TTVN, TTVBW)"
+                    default="BaTTV"
+                />
+                <field
+                    name="clicktt_club_number"
+                    type="text"
+                    label="Club Number"
+                    description="The club number on click-tt.de / mytischtennis.de (e.g., 445)"
+                    default=""
+                />
+                <field
+                    name="clicktt_club_name"
+                    type="text"
+                    label="Club Name (URL)"
+                    description="The club name as it appears in the URL (underscores for spaces, e.g., TTC_Wöschbach_58_e.V.)"
+                    default=""
+                />
+                <field
+                    name="mytischtennis_club_url"
+                    type="url"
+                    label="COM_TTCLUB_CONFIG_CLUB_URL_LABEL"
+                    description="COM_TTCLUB_CONFIG_CLUB_URL_DESC"
+                    default=""
+                />
+                <field
+                    name="player_visible_fields"
+                    type="list"
+                    label="COM_TTCLUB_CONFIG_PLAYER_VISIBLE_FIELDS_LABEL"
+                    description="COM_TTCLUB_CONFIG_PLAYER_VISIBLE_FIELDS_DESC"
+                    multiple="true"
+                    default="first_name,last_name"
+                >
+                    <option value="first_name">COM_TTCLUB_FIELD_FIRST_NAME</option>
+                    <option value="last_name">COM_TTCLUB_FIELD_LAST_NAME</option>
+                </field>
+                <field
+                    name="default_placeholder_image"
+                    type="text"
+                    label="COM_TTCLUB_CONFIG_PLACEHOLDER_IMAGE_LABEL"
+                    description="COM_TTCLUB_CONFIG_PLACEHOLDER_IMAGE_DESC"
+                    default="media/com_ttclub/images/placeholder.png"
+                />
+                <field
+                    name="ranking_cache_duration"
+                    type="number"
+                    label="COM_TTCLUB_CONFIG_RANKING_CACHE_DURATION_LABEL"
+                    description="COM_TTCLUB_CONFIG_RANKING_CACHE_DURATION_DESC"
+                    default="3600"
+                    min="0"
+                />
+                <field
+                    name="schedule_cache_duration"
+                    type="number"
+                    label="COM_TTCLUB_CONFIG_SCHEDULE_CACHE_DURATION_LABEL"
+                    description="COM_TTCLUB_CONFIG_SCHEDULE_CACHE_DURATION_DESC"
+                    default="259200"
+                    min="0"
+                />
+            </fieldset>
+            <fieldset
+                name="permissions"
+                label="JCONFIG_PERMISSIONS_LABEL"
+                description="JCONFIG_PERMISSIONS_DESC"
+            >
+                <field
+                    name="rules"
+                    type="rules"
+                    label="JCONFIG_PERMISSIONS_LABEL"
+                    filter="rules"
+                    component="com_ttclub"
+                    section="component"
+                />
+            </fieldset>
+        </fields>
+    </config>
+</extension>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fieldset name="details">
+        <field
+            name="id"
+            type="hidden"
+            default="0"
+        />
+
+        <field
+            name="label"
+            type="text"
+            label="COM_TTCLUB_FIELD_CLUBID_LABEL_LABEL"
+            description="COM_TTCLUB_FIELD_CLUBID_LABEL_DESC"
+            required="true"
+            maxlength="100"
+            size="40"
+        />
+
+        <field
+            name="click_tt_club_id"
+            type="number"
+            label="COM_TTCLUB_FIELD_CLUBID_CLICK_TT_CLUB_ID_LABEL"
+            description="COM_TTCLUB_FIELD_CLUBID_CLICK_TT_CLUB_ID_DESC"
+            required="true"
+            min="1"
+        />
+
+        <field
+            name="legacy_club_id"
+            type="number"
+            label="COM_TTCLUB_FIELD_CLUBID_LEGACY_CLUB_ID_LABEL"
+            description="COM_TTCLUB_FIELD_CLUBID_LEGACY_CLUB_ID_DESC"
+            min="1"
+        />
+
+        <field
+            name="club_name"
+            type="text"
+            label="COM_TTCLUB_FIELD_CLUBID_CLUB_NAME_LABEL"
+            description="COM_TTCLUB_FIELD_CLUBID_CLUB_NAME_DESC"
+            maxlength="200"
+            size="40"
+        />
+
+        <field
+            name="federation"
+            type="text"
+            label="COM_TTCLUB_FIELD_CLUBID_FEDERATION_LABEL"
+            description="COM_TTCLUB_FIELD_CLUBID_FEDERATION_DESC"
+            required="true"
+            maxlength="20"
+            size="20"
+        />
+
+        <field
+            name="ordering"
+            type="number"
+            label="JGRID_HEADING_ORDERING"
+            description="COM_TTCLUB_FIELD_CLUBID_ORDERING_DESC"
+            default="0"
+            min="0"
+        />
+    </fieldset>
+</form>

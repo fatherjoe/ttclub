@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fieldset name="details">
+        <field
+            name="id"
+            type="hidden"
+            default="0"
+        />
+
+        <field
+            name="name"
+            type="text"
+            label="Name"
+            description="The name of the age class (e.g., Herren, Jugend U19)"
+            required="true"
+            maxlength="100"
+        />
+
+        <field
+            name="max_age"
+            type="number"
+            label="Max Age"
+            description="Maximum age for this age class. Leave empty for no age limit (e.g., open/adult)."
+            min="1"
+            max="99"
+        />
+
+        <field
+            name="published"
+            type="list"
+            label="Status"
+            default="1"
+        >
+            <option value="1">Published</option>
+            <option value="0">Unpublished</option>
+        </field>
+
+        <field
+            name="created"
+            type="hidden"
+            default=""
+        />
+
+        <field
+            name="modified"
+            type="hidden"
+            default=""
+        />
+    </fieldset>
+</form>

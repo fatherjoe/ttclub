@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fieldset name="details">
+        <field
+            name="player_id"
+            type="sql"
+            label="Player"
+            description="Select a player to assign to the team roster"
+            required="true"
+            query="SELECT id AS value, CONCAT(last_name, ', ', first_name) AS text FROM #__ttclub_players WHERE published = 1 ORDER BY last_name ASC, first_name ASC"
+            key_field="value"
+            value_field="text"
+        >
+            <option value="">- Select Player -</option>
+        </field>
+
+        <field
+            name="team_id"
+            type="sql"
+            label="Team"
+            description="Select a team"
+            required="true"
+            query="SELECT t.id AS value, CONCAT(IF(s.label != '', CONCAT(s.label, ' '), ''), s.start_year, '/', LPAD(MOD(s.start_year + 1, 100), 2, '0'), ' - Team ', t.team_number) AS text FROM #__ttclub_teams t LEFT JOIN #__ttclub_seasons s ON s.id = t.season_id WHERE t.published = 1 ORDER BY s.start_year DESC, s.label ASC, t.team_number ASC"
+            key_field="value"
+            value_field="text"
+        >
+            <option value="">- Select Team -</option>
+        </field>
+
+        <field
+            name="half_season_id"
+            type="sql"
+            label="Half-Season"
+            description="Select a half-season"
+            required="true"
+            query="SELECT hs.id AS value, CONCAT(IF(s.label != '', CONCAT(s.label, ' '), ''), s.start_year, '/', LPAD(MOD(s.start_year + 1, 100), 2, '0'), ' - Half ', hs.half) AS text FROM #__ttclub_half_seasons hs LEFT JOIN #__ttclub_seasons s ON s.id = hs.season_id ORDER BY s.start_year DESC, s.label ASC, hs.half ASC"
+            key_field="value"
+            value_field="text"
+        >
+            <option value="">- Select Half-Season -</option>
+        </field>
+    </fieldset>
+</form>

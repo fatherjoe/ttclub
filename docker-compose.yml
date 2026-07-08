@@ -1,0 +1,55 @@
+version: "3.9"
+
+services:
+  joomla:
+    image: joomla:6.1-php8.4-apache
+    container_name: ttclub-joomla
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+    environment:
+      JOOMLA_DB_HOST: db
+      JOOMLA_DB_NAME: joomla
+      JOOMLA_DB_USER: joomla
+      JOOMLA_DB_PASSWORD: joomla_password
+    volumes:
+      - joomla_data:/var/www/html
+      - ./com_ttclub:/tmp/com_ttclub_source:ro
+    depends_on:
+      db:
+        condition: service_healthy
+
+  db:
+    image: mariadb:11.4
+    container_name: ttclub-db
+    restart: unless-stopped
+    ports:
+      - "3306:3306"
+    environment:
+      MARIADB_ROOT_PASSWORD: root_password
+      MARIADB_DATABASE: joomla
+      MARIADB_USER: joomla
+      MARIADB_PASSWORD: joomla_password
+    volumes:
+      - db_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+
+  phpmyadmin:
+    image: phpmyadmin:latest
+    container_name: ttclub-pma
+    restart: unless-stopped
+    ports:
+      - "8081:80"
+    environment:
+      PMA_HOST: db
+      PMA_USER: root
+      PMA_PASSWORD: root_password
+
+volumes:
+  joomla_data:
+  db_data:

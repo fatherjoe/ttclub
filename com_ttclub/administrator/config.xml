@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <fieldset name="basic" label="Club IDs (click-TT)">
+        <field
+            name="clicktt_club_ids"
+            type="textarea"
+            label="Club IDs"
+            description="Configure click-tt.de club IDs for import. One entry per line, format: FEDERATION|CLUB_ID|LABEL (e.g., battv|6658|Erwachsene). The federation is the subdomain prefix on click-tt.de."
+            default=""
+            rows="5"
+            cols="60"
+        />
+        <field
+            name="clicktt_club_name"
+            type="text"
+            label="Club Name"
+            description="The official club name as it appears on click-tt.de (used for schedule/ranking matching)"
+            default=""
+        />
+        <field
+            name="clicktt_club_number"
+            type="text"
+            label="mytischtennis.de Club Number"
+            description="The club number on mytischtennis.de (e.g., 445) — used for historical import"
+            default=""
+        />
+        <field
+            name="mytischtennis_club_url"
+            type="url"
+            label="Club URL (override)"
+            description="Full URL override for the club page — leave empty to use the auto-built URL"
+            default=""
+        />
+    </fieldset>
+    <fieldset name="display" label="Display Settings">
+        <field
+            name="player_visible_fields"
+            type="list"
+            label="Visible Player Fields"
+            description="Which player fields are visible on the public frontend"
+            multiple="true"
+            default="first_name,last_name"
+        >
+            <option value="first_name">First Name</option>
+            <option value="last_name">Last Name</option>
+        </field>
+        <field
+            name="default_placeholder_image"
+            type="text"
+            label="Placeholder Image"
+            description="Path to the default placeholder image"
+            default="media/com_ttclub/images/placeholder.png"
+        />
+        <field
+            name="ranking_cache_duration"
+            type="number"
+            label="Ranking Cache Duration (seconds)"
+            description="Cache duration in seconds for ranking table data"
+            default="3600"
+            min="0"
+            step="1"
+        />
+        <field
+            name="schedule_cache_duration"
+            type="number"
+            label="Schedule Cache Duration (seconds)"
+            description="Cache duration in seconds for match schedule data from click-tt.de"
+            default="259200"
+            min="0"
+            step="1"
+        />
+    </fieldset>
+    <fieldset
+        name="permissions"
+        label="Permissions"
+        description="Configure access permissions for this component"
+    >
+        <field
+            name="rules"
+            type="rules"
+            label="Permissions"
+            filter="rules"
+            component="com_ttclub"
+            section="component"
+        />
+    </fieldset>
+</config>

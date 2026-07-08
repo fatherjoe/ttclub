@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fieldset name="details">
+        <field
+            name="id"
+            type="hidden"
+            default="0"
+        />
+
+        <field
+            name="name"
+            type="text"
+            label="COM_TTCLUB_FIELD_LEAGUE_NAME_LABEL"
+            description="COM_TTCLUB_FIELD_LEAGUE_NAME_DESC"
+            required="true"
+            maxLength="100"
+            size="40"
+        />
+
+        <field
+            name="published"
+            type="list"
+            label="JSTATUS"
+            default="1"
+        >
+            <option value="1">JPUBLISHED</option>
+            <option value="0">JUNPUBLISHED</option>
+        </field>
+
+        <field
+            name="created"
+            type="hidden"
+            filter="unset"
+        />
+
+        <field
+            name="modified"
+            type="hidden"
+            filter="unset"
+        />
+
+        <field
+            name="created_by"
+            type="hidden"
+            default="0"
+        />
+
+        <field
+            name="modified_by"
+            type="hidden"
+            default="0"
+        />
+    </fieldset>
+</form>

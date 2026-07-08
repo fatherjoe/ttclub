@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3d0a9739-cace-42d6-84b1-064ece580e60" name="Changes" comment="initial requirements document" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="518" />
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Joerg Vater &lt;joerg.vater@citrix.com&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="SOFT" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "vaterj_tipico"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/fatherjoe/ttclub.git",
+    "accountId": "32d1d959-691e-4ba5-b16d-14af09020ed6"
+  }
+}]]></component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0000008369538675" />
+      <entry key="MS500" value="1.076592262073607" />
+      <entry key="S2" value="1.940954810908114" />
+      <entry key="S5" value="3.141724555298694" />
+      <entry key="S10" value="4.153225787228615" />
+      <entry key="S30" value="5.251906474145866" />
+      <entry key="S60" value="5.6060067843919335" />
+      <entry key="M2" value="5.797718855839067" />
+      <entry key="M5" value="5.917778996418019" />
+      <entry key="M10" value="5.9586679597924626" />
+      <entry key="M15" value="5.972395817022316" />
+      <entry key="M30" value="5.986173098742562" />
+      <entry key="H1" value="5.993080334707731" />
+      <entry key="H2" value="5.996538612157586" />
+      <entry key="H4" value="5.9982689170882555" />
+      <entry key="D1" value="5.999711432138653" />
+      <entry key="W1" value="5.9999587746961005" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="0.0" />
+      <entry key="S60" value="0.0" />
+      <entry key="M2" value="0.0" />
+      <entry key="M5" value="0.0" />
+      <entry key="M10" value="0.0" />
+      <entry key="M15" value="0.0" />
+      <entry key="M30" value="0.0" />
+      <entry key="H1" value="0.0" />
+      <entry key="H2" value="0.0" />
+      <entry key="H4" value="0.0" />
+      <entry key="D1" value="0.0" />
+      <entry key="W1" value="0.0" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.9794211220738799" />
+      <entry key="MS500" value="1.0566000822666868" />
+      <entry key="S2" value="1.6642087277777633" />
+      <entry key="S5" value="2.8425333127834165" />
+      <entry key="S10" value="3.941650514949094" />
+      <entry key="S30" value="5.162659013146843" />
+      <entry key="S60" value="5.558651676674515" />
+      <entry key="M2" value="5.773325412060174" />
+      <entry key="M5" value="5.907845403739985" />
+      <entry key="M10" value="5.953671420064582" />
+      <entry key="M15" value="5.969058152908902" />
+      <entry key="M30" value="5.98450094084924" />
+      <entry key="H1" value="5.992243422982748" />
+      <entry key="H2" value="5.996119947935403" />
+      <entry key="H4" value="5.9980595328665895" />
+      <entry key="D1" value="5.999676527529044" />
+      <entry key="W1" value="5.999953788145986" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1,
+  "fromUser": false
+}]]></component>
+  <component name="ProjectId" id="3FPHQAaZy7ZvlhvMQ0ZixlEWWVl" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="openDirectoriesWithSingleClick" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/vaterj/Workspace/github/fatherjoe/ttclub",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "vcs.Git",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="Push.Settings">
+    <force-push-targets>
+      <force-push-target remote-path="origin" branch="master" />
+    </force-push-targets>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-37e91769500f-intellij.indexing.shared.core-IU-261.25134.95" />
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-IU-261.25134.95" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3d0a9739-cace-42d6-84b1-064ece580e60" name="Changes" comment="" />
+      <created>1781969765229</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1781969765229</updated>
+      <workItem from="1781969766129" duration="1684000" />
+    </task>
+    <task id="LOCAL-00001" summary="bootstrap ttclub component">
+      <option name="closed" value="true" />
+      <created>1781970006650</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1781970006650</updated>
+    </task>
+    <task id="LOCAL-00002" summary="bootstrap ttclub component">
+      <option name="closed" value="true" />
+      <created>1781970156249</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1781970156249</updated>
+    </task>
+    <task id="LOCAL-00003" summary="initial requirements document">
+      <option name="closed" value="true" />
+      <created>1781971862341</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1781971862341</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="bootstrap ttclub component" />
+    <MESSAGE value="initial requirements document" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial requirements document" />
+  </component>
+</project>

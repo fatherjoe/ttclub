@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fieldset name="details">
+        <field
+            name="club_identifier"
+            type="text"
+            label="Club Identifier"
+            description="The club identifier or URL for validation"
+            size="60"
+        />
+
+        <field
+            name="season_id"
+            type="sql"
+            label="Season"
+            description="Select a season to import data for"
+            query="SELECT id, CONCAT(IF(label != '', CONCAT(label, ' '), ''), start_year, '/', LPAD(MOD(start_year + 1, 100), 2, '0')) AS name FROM #__ttclub_seasons WHERE published = 1 ORDER BY start_year DESC, label ASC"
+            key_field="id"
+            value_field="name"
+            required="true"
+        >
+            <option value="">- Select Season -</option>
+        </field>
+
+        <field
+            name="half_season_id"
+            type="sql"
+            label="Half-Season"
+            description="Select a half-season (required for roster import)"
+            query="SELECT hs.id, CONCAT(IF(s.label != '', CONCAT(s.label, ' '), ''), s.start_year, '/', LPAD(MOD(s.start_year + 1, 100), 2, '0'), ' - ', CASE hs.half WHEN 1 THEN 'First Half' WHEN 2 THEN 'Second Half' END) AS name FROM #__ttclub_half_seasons hs INNER JOIN #__ttclub_seasons s ON s.id = hs.season_id WHERE s.published = 1 ORDER BY s.start_year DESC, s.label ASC, hs.half ASC"
+            key_field="id"
+            value_field="name"
+        >
+            <option value="">- Select Half-Season -</option>
+        </field>
+
+        <field
+            name="click_tt_url"
+            type="url"
+            label="click-tt.de URL"
+            description="Paste a click-tt.de URL to import a parallel season (e.g., cup/Pokal data). No season selection required."
+            size="80"
+            hint="https://battv.click-tt.de/cgi-bin/WebObjects/nuLigaTTDE.woa/wa/clubPools?club=..."
+        />
+    </fieldset>
+</form>

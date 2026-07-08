@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fieldset name="details">
+        <field
+            name="id"
+            type="hidden"
+            default="0"
+        />
+
+        <field
+            name="start_year"
+            type="number"
+            label="Start Year"
+            description="The first year of the season (e.g., 2025 for season 2025/26)"
+            required="true"
+            min="1900"
+            max="2100"
+            step="1"
+        />
+
+        <field
+            name="label"
+            type="text"
+            label="Label (optional)"
+            description="Optional label for parallel seasons (e.g., 'Pokal'). Leave empty for the main league season."
+            maxlength="50"
+            default=""
+        />
+
+        <field
+            name="published"
+            type="list"
+            label="Status"
+            default="1"
+        >
+            <option value="1">Published</option>
+            <option value="0">Unpublished</option>
+        </field>
+
+        <field
+            name="created"
+            type="hidden"
+            default=""
+        />
+
+        <field
+            name="modified"
+            type="hidden"
+            default=""
+        />
+    </fieldset>
+</form>

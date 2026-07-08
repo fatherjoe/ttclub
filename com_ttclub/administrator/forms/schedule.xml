@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fieldset name="details">
+        <field
+            name="id"
+            type="hidden"
+            default="0"
+        />
+
+        <field
+            name="team_id"
+            type="sql"
+            label="Team"
+            description="The team this match belongs to"
+            required="true"
+            query="SELECT t.id AS value, CONCAT('Team ', t.team_number, ' (', IF(s.label != '', CONCAT(s.label, ' '), ''), s.start_year, '/', LPAD(MOD(s.start_year + 1, 100), 2, '0'), ')') AS text FROM #__ttclub_teams t LEFT JOIN #__ttclub_seasons s ON s.id = t.season_id WHERE t.published = 1 ORDER BY s.start_year DESC, s.label ASC, t.team_number ASC"
+            key_field="value"
+            value_field="text"
+        >
+            <option value="">- Select Team -</option>
+        </field>
+
+        <field
+            name="season_id"
+            type="sql"
+            label="Season"
+            description="The season this match belongs to"
+            required="true"
+            query="SELECT id AS value, CONCAT(IF(label != '', CONCAT(label, ' '), ''), start_year, '/', LPAD(MOD(start_year + 1, 100), 2, '0')) AS text FROM #__ttclub_seasons WHERE published = 1 ORDER BY start_year DESC, label ASC"
+            key_field="value"
+            value_field="text"
+        >
+            <option value="">- Select Season -</option>
+        </field>
+
+        <field
+            name="match_date"
+            type="calendar"
+            label="Match Date"
+            description="The date of the match"
+            required="true"
+            format="%Y-%m-%d"
+        />
+
+        <field
+            name="match_time"
+            type="text"
+            label="Match Time"
+            description="The time of the match (HH:MM format)"
+            filter="string"
+            hint="HH:MM"
+        />
+
+        <field
+            name="opponent"
+            type="text"
+            label="Opponent"
+            description="The name of the opposing team"
+            required="true"
+            maxlength="150"
+        />
+
+        <field
+            name="venue"
+            type="text"
+            label="Venue"
+            description="The match venue / location"
+            required="true"
+            maxlength="200"
+        />
+
+        <field
+            name="home_away"
+            type="list"
+            label="Home / Away"
+            description="Whether this is a home or away match"
+            required="true"
+        >
+            <option value="">- Select -</option>
+            <option value="1">Home</option>
+            <option value="2">Away</option>
+        </field>
+
+        <field
+            name="result"
+            type="text"
+            label="Result"
+            description="The match result (e.g., 9:5). Can be added after the match is played."
+            maxlength="20"
+        />
+
+        <field
+            name="published"
+            type="list"
+            label="Status"
+            default="1"
+        >
+            <option value="1">Published</option>
+            <option value="0">Unpublished</option>
+        </field>
+    </fieldset>
+</form>

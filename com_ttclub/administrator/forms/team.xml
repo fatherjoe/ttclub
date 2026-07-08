@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fieldset name="details">
+        <field
+            name="id"
+            type="hidden"
+            default="0"
+        />
+
+        <field
+            name="team_number"
+            type="number"
+            label="Team Number"
+            description="The team number within the club (e.g., 1 for first team, 2 for second team)"
+            required="true"
+            min="1"
+        />
+
+        <field
+            name="season_id"
+            type="sql"
+            label="Season"
+            description="The season this team competes in"
+            required="true"
+            query="SELECT id AS value, CONCAT(IF(label != '', CONCAT(label, ' '), ''), start_year, '/', LPAD(MOD(start_year + 1, 100), 2, '0')) AS text FROM #__ttclub_seasons WHERE published = 1 ORDER BY start_year DESC, label ASC"
+            key_field="value"
+            value_field="text"
+        >
+            <option value="">- Select Season -</option>
+        </field>
+
+        <field
+            name="league_id"
+            type="sql"
+            label="League"
+            description="The league this team plays in. Cannot be changed after creation."
+            required="true"
+            query="SELECT id AS value, name AS text FROM #__ttclub_leagues WHERE published = 1 ORDER BY name ASC"
+            key_field="value"
+            value_field="text"
+        >
+            <option value="">- Select League -</option>
+        </field>
+
+        <field
+            name="age_class_id"
+            type="sql"
+            label="Age Class"
+            description="The age class this team belongs to"
+            required="true"
+            query="SELECT id AS value, name AS text FROM #__ttclub_age_classes WHERE published = 1 ORDER BY name ASC"
+            key_field="value"
+            value_field="text"
+        >
+            <option value="">- Select Age Class -</option>
+        </field>
+
+        <field
+            name="published"
+            type="list"
+            label="Status"
+            default="1"
+        >
+            <option value="1">Published</option>
+            <option value="0">Unpublished</option>
+        </field>
+
+        <field
+            name="created"
+            type="hidden"
+            default=""
+        />
+
+        <field
+            name="modified"
+            type="hidden"
+            default=""
+        />
+    </fieldset>
+</form>

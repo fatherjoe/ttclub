@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fieldset name="details">
+        <field
+            name="id"
+            type="hidden"
+            default="0"
+        />
+
+        <field
+            name="first_name"
+            type="text"
+            label="First Name"
+            description="The player's first name"
+            required="true"
+            maxlength="50"
+        />
+
+        <field
+            name="last_name"
+            type="text"
+            label="Last Name"
+            description="The player's last name"
+            required="true"
+            maxlength="50"
+        />
+
+        <field
+            name="published"
+            type="list"
+            label="Status"
+            default="1"
+        >
+            <option value="1">Published</option>
+            <option value="0">Unpublished</option>
+        </field>
+
+        <field
+            name="created"
+            type="hidden"
+            default=""
+        />
+
+        <field
+            name="modified"
+            type="hidden"
+            default=""
+        />
+    </fieldset>
+</form>
